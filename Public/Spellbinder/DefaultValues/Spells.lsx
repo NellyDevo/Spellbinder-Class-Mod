@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<save>
+    <version major="4" minor="0" revision="9" build="319"/>
+    <region id="DefaultValues">
+        <node id="root">
+            <children>
+                <node id="DefaultValue">
+					<attribute id="Add" type="LSString" value="Target_BoomingBlade;Target_ShockingGrasp;Shout_Thunderclap;Projectile_FireBolt"/>
+                    <attribute id="Level" type="int32" value="1"/>
+                    <attribute id="SelectorId" type="LSString" value="Spellbinder Cantrips"/>
+                    <attribute id="TableUUID" type="guid" value="ca9cfd96-20b1-485c-b474-b333e6396591"/>
+                    <attribute id="UUID" type="guid" value="2849d689-5488-4712-a5dd-dde22816835b"/>
+                </node>
+                <node id="DefaultValue">
+					<attribute id="Add" type="LSString" value="Shout_Shield_Wizard;Shout_ZephyrStrike;Target_Smite_Wrathful"/>
+                    <attribute id="Level" type="int32" value="1"/>
+                    <attribute id="SelectorId" type="LSString" value="Spellbinder Spells"/>
+                    <attribute id="TableUUID" type="guid" value="ca9cfd96-20b1-485c-b474-b333e6396591"/>
+                    <attribute id="UUID" type="guid" value="c0f55267-6617-4b05-beea-0e6e465816f3"/>
+                </node>
+            </children>
+        </node>
+    </region>
+</save>

@@ -1,0 +1,30 @@
+{
+    "bg3ModHelper.rootModPath": "c:\\Users\\Noelle\\Desktop\\BG3 Modding\\mods\\Spellbinder",
+    "bg3ModHelper.packingPriority": 0,
+    "bg3ModHelper.modName": "Spellbinder",
+    "editor.tokenColorCustomizations": {
+        "textMateRules": [
+            {
+                "scope": "keyword.control.bg3txt",
+                "settings": {
+                    "foreground": "#C586C0"
+                }
+            },
+            {
+                "scope": "keyword.operator.bg3txt",
+                "settings": {
+                    "foreground": "#ffa200"
+                }
+            },
+            {
+                "scope": "string.first-column.bg3txt",
+                "settings": {
+                    "foreground": "#9CDCFE"
+                }
+            }
+        ]
+    },
+    "files.associations": {
+        "*.txt": "bg3txt"
+    }
+}

@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<save>
+  <version major="4" minor="0" revision="9" build="328" />
+  <region id="ProgressionDescriptions">
+    <node id="root">
+      <children>
+        <node id="ProgressionDescription">
+          <attribute id="Description" type="TranslatedString" handle="h00791325bfd04055a13a33456765417a6fcb" version="1" />
+          <attribute id="DisplayName" type="TranslatedString" handle="hfa96c9fae809403c90fd843f4ff731360e5d" version="1" />
+          <attribute id="ProgressionTableId" type="guid" value="ca9cfd96-20b1-485c-b474-b333e6396591" />
+          <attribute id="Type" type="FixedString" value="Spellbinder" />
+          <attribute id="UUID" type="guid" value="98bf8f9d-02d1-4811-9a76-40a81a58c731" />
+        </node>
+        <node id="ProgressionDescription">
+          <attribute id="Description" type="TranslatedString" handle="h712a50d79e864f45a45ae83b822046ad1101" version="1" />
+          <attribute id="DisplayName" type="TranslatedString" handle="h5c31ecd75fed477ca46a5a3eb2bf6a2f4253" version="1" />
+          <attribute id="SelectorId" type="FixedString" value="SPELLBINDER_LOCA_FIGHTING_STYLE" />
+          <attribute id="UUID" type="guid" value="872b0af8-87e5-4951-8a47-335d3e788228" />
+        </node>
+        <node id="ProgressionDescription">
+          <attribute id="Description" type="TranslatedString" handle="hf18ca3c5864d486eb8e63806c8fd4c2dg8f9" version="1" />
+          <attribute id="DisplayName" type="TranslatedString" handle="hb5c6898df72e4996a4ed61cfee8e86b6c20b" version="1" />
+          <attribute id="SelectorId" type="FixedString" value="SPELLBINDER_LOCA_WEAPON_MASTERY" />
+          <attribute id="UUID" type="guid" value="eeb0c5d1-8c4f-49ed-936c-b942470baa3f" />
+        </node>
+      </children>
+    </node>
+  </region>
+</save>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<save>
+    <version major="4" minor="0" revision="4" build="206"/>
+    <region id="PassiveLists">
+        <node id="root">
+            <children>
+                <node id="PassiveList"> Fighting Styles
+                    <attribute id="Passives" type="LSString" value="FightingStyle_Archery,FightingStyle_Defense,FightingStyle_Dueling,FightingStyle_GreatWeaponFighting,FightingStyle_Protection,FightingStyle_TwoWeaponFighting"/>
+                    <attribute id="UUID" type="guid" value="df8cac8c-d186-4536-88ff-d4ace48fa7bb"/>
+                </node>
+                <node id="PassiveList"> Weapon Mastery
+                    <attribute id="Passives" type="LSString" value="Spellbinder_WeaponMasteryBattleaxe,Spellbinder_WeaponMasteryClub,Spellbinder_WeaponMasteryDagger,Spellbinder_WeaponMasteryDart,Spellbinder_WeaponMasteryFlail,Spellbinder_WeaponMasteryGlaive,Spellbinder_WeaponMasteryGreataxe,Spellbinder_WeaponMasteryGreatclub,Spellbinder_WeaponMasteryGreatsword,Spellbinder_WeaponMasteryHalberd,Spellbinder_WeaponMasteryHandCrossbow,Spellbinder_WeaponMasteryHandaxe,Spellbinder_WeaponMasteryHeavyCrossbow,Spellbinder_WeaponMasteryJavelin,Spellbinder_WeaponMasteryLightCrossbow,Spellbinder_WeaponMasteryLightHammer,Spellbinder_WeaponMasteryLongbow,Spellbinder_WeaponMasteryLongsword,Spellbinder_WeaponMasteryMace,Spellbinder_WeaponMasteryMaul,Spellbinder_WeaponMasteryMorningstar,Spellbinder_WeaponMasteryPike,Spellbinder_WeaponMasteryQuarterstaff,Spellbinder_WeaponMasteryRapier,Spellbinder_WeaponMasteryScimitar,Spellbinder_WeaponMasteryShortbow,Spellbinder_WeaponMasteryShortsword,Spellbinder_WeaponMasterySickle,Spellbinder_WeaponMasterySling,Spellbinder_WeaponMasterySpear,Spellbinder_WeaponMasteryTrident,Spellbinder_WeaponMasteryWarhammer,Spellbinder_WeaponMasteryWarpick"/>
+                    <attribute id="UUID" type="guid" value="725541a0-c403-4e57-9d9e-908f2da102dd"/>
+                </node>
+            </children>
+        </node>
+    </region>
+</save>
