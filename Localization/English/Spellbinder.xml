@@ -89,4 +89,7 @@
     <content contentuid="hc769475419be4b19acda1be3143999ec1bc3" version="1">Tridents</content>
     <content contentuid="h933a08bd09ad487c97ef9dbe156add3cb16a" version="1">Warhammers</content>
     <content contentuid="h855f4685beee43f48091ade42e9da19c431c" version="1">Warpicks</content>
+    
+    <content contentuid="hea41c9488817422db58afc31e0a3d8270c3f" version="1">Battle Magic</content>
+    <content contentuid="h2ab36720104745e0a4c5f2895752c6951240" version="1">You can cast a cantrip in place of one of your attacks</content>
 </contentList>
