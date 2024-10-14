@@ -92,4 +92,12 @@
     
     <content contentuid="hea41c9488817422db58afc31e0a3d8270c3f" version="1">Battle Magic</content>
     <content contentuid="h2ab36720104745e0a4c5f2895752c6951240" version="1">You can cast a cantrip in place of one of your attacks</content>
+    
+    <content contentuid="hc79d7fbde1f842f08a708bd671ad0c9bg144" version="1">Magic Touch</content>
+    <content contentuid="h51f2f0adb5684e62968602cf0d31e503135d" version="1">Your practical experience with magic assists your knowledge with the chosen Intelligence-based skill. You gain Proficiency and Expertise with it.</content>
+    <content contentuid="hed10d23fa6ce404f9fc6c7cde1d314119314" version="1">Arcana</content>
+    <content contentuid="haa417050ac4140c8958f63af3bdbadf08da8" version="1">History</content>
+    <content contentuid="h20c289ca62b245bea7a23be92289a13050c9" version="1">Investigation</content>
+    <content contentuid="h908f0a13ec414ef9b8d0a9116d318e6df621" version="1">Nature</content>
+    <content contentuid="h7c6aed0e38cf45038b61133211d3d0841ec2" version="1">Religion</content>
 </contentList>

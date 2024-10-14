@@ -216,13 +216,40 @@ data "Conditions" "(context.HasContextFlag(StatsFunctorContext.OnCast) and IsCan
 data "StatsFunctors" "IF(context.HasContextFlag(StatsFunctorContext.OnCast)):ApplyStatus(SELF,SPELLBINDER_EXTRA_ATTACK_Q,100,1);IF(context.HasContextFlag(StatsFunctorContext.OnStatusRemoved)):ApplyStatus(SPELLBINDER_EXTRA_ATTACK_Q,100,1);IF(context.HasContextFlag(StatsFunctorContext.OnStatusApplied) and not HasHigherPriorityExtraAttackQueued('SPELLBINDER_EXTRA_ATTACK_Q') and not HasAnyExtraAttack() and not HasBattleMagic()):ApplyStatus(SPELLBINDER_EXTRA_ATTACK, 100, 1)"
 data "Properties" "IsHidden"
 
-//new entry "Spellbinder_BattleMagic"
-//type "PassiveData"
-//using "ExtraAttack"
-//data "DisplayName" "hea41c9488817422db58afc31e0a3d8270c3f"
-//data "Description" "h2ab36720104745e0a4c5f2895752c6951240"
-//data "StatsFunctorContext" "OnCast;OnStatusRemoved;OnStatusApplied"
-//data "Conditions" "(context.HasContextFlag(StatsFunctorContext.OnCast) and ExtraAttackSpellCheck() and HasUseCosts('ActionPoint', true) and not Tagged('EXTRA_ATTACK_BLOCKED',context.Source) and not HasStatus('SLAYER_PLAYER',context.Source) and not HasStatus('SLAYER_PLAYER_10',context.Source) and TurnBased(context.Source)) or (context.HasContextFlag(StatsFunctorContext.OnStatusRemoved) and StatusId('INITIAL_ATTACK_TECHNICAL') and TurnBased()) or (context.HasContextFlag(StatsFunctorContext.OnStatusApplied) and StatusId('EXTRA_ATTACK_Q'))"
-//data "StatsFunctors" "IF(context.HasContextFlag(StatsFunctorContext.OnCast)):ApplyStatus(SELF,EXTRA_ATTACK_Q,100,1);IF(context.HasContextFlag(StatsFunctorContext.OnStatusRemoved)):ApplyStatus(EXTRA_ATTACK_Q,100,1);IF(context.HasContextFlag(StatsFunctorContext.OnStatusApplied) and not HasHigherPriorityExtraAttackQueued('EXTRA_ATTACK_Q') and not HasAnyExtraAttack()):ApplyStatus(EXTRA_ATTACK, 100, 1)"
+// Magic Touch
 
+new entry "Spellbinder_MagicTouch"
+type "PassiveData"
+data "Description" "h51f2f0adb5684e62968602cf0d31e503135d"
+data "BoostContext" "OnEquip;OnCreate"
+
+new entry "Spellbinder_MagicTouch_Arcana"
+type "PassiveData"
+using "Spellbinder_MagicTouch"
+data "DisplayName" "hed10d23fa6ce404f9fc6c7cde1d314119314"
+data "Boosts" "ProficiencyBonus(Arcana);ExpertiseBonus(Arcana)"
+
+new entry "Spellbinder_MagicTouch_History"
+type "PassiveData"
+using "Spellbinder_MagicTouch"
+data "DisplayName" "haa417050ac4140c8958f63af3bdbadf08da8"
+data "Boosts" "ProficiencyBonus(History);ExpertiseBonus(History)"
+
+new entry "Spellbinder_MagicTouch_Investigation"
+type "PassiveData"
+using "Spellbinder_MagicTouch"
+data "DisplayName" "h20c289ca62b245bea7a23be92289a13050c9"
+data "Boosts" "ProficiencyBonus(Investigation);ExpertiseBonus(Investigation)"
+
+new entry "Spellbinder_MagicTouch_Nature"
+type "PassiveData"
+using "Spellbinder_MagicTouch"
+data "DisplayName" "h908f0a13ec414ef9b8d0a9116d318e6df621"
+data "Boosts" "ProficiencyBonus(Nature);ExpertiseBonus(Nature)"
+
+new entry "Spellbinder_MagicTouch_Religion"
+type "PassiveData"
+using "Spellbinder_MagicTouch"
+data "DisplayName" "h7c6aed0e38cf45038b61133211d3d0841ec2"
+data "Boosts" "ProficiencyBonus(Religion);ExpertiseBonus(Religion)"
 

@@ -129,7 +129,7 @@
                     <attribute id="PassivesAdded" type="LSString" value="UnlockedSpellSlotLevel2;ExtraAttack"/> most class features usually can be done with passives
                     <attribute id="PassivesRemoved" type="LSString" value=""/>
                     <attribute id="ProgressionType" type="uint8" value="0"/> 0 means main class, 1 means subclass, 2 means race
-                    <attribute id="Selectors" type="LSString" value="SelectSpells(32893c8b-b54e-4168-83af-4f6dc7ce9388,0,1,,,,AlwaysPrepared);SelectSpells(d360c3b2-4eff-4263-b87b-9a8de6e62522,1,1)"/>
+                    <attribute id="Selectors" type="LSString" value="SelectPassives(06c79ede-82df-4aa2-a202-16ea5a1973bf,1,SPELLBINDER_LOCA_MAGIC_TOUCH);SelectSpells(32893c8b-b54e-4168-83af-4f6dc7ce9388,0,1,,,,AlwaysPrepared);SelectSpells(d360c3b2-4eff-4263-b87b-9a8de6e62522,1,1)"/>
 					<attribute id="TableUUID" type="guid" value="ca9cfd96-20b1-485c-b474-b333e6396591"/> Same UUID as the one in ClassDescriptions.lsx this refers to the entire table
                     <attribute id="UUID" type="guid" value="9e209511-2b37-456d-90f3-fd61afcbf320"/>
                 </node>

@@ -12,6 +12,10 @@
                     <attribute id="Passives" type="LSString" value="Spellbinder_WeaponMasteryBattleaxe,Spellbinder_WeaponMasteryClub,Spellbinder_WeaponMasteryDagger,Spellbinder_WeaponMasteryDart,Spellbinder_WeaponMasteryFlail,Spellbinder_WeaponMasteryGlaive,Spellbinder_WeaponMasteryGreataxe,Spellbinder_WeaponMasteryGreatclub,Spellbinder_WeaponMasteryGreatsword,Spellbinder_WeaponMasteryHalberd,Spellbinder_WeaponMasteryHandCrossbow,Spellbinder_WeaponMasteryHandaxe,Spellbinder_WeaponMasteryHeavyCrossbow,Spellbinder_WeaponMasteryJavelin,Spellbinder_WeaponMasteryLightCrossbow,Spellbinder_WeaponMasteryLightHammer,Spellbinder_WeaponMasteryLongbow,Spellbinder_WeaponMasteryLongsword,Spellbinder_WeaponMasteryMace,Spellbinder_WeaponMasteryMaul,Spellbinder_WeaponMasteryMorningstar,Spellbinder_WeaponMasteryPike,Spellbinder_WeaponMasteryQuarterstaff,Spellbinder_WeaponMasteryRapier,Spellbinder_WeaponMasteryScimitar,Spellbinder_WeaponMasteryShortbow,Spellbinder_WeaponMasteryShortsword,Spellbinder_WeaponMasterySickle,Spellbinder_WeaponMasterySling,Spellbinder_WeaponMasterySpear,Spellbinder_WeaponMasteryTrident,Spellbinder_WeaponMasteryWarhammer,Spellbinder_WeaponMasteryWarpick"/>
                     <attribute id="UUID" type="guid" value="725541a0-c403-4e57-9d9e-908f2da102dd"/>
                 </node>
+                <node id="PassiveList"> Magic Touch
+                    <attribute id="Passives" type="LSString" value="Spellbinder_MagicTouch_Arcana,Spellbinder_MagicTouch_History,Spellbinder_MagicTouch_Investigation,Spellbinder_MagicTouch_Nature,Spellbinder_MagicTouch_Religion"/>
+                    <attribute id="UUID" type="guid" value="06c79ede-82df-4aa2-a202-16ea5a1973bf"/>
+                </node>
             </children>
         </node>
     </region>
