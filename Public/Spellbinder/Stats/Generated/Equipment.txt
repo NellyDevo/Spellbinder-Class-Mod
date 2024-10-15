@@ -1,7 +1,7 @@
 new equipment "EQP_CC_SPELLBINDER"
 add initialweaponset "Melee"
 add equipmentgroup
-add equipment entry "WPN_Rapier"
+add equipment entry "WPN_Dagger"
 add equipmentgroup
 add equipment entry "OBJ_Potion_Healing"
 add equipmentgroup
@@ -10,8 +10,6 @@ add equipmentgroup
 add equipment entry "ARM_Boots_Leather"
 add equipmentgroup
 add equipment entry "ARM_ScaleMail_Body"
-add equipmentgroup
-add equipment entry "ARM_Shield"
 add equipmentgroup
 add equipment entry "OBJ_Scroll_Revivify"
 add equipmentgroup

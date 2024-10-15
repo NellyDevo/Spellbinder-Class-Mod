@@ -13,7 +13,7 @@ local spellsToProficienciesMap = {
     Shout_Spellbinder_WeaponMasteryHandaxe = "Handaxes",
     Shout_Spellbinder_WeaponMasteryHeavyCrossbow = "HeavyCrossbows",
     Shout_Spellbinder_WeaponMasteryJavelin = "Javelins",
-    Shout_Spellbinder_WeaponMasteryLightCrossbow = "LightCrossbow",
+    Shout_Spellbinder_WeaponMasteryLightCrossbow = "LightCrossbows",
     Shout_Spellbinder_WeaponMasteryLightHammer = "LightHammers",
     Shout_Spellbinder_WeaponMasteryLongbow = "Longbows",
     Shout_Spellbinder_WeaponMasteryLongsword = "Longswords",
@@ -47,7 +47,7 @@ end
 
 local function checkForSpells(weaponEntity, casterEntity)
     local didThing = false
-    for i,boost in ipairs(weaponEntity.ItemBoosts.Boosts) do
+    for _,boost in ipairs(weaponEntity.ItemBoosts.Boosts) do
         if (boost.BoostInfo.Params.Boost == "UnlockSpell") then
             didThing = removeCooldowns(casterEntity, boost)
         end
