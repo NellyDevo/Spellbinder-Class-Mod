@@ -100,4 +100,8 @@
     <content contentuid="h20c289ca62b245bea7a23be92289a13050c9" version="1">Investigation</content>
     <content contentuid="h908f0a13ec414ef9b8d0a9116d318e6df621" version="1">Nature</content>
     <content contentuid="h7c6aed0e38cf45038b61133211d3d0841ec2" version="1">Religion</content>
+
+    <content contentuid="h94e6a0948c02455f8418a180dd2e72bbca8d" version="1">Runic Beacon</content>
+    <content contentuid="h335b7c42895b4a6ab6ff5c85038162556255" version="1">When you affect an enemy with a spell, you can attempt to tether to them for one round plus a number of rounds equal to the level of the slot expended. While tethered, you have advantage on all attacks against them.</content>
+    <content contentuid="h3e0adb3eae66484a9bb3270579585387768d" version="1">The source of this beacon has advantage on all attacks against this creature.</content>
 </contentList>

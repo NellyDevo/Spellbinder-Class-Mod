@@ -1,3 +1,5 @@
+//Battle Magic
+
 new entry "SPELLBINDER_EXTRA_ATTACK"
 type "StatusData"
 data "StatusType" "BOOST"
@@ -49,3 +51,27 @@ data "RemoveConditions" "not HasHigherPriorityExtraAttackQueued('SPELLBINDER_EXT
 data "RemoveEvents" "OnStatusRemoved"
 data "StatusPropertyFlags" "DisableCombatlog;DisablePortraitIndicator;DisableOverhead;ApplyToDead"
 data "OnRemoveFunctors" "IF(RemoveCause(StatusRemoveCause.Condition)):ApplyStatus(SPELLBINDER_EXTRA_ATTACK_OR_CANTRIP,100,1)"
+
+//Runic Beacon
+
+new entry "SPELLBINDER_RUNIC_BEACON"
+type "StatusData"
+data "StatusType" "BOOST"
+data "DisplayName" "h94e6a0948c02455f8418a180dd2e72bbca8d"
+data "Description" "h3e0adb3eae66484a9bb3270579585387768d"
+data "Icon" "PassiveFeature_ExtraAttack"
+data "StackId" "SPELLBINDER_RUNIC_BEACON"
+data "StackPriority" "20"
+data "TickType" "StartTurn"
+data "Boosts" "SourceAdvantageOnAttack()"
+data "RemoveEvents" "OnTurn"
+data "RemoveConditions" "SavingThrow(Ability.Intelligence, SourceSpellDC(10,context.Source,Ability.Intelligence))"
+
+new entry "SPELLBINDER_RUNIC_BEACON_UPCASTING_STATUS"
+type "StatusData"
+data "StatusType" "BOOST"
+data "StackId" "SPELLBINDER_RUNIC_BEACON_UPCASTING"
+data "StackPriority" "20"
+data "StatusPropertyFlags" "DisableCombatlog;DisablePortraitIndicator;DisableOverhead;ApplyToDead"
+data "Passives" "Spellbinder_RunicBeacon_Upcasting_Passive_2;Spellbinder_RunicBeacon_Upcasting_Passive_3;Spellbinder_RunicBeacon_Upcasting_Passive_4;Spellbinder_RunicBeacon_Upcasting_Passive_5;Spellbinder_RunicBeacon_Upcasting_Passive_6;Spellbinder_RunicBeacon_Upcasting_Passive_7;Spellbinder_RunicBeacon_Upcasting_Passive_8;Spellbinder_RunicBeacon_Upcasting_Passive_9"
+data "StatusGroups" "SG_RemoveOnRespec"

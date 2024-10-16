@@ -6,10 +6,12 @@
             <children>
                 <node id="Progression"> Mainclass Level 1
                     <attribute id="AllowImprovement" type="bool" value="false"/> Whether your class get a feat at his level. Does not work for level 1.
-                    <attribute id="Boosts" type="LSString" value="ActionResource(WeaponMasteryPoint,1,0);ActionResource(SpellSlot,2,1);ProficiencyBonus(SavingThrow,Intelligence);ProficiencyBonus(SavingThrow,Constitution);Proficiency(LightArmor);Proficiency(MediumArmor);Proficiency(HeavyArmor);Proficiency(Shields);Proficiency(SimpleWeapons)"/> Adds resource, proficiency, etc.
+                    <attribute id="Boosts" type="LSString" value="ActionResource(WeaponMasteryPoint,1,0);ActionResource(SpellSlot,2,1);ProficiencyBonus(SavingThrow,Intelligence);ProficiencyBonus(SavingThrow,Constitution);Proficiency(LightArmor);Proficiency(MediumArmor);Proficiency(HeavyArmor);Proficiency(Shields);Proficiency(SimpleWeapons)"/>
+                    <!--attribute id="Boosts" type="LSString" value="ActionResource(SpellSlot,4,2);ActionResource(SpellSlot,4,3);ActionResource(SpellSlot,4,4);ActionResource(SpellSlot,4,5);ActionResource(SpellSlot,4,6);UnlockInterrupt(Interrupt_Spellbinder_RunicBeacon);ActionResource(WeaponMasteryPoint,1,0);ActionResource(SpellSlot,2,1);ProficiencyBonus(SavingThrow,Intelligence);ProficiencyBonus(SavingThrow,Constitution);Proficiency(LightArmor);Proficiency(MediumArmor);Proficiency(HeavyArmor);Proficiency(Shields);Proficiency(SimpleWeapons)"/-->
                     <attribute id="Level" type="uint8" value="1"/> Class Level for this entry
                     <attribute id="Name" type="LSString" value="Spellbinder"/> Name of the class, keep it consistent with class description
-                    <attribute id="PassivesAdded" type="LSString" value="UnlockedSpellSlotLevel1;"/> most class features usually can be done with passives
+                    <attribute id="PassivesAdded" type="LSString" value="UnlockedSpellSlotLevel1"/> 
+                    <!--attribute id="PassivesAdded" type="LSString" value="UnlockedSpellSlotLevel1;UnlockedSpellSlotLevel2;UnlockedSpellSlotLevel3;UnlockedSpellSlotLevel4;UnlockedSpellSlotLevel5;UnlockedSpellSlotLevel6"/--> 
                     <attribute id="PassivesRemoved" type="LSString" value=""/>
                     <attribute id="ProgressionType" type="uint8" value="0"/> 0 means main class, 1 means subclass, 2 means race
                     <attribute id="Selectors" type="LSString" value="SelectPassives(725541a0-c403-4e57-9d9e-908f2da102dd,1,SPELLBINDER_LOCA_WEAPON_MASTERY);SelectAbilityBonus(b9149c8e-52c8-46e5-9cb6-fc39301c05fe,AbilityBonus,2,1);SelectSkills(6659e971-cdce-4e8f-aead-ac36153752e1,2);SelectSpells(32893c8b-b54e-4168-83af-4f6dc7ce9388,2,0,,,,AlwaysPrepared);SelectSpells(56e512fe-093c-47b6-bada-f5b4c379f01b,2,0)"/> this is where you can have your class select spells from spell list, passive from passive list, and skill from skill list. Select ability bonus let you get the +2/+1 at CC :: 
@@ -138,7 +140,7 @@
                     <attribute id="Boosts" type="LSString" value=""/> Adds resource, proficiency, etc.
                     <attribute id="Level" type="uint8" value="6"/> Class Level for this entry
                     <attribute id="Name" type="LSString" value="Spellbinder"/> Name of the class, keep it consistent with class description
-                    <attribute id="PassivesAdded" type="LSString" value="Spellbinder_BattleMagic;Spellbinder_BattleMagic_CantripTrigger"/> most class features usually can be done with passives
+                    <attribute id="PassivesAdded" type="LSString" value="Spellbinder_RunicBeacon_Upcasting_Passive;Spellbinder_BattleMagic;Spellbinder_BattleMagic_CantripTrigger"/> most class features usually can be done with passives
                     <attribute id="PassivesRemoved" type="LSString" value="ExtraAttack"/>
                     <attribute id="ProgressionType" type="uint8" value="0"/> 0 means main class, 1 means subclass, 2 means race
                     <attribute id="Selectors" type="LSString" value="SelectSpells(32893c8b-b54e-4168-83af-4f6dc7ce9388,0,1,,,,AlwaysPrepared);SelectSpells(d360c3b2-4eff-4263-b87b-9a8de6e62522,0,1)"/>
