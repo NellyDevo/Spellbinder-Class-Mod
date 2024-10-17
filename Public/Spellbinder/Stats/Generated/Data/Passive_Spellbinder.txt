@@ -318,3 +318,11 @@ data "BoostContext" "OnCreate;OnMove"
 data "BoostConditions" "HasPassive('UnlockedSpellSlotLevel9',context.Source)"
 data "Boosts" "UnlockInterrupt(Interrupt_Spellbinder_RunicBeacon_9)"
 data "Properties" "IsHidden"
+
+//Quick Bind Resource
+
+new entry "Spellbinder_QuickBind"
+type "PassiveData"
+data "DisplayName" "h489fd55da0b5442da31e4018eb79e59e8fb8"
+data "Description" "h8be02acd5b7745e281438a42201fb82ed6gd"
+data "Boosts" "ActionResource(QuickBindPoint,0,1)"

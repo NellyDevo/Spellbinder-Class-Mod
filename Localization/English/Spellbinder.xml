@@ -104,4 +104,10 @@
     <content contentuid="h94e6a0948c02455f8418a180dd2e72bbca8d" version="1">Runic Beacon</content>
     <content contentuid="h335b7c42895b4a6ab6ff5c85038162556255" version="1">When you affect an enemy with a spell, you can attempt to tether to them for one round plus a number of rounds equal to the level of the slot expended. While tethered, you have advantage on all attacks against them.</content>
     <content contentuid="h3e0adb3eae66484a9bb3270579585387768d" version="1">The source of this beacon has advantage on all attacks against this creature.</content>
+
+    <content contentuid="hd3dfb9450231431abdbf5f75cca7eef5a08a" version="1">Used to quickly bind spells to weapons</content>
+    <content contentuid="ha0ad0427153c46aba761e109b5d6f5896a7c" version="1">Quick Binds</content>
+    <content contentuid="h489fd55da0b5442da31e4018eb79e59e8fb8" version="1">Quick Bind</content>
+    <content contentuid="h8be02acd5b7745e281438a42201fb82ed6gd" version="1">You can use Quick Bind points to cast your spells to Bind them as a Bonus Action. Costs 1 point plus the level of the spell.</content>
+    
 </contentList>

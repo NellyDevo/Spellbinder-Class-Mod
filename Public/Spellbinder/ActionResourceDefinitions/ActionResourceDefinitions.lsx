@@ -18,6 +18,20 @@
                     <attribute id="UUID" type="guid" value="eaeaa76a-7d46-4aba-8eb3-2e024af375c5"/> UUID for the Resource, give it a new one
                     <attribute id="UpdatesSpellPowerLevel" type="bool" value="false"/> Would this resource be used at different power levels
                 </node>
+                <node id="ActionResourceDefinition">
+                    <attribute id="Description" type="TranslatedString" handle="hd3dfb9450231431abdbf5f75cca7eef5a08a" version="1"/> A text tied to the .loca file
+                    <attribute id="DisplayName" type="TranslatedString" handle="ha0ad0427153c46aba761e109b5d6f5896a7c" version="1"/> A text tied to the .loca file
+                    <attribute id="Error" type="FixedString" value="ActionResourceDefinitions_New_Stat_4_Error"/>
+                    <attribute id="IsSpellResource" type="bool" value="false"/> Is this resource used to cast spells
+                    <attribute id="MaxLevel" type="uint32" value="0"/>
+                    <attribute id="MaxValue" type="uint32" value="0"/>
+                    <attribute id="Name" type="FixedString" value="QuickBindPoint"/> What you will be referring to in your code
+                    <attribute id="PartyActionResource" type="bool" value="false"/>
+                    <attribute id="ReplenishType" type="FixedString" value="ShortRest"/> Rest = Long Rest, ShortRest = ShortRest
+                    <attribute id="ShowOnActionResourcePanel" type="bool" value="true"/> If the resource will be displayed on your hotbar
+                    <attribute id="UUID" type="guid" value="df7bef22-5966-4322-982f-fe0c4219c4f0"/> UUID for the Resource, give it a new one
+                    <attribute id="UpdatesSpellPowerLevel" type="bool" value="false"/> Would this resource be used at different power levels
+                </node>
             </children>
         </node>
     </region>

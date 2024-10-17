@@ -36,7 +36,7 @@
                     <attribute id="Boosts" type="LSString" value=""/> Adds resource, proficiency, etc.
                     <attribute id="Level" type="uint8" value="2"/> Class Level for this entry
                     <attribute id="Name" type="LSString" value="Spellbinder"/> Name of the class, keep it consistent with class description
-                    <attribute id="PassivesAdded" type="LSString" value=""/> most class features usually can be done with passives
+                    <attribute id="PassivesAdded" type="LSString" value="Spellbinder_QuickBind"/> most class features usually can be done with passives
                     <attribute id="PassivesRemoved" type="LSString" value=""/>
                     <attribute id="ProgressionType" type="uint8" value="0"/> 0 means main class, 1 means subclass, 2 means race
                     <attribute id="Selectors" type="LSString" value="SelectSpells(32893c8b-b54e-4168-83af-4f6dc7ce9388,0,1,,,,AlwaysPrepared);SelectSpells(56e512fe-093c-47b6-bada-f5b4c379f01b,1,1)"/>

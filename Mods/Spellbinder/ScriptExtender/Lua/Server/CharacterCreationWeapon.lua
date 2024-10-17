@@ -64,7 +64,6 @@ Ext.Osiris.RegisterListener("PROC_Shared_CharacterCreationFinished", 0, "after",
                     local inventoryEntity = characterEntity.InventoryOwner.Inventories[1]
                     local weapon = retrieveWeapon(inventoryEntity, eq)
                     if weapon and Osi.GetEquipmentSlotForItem(weapon.Item.Uuid.EntityUuid) == 3 then
-                        LazyExport("SpawnedWeapon", weapon.Item)
                         Osi.Equip(guid, weapon.Item.Uuid.EntityUuid, 0, 1, 0)
                     end
                 end)
