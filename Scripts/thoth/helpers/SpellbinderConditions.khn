@@ -5,3 +5,13 @@ function HasBattleMagic(entity)
 	local result = HasAnyStatus({'SPELLBINDER_EXTRA_ATTACK_CANTRIP', 'SPELLBINDER_EXTRA_ATTACK'},{},{}, entity, context.Source, false).Result
     return ConditionResult(result)
 end
+
+function SpellAutoResolveOnAllyWithDisadvantage(ability, dc, result)
+    result = result or false
+    ally = Ally()
+    if not ally.Result then
+        st = ~SavingThrow(ability, dc, false, true)
+        return ConditionResult(st.Result,{},{},st.Chance)
+    end
+    return ConditionResult(result)
+end

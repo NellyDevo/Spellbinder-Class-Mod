@@ -109,5 +109,80 @@
     <content contentuid="ha0ad0427153c46aba761e109b5d6f5896a7c" version="1">Quick Binds</content>
     <content contentuid="h489fd55da0b5442da31e4018eb79e59e8fb8" version="1">Quick Bind</content>
     <content contentuid="h8be02acd5b7745e281438a42201fb82ed6gd" version="1">You can use Quick Bind points to cast your spells to Bind them as a Bonus Action. Costs 1 point plus the level of the spell.</content>
+    <content contentuid="h97fcd9e74841489cb9ae544b05560b7658c1" version="1">Spell Binding</content>
+    <content contentuid="ha04e15945f2141bb879f8577b6071d3e33b7" version="1">You can cast your spells to Bind them to your weapons. When you hit with a Bound weapon, also apply the effects of the Bound spell.</content>
+    <content contentuid="h776580fc37504425a15f2a6d0d39ea4c7d5f" version="1">Bind Off Hand</content>
+    <content contentuid="hf42b1135795c477096c7ec8df7168ce2b992" version="1">Toggle this passive on to indicate that your Spell Binding feature should bind your spell to your off-hand weapon</content>
+
+<content contentuid="he5229fcdgedc1g4a0egaa81gbe920cde95b0" version="1">Bone Chill - 2 Charges</content>
+<content contentuid="hd0f1d48bg7928g476fg9c7eg3913ba1ad646" version="1">Bone Chill - 3 Charges</content>
+<content contentuid="h8fb20489ga317g4de4ga05cga5c888ba54c6" version="1">Bone Chill - 4 Charges</content>
+<content contentuid="he55b28d6g7beeg4bb4gbf67g33df613fbde0" version="1">Fire Bolt - 2 Charges</content>
+<content contentuid="hd82008a3gcdcfg4ca5ga7ccg28d23ffa9dcc" version="1">Fire Bolt - 3 Charges</content>
+<content contentuid="h00d61a89gbc46g43a6g8bc5g338428d81cdb" version="1">Fire Bolt - 4 Charges</content>
+<content contentuid="h2fedbb4cg4bdbg43f6g9bcbg2eb81f71034b" version="1">Light - 2 Charges</content>
+<content contentuid="h3aac3266g01e2g45d1ga2bag4dd45d14a2e3" version="1">Light - 3 Charges</content>
+<content contentuid="hd350380dga746g440dga100g86e356e7a228" version="1">Light - 4 Charges</content>
+<content contentuid="h97c93bc8g88bfg41e2g99b5g65ffceb8fca5" version="1">Mind Sliver - 2 Charges</content>
+<content contentuid="hc1c8f80fgbcd6g47b6gb1dcgaeb1ad927c42" version="1">Mind Sliver - 3 Charges</content>
+<content contentuid="h1b2edddbg36acg4f5egbdbdge69682af9142" version="1">Mind Sliver - 4 Charges</content>
+<content contentuid="had0e1321g2ec7g48d7gaf2bg5acfb55bf36f" version="1">Poison Spray - 2 Charges</content>
+<content contentuid="h2e20701agaac7g4484g9242gf529fc3bc61d" version="1">Poison Spray - 3 Charges</content>
+<content contentuid="h90678ff7g2da8g4dbegaf22g0b328b3ba258" version="1">Poison Spray - 4 Charges</content>
+<content contentuid="h4bc6ef8eg238cg45deg9ba3g982a7e183b5f" version="1">Ray of Frost - 2 Charges</content>
+<content contentuid="h21bb17d8gb672g4bcaga6beg41c2daac56aa" version="1">Ray of Frost - 3 Charges</content>
+<content contentuid="h28bac633g3e20g482fgaa84g2e7e26b83419" version="1">Ray of Frost - 4 Charges</content>
+<content contentuid="h7a35b855gdb9bg45fagbbb6g6368289bd8ae" version="1">Shocking Grasp - 2 Charges</content>
+<content contentuid="hd6052b68g0842g4204g93f0g5682adeffff5" version="1">Shocking Grasp - 3 Charges</content>
+<content contentuid="hc0245442g028cg43b7g82deg95c32220bab2" version="1">Shocking Grasp - 4 Charges</content>
+<content contentuid="h85646a8cg5426g4dcaga74fga0276f1982ef" version="1">Longstrider - 2 Charges</content>
+<content contentuid="h1aa4529eg4b57g44d2g89b5gd69fa77eca61" version="1">Longstrider - 3 Charges</content>
+<content contentuid="h2ba5b7d8g043ag4abcg8b56g0211e79d98b4" version="1">Longstrider - 4 Charges</content>
+<content contentuid="h51756bb6gc7cbg49ecg9158gb375218caf25" version="1">Longstrider - 5 Charges</content>
+<content contentuid="h099ceb63g1675g4a1fga6b0gb7ec507098c3" version="1">Longstrider - 6 Charges</content>
+<content contentuid="hcfc21af9g59f9g4b30g8237g6380a4fcd211" version="1">Magic Missile - 2 Charges</content>
+<content contentuid="h773ba22cgf37eg4292gbe58g0f38d9f548ca" version="1">Magic Missile - 3 Charges</content>
+<content contentuid="hcd6c4992gc884g476agbe7bga7ed1ac25dba" version="1">Magic Missile - 4 Charges</content>
+<content contentuid="hdbd5e2cfge7e3g4327ga7f7gbabeb0d1ebbc" version="1">Magic Missile - 5 Charges</content>
+<content contentuid="hf35a4cbbge943g48f7ga15cg65a4ef7fdef4" version="1">Magic Missile - 6 Charges</content>
+<content contentuid="h82556048gb879g460fg98a4gb3966042b15a" version="1">Magic Missile - 7 Charges</content>
+<content contentuid="h5d98eaa9gd7d4g48c3ga6aegbfeb9013147b" version="1">Magic Missile - 8 Charges</content>
+<content contentuid="hc5f70b61gedcag4700g94e5ga29c6c5af294" version="1">Blindness - 2 Charges</content>
+<content contentuid="hd21164f3g2648g403dga6ffga2b7595df934" version="1">Blindness - 3 Charges</content>
+<content contentuid="hb29c3fb9g3101g4690gb155g5f1675b2632b" version="1">Blindness - 4 Charges</content>
+<content contentuid="hd52fc15cg980cg4a9cg8c04gd46246e5fee5" version="1">Blindness - 5 Charges</content>
+<content contentuid="h7881553cg969dg4d68g9b3dg764ef3f2b7c2" version="1">Hold Person - 2 Charges</content>
+<content contentuid="h0efde014g4328g48a5g9004g6653afec7fdf" version="1">Hold Person - 3 Charges</content>
+<content contentuid="he9223990g82fdg4f1fgb1c8g7bba99bf4cb8" version="1">Hold Person - 4 Charges</content>
+<content contentuid="h3af965bfg8578g42dag88deg43be61f0a16f" version="1">Hold Person - 5 Charges</content>
+<content contentuid="h588efcadg5341g4a1dg9566g5cffde6505d1" version="1">Invisibility - 2 Charges</content>
+<content contentuid="h7a96659fg93aag44ccg91b7g449759002109" version="1">Invisibility - 3 Charges</content>
+<content contentuid="h32151266gf5f3g4d27g852fg2b40f4237169" version="1">Invisibility - 4 Charges</content>
+<content contentuid="h4c44539fgbb0dg453cgaa81g9167c66098fb" version="1">Invisibility - 5 Charges</content>
+<content contentuid="h1071632fg40fag49cdg9a15gbce463d708dc" version="1">Scorching Ray - 2 Charges</content>
+<content contentuid="h63e7c88egafc6g47a9g85f9g99c9d8de66bd" version="1">Scorching Ray - 3 Charges</content>
+<content contentuid="h99ab8602g5362g4856g95f0g625f9df7fc61" version="1">Scorching Ray - 4 Charges</content>
+<content contentuid="ha0ab363cgdcefg43a3gad05g109969eda340" version="1">Scorching Ray - 5 Charges</content>
+<content contentuid="h99ad120bg3d53g4532gbc20g3e11c3792306" version="1">Scorching Ray - 6 Charges</content>
+<content contentuid="hb670d37eg0413g4484g83dbgffd5764c7f13" version="1">Scorching Ray - 7 Charges</content>
+<content contentuid="ha11dc29ag0ef2g4e18gac87gfcde61629bf0" version="1">Scorching Ray - 8 Charges</content>
+<content contentuid="hc3839a35g9766g4358g8219g3b8468936fed" version="1">Scorching Ray - 9 Charges</content>
+<content contentuid="h4cad4b1fg3151g4f68gb45cg1188ae9de5cf" version="1">Scorching Ray - 10 Charges</content>
+<content contentuid="hbc2e6a8dg4f55g401ag8076g2eb3dbb81ae5" version="1">Grant Flight - 2 Charges</content>
+<content contentuid="hb75e215fgb907g4c58gbe96g6a8a3ebcdc93" version="1">Grant Flight - 3 Charges</content>
+<content contentuid="h794f1654gcc3bg4290g95a8gc53a0cb90090" version="1">Grant Flight - 4 Charges</content>
+<content contentuid="he56eff2bg1ed2g4206g84ecgd486306034dd" version="1">Slow - 2 Charges</content>
+<content contentuid="h407e0bddgf30bg4099ga87ag3b7af7daf040" version="1">Slow - 3 Charges</content>
+<content contentuid="h79d16309gf3e1g4945g9db0gaa3c11140c8e" version="1">Slow - 4 Charges</content>
+<content contentuid="hdedda96eg2b86g4ddcga32bg9a22a2c41017" version="1">Slow - 5 Charges</content>
+<content contentuid="h055f8d19g7d91g4dcbgb0aag5f704b683165" version="1">Slow - 6 Charges</content>
+<content contentuid="hdb925a8ag4080g42bdgbd90g77648a23f08b" version="1">Banishment - 2 Charges</content>
+<content contentuid="h3d74981ege7f2g4f01g892bg6a8c4dfb6956" version="1">Banishment - 3 Charges</content>
+<content contentuid="h5105533cgcf94g4277ga9cbg15f58d9df9c8" version="1">Charm Monster - 2 Charges</content>
+<content contentuid="hc7da0757g042eg4de0g9cd8ga4ab3072c69e" version="1">Charm Monster - 3 Charges</content>
+<content contentuid="h51face10g5a13g43fdgaddbg4efd5bf918b3" version="1">Charm Monster - 4 Charges</content>
+<content contentuid="hc8e92cd8g257dg46a8gb84dg9f952dd4f33e" version="1">Charm Monster - 5 Charges</content>
+<content contentuid="hbaf9b571g9487g437eg9b8bgbcf2dfdc9197" version="1">Charm Monster - 6 Charges</content>
+<content contentuid="h3b00ebe2gebc1g4b81g82eega825ca32a417" version="1">Hold Monster - 2 Charges</content>
     
 </contentList>
