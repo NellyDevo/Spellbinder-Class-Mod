@@ -28,13 +28,13 @@ local combiner = [[%s
 %s]]
 local locaTemplate = '<content contentuid="%s" version="1">%s</content>'
 ---@param text string
----@param locaOutput table
-DynHelper.GenerateTranslationEntry = function(text, locaOutput)
+---@param output table
+DynHelper.GenerateTranslationEntry = function(text, output)
     if alreadyGenerated[text] then
         return alreadyGenerated[text]
     end
     local handle = generateHandle()
-    locaOutput[1] = string.format(combiner, locaOutput[1], string.format(locaTemplate, handle, text))
+    output.loca = string.format(combiner, output.loca, string.format(locaTemplate, handle, text))
     alreadyGenerated[text] = handle
     return handle
 end

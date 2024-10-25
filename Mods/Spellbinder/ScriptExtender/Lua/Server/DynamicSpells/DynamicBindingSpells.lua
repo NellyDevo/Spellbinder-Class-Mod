@@ -6,26 +6,26 @@ local DynHelper = Ext.Require("Server/DynamicSpells/DynamicHelper.lua")
 local combiner = [[%s
 
 %s]]
-local function generateData(spellID, spell, dataOutput, locaOutput)
+local function generateData(spellID, spell, output)
     local isUpcast = spell.PowerLevel > spell.Level
     if isUpcast then
-        dataOutput[1] = string.format(combiner, dataOutput[1], Spells.CreateUpcastSpell(spellID, spell))
+        output.data = string.format(combiner, output.data, Spells.CreateUpcastSpell(spellID, spell, output))
     else
-        dataOutput[1] = string.format(combiner, dataOutput[1], Spells.CreateBaseSpell(spellID, spell))
+        output.data = string.format(combiner, output.data, Spells.CreateBaseSpell(spellID, spell, output))
     end
-    dataOutput[1] = string.format(combiner, dataOutput[1], Spells.CreatePayload(spellID, spell))
-    dataOutput[1] = string.format(combiner, dataOutput[1], Statuses.CreateStatuses(spellID, spell, locaOutput))
-    dataOutput[1] = string.format(combiner, dataOutput[1], Passives.CreatePassive(spellID, spell))
+    output.data = string.format(combiner, output.data, Spells.CreatePayload(spellID, spell, output))
+    output.data = string.format(combiner, output.data, Statuses.CreateStatuses(spellID, spell, output))
+    output.data = string.format(combiner, output.data, Passives.CreatePassive(spellID, spell, output))
 end
 
-local function handleSpell(spellID, spell, dataOutput, locaOutput)
-    generateData(spellID, spell, dataOutput, locaOutput)
+local function handleSpell(spellID, spell, output)
+    generateData(spellID, spell, output)
     if spell.Level > 0 then
         for i=spell.Level,9,1 do
             local upcastID = spellID .. "_" .. i
             local upcastSpell = Ext.Stats.Get(upcastID)
             if upcastSpell then
-                generateData(upcastID, upcastSpell, dataOutput, locaOutput)
+                generateData(upcastID, upcastSpell, output)
             end
         end
     end
@@ -40,8 +40,10 @@ local supportedSpellLists = {
     "966a37fb-e0d7-43b1-864c-625440e6a315"
 }
 Ext.RegisterConsoleCommand("GenerateBoundSpells", function (cmd, ...)
-    local dataOutput = {"//This file was generated automatically from Server/DynamicSpells/DynamicBindingSpells.lua"}
-    local locaOutput = {""}
+    local output = {
+        data = "//This file was generated automatically from Server/DynamicSpells/DynamicBindingSpells.lua",
+        loca = ""
+    }
     for _,listID in pairs(supportedSpellLists) do
         local list = Ext.StaticData.Get(listID, "SpellList")
         for _,spellID in pairs(list.Spells) do
@@ -51,14 +53,14 @@ Ext.RegisterConsoleCommand("GenerateBoundSpells", function (cmd, ...)
                     local containedSpellTable = DynHelper.SplitString(spell.ContainerSpells, ";")
                     for _,containedID in pairs(containedSpellTable) do
                         local containedSpell = Ext.Stats.Get(containedID) --[[@as SpellData]]
-                        handleSpell(containedID, containedSpell, dataOutput, locaOutput)
+                        handleSpell(containedID, containedSpell, output)
                     end
                 else
-                    handleSpell(spellID, spell, dataOutput, locaOutput)
+                    handleSpell(spellID, spell, output)
                 end
             end
         end
     end
-    Ext.IO.SaveFile("Spellbinder_BindableSpells.txt", dataOutput[1])
-    Ext.IO.SaveFile("Spellbinder_LocaDump.txt", locaOutput[1])
+    Ext.IO.SaveFile("Spellbinder_BindableSpells.txt", output.data)
+    Ext.IO.SaveFile("Spellbinder_LocaDump.txt", output.loca)
 end)

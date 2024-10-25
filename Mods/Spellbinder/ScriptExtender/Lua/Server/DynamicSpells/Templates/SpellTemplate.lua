@@ -24,6 +24,7 @@ data "DescriptionParams" "%s"
 data "HitAnimationType" "%s"
 data "Icon" "%s"
 data "Level" "%s"
+data "PowerLevel" "%s"
 data "PrepareEffect" "%s"
 data "PrepareLoopSound" "%s"
 data "PrepareSound" "%s"
@@ -55,6 +56,7 @@ data "VerbalIntent" "%s"]]
 -- HitAnimationType
 -- Icon
 -- Spell Level
+-- Spell Level
 -- PrepareEffect
 -- PrepareLoopSound
 -- PrepareSound
@@ -83,7 +85,7 @@ local levelledPropertiesTemplate = "IF(not HasStatus('SPELLBINDER_OFFHAND_BINDIN
 ---@param spellID string
 ---@param spellStat SpellData
 ---@return string
-Spells.CreateBaseSpell = function(spellID, spellStat)
+Spells.CreateBaseSpell = function(spellID, spellStat, output)
     local cached = Ext.Stats.GetCachedSpell(spellID)
     local spellFlags = ""
     for _,flag in pairs(spellStat.SpellFlags) do
@@ -119,6 +121,7 @@ Spells.CreateBaseSpell = function(spellID, spellStat)
         spellStat.DescriptionParams,
         spellStat.HitAnimationType,
         spellStat.Icon,
+        spellStat.Level,
         spellStat.Level,
         spellStat.PrepareEffect,
         spellStat.PrepareLoopSound,
@@ -163,7 +166,7 @@ data "UseCosts" "%s"]]
 ---@param spellID string
 ---@param spellStat SpellData
 ---@return string
-Spells.CreateUpcastSpell = function(spellID, spellStat)
+Spells.CreateUpcastSpell = function(spellID, spellStat, output)
     local spellProperties = ""
     local charges = __dynHelper.DetermineChargesForSpell(spellStat)
     local level = spellStat.Level

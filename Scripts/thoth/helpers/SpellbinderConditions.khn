@@ -15,3 +15,17 @@ function SpellAutoResolveOnAllyWithDisadvantage(ability, dc, result)
     end
     return ConditionResult(result)
 end
+
+function CanQuickBind()
+    if HasUseCosts('ActionPoint').Result and not HasUseCosts('BonusActionPoint').Result then
+        local spellId = context.SpellModificationDescription.SpellId
+        if spellId ~= "" and string.find(spellId, "Shout_Spellbinder_Bind") then
+            return ConditionResult(true)
+        end
+    end
+    return ConditionResult(false)
+end
+
+function GetBindCost()
+    return context.HitDescription.SpellPowerLevel + 1
+end

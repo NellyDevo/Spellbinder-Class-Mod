@@ -12,7 +12,7 @@ data "StatusGroups" "SG_RemoveOnRespec"
 data "StatusPropertyFlags" "DisableOverhead;DisableCombatlog;DisablePortraitIndicator;IgnoreResting"
 data "Boosts" "UnlockSpell(Shout_Spellbinder_Bind_%s %s)"]]
 -- Original Spell Id x3
--- if cantrip, "", else the string ",,d136c5d9-0ff0-43da-ceac-4aa7f807bfd6"
+-- if cantrip, "", else the string ",AddChildren,d136c5d9-0ff0-43da-ceac-4aa7f807bfd6"
 
 local statusFirstChargeTemplate = [[%s
 
@@ -64,11 +64,11 @@ data "OnRemoveFunctors" "ApplyStatus(TAGBOUNDSPELL_%s_%s_Projectile_Spellbinder_
 ---@param spellID string
 ---@param spellStat SpellData
 ---@return string
-Statuses.CreateStatuses = function(spellID, spellStat, locaOutput)
+Statuses.CreateStatuses = function(spellID, spellStat, output)
     local cached = Ext.Stats.GetCachedSpell(spellID)
     local charges = __dynHelper.DetermineChargesForSpell(spellStat)
     local level = spellStat.Level
-    local resourceGuid = ",,d136c5d9-0ff0-43da-ceac-4aa7f807bfd6"
+    local resourceGuid = ",AddChildren,d136c5d9-0ff0-43da-ceac-4aa7f807bfd6"
     if level == 0 then resourceGuid = "" end
     if spellStat.PowerLevel > level then level = spellStat.PowerLevel end
     local retVal = string.format(statusUnlockTemplate,
@@ -89,7 +89,7 @@ Statuses.CreateStatuses = function(spellID, spellStat, locaOutput)
     )
     if charges > 1 then
         for i=2,charges,1 do
-            local handle = __dynHelper.GenerateTranslationEntry(Ext.Loca.GetTranslatedString(cached.Description.DisplayName.Handle.Handle, tostring(cached.Description.DisplayName.Handle.Version)) .. " - " .. i .. " Charges", locaOutput)
+            local handle = __dynHelper.GenerateTranslationEntry(Ext.Loca.GetTranslatedString(cached.Description.DisplayName.Handle.Handle, tostring(cached.Description.DisplayName.Handle.Version)) .. " - " .. i .. " Charges", output)
             retVal = string.format(statusChargesTemplate,
                 retVal,
                 i,

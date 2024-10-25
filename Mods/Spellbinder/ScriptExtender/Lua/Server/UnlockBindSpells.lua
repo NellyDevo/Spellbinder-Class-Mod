@@ -12,6 +12,12 @@ Ext.Osiris.RegisterListener("LeveledUp", 1, "after", function(character)
                 if Osi.HasActiveStatus(character, toLearn) == 0 then
                     Osi.ApplyStatus(character, toLearn, -1)
                 end
+                --for i=2,9,1 do
+                --    local upcastID = toLearn .. i
+                --    if Osi.HasActiveStatus(character, upcastID) == 0 then
+                --        Osi.ApplyStatus(character, upcastID, -1)
+                --    end
+                --end
             end
         end
     end)
