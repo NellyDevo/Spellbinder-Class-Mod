@@ -79,7 +79,7 @@
                         </node>
                     </children>
                 </node>
-				<node id="Progression"> Arcane Archer Level 3
+				<node id="Progression"> Arcane Sniper Level 3
                     <attribute id="Level" type="uint8" value="3"/>
                     <attribute id="Name" type="LSString" value="ArcaneSniper"/>
                     <attribute id="ProgressionType" type="uint8" value="1"/> as mentioned before type 1 = subclass
@@ -99,7 +99,7 @@
                     <attribute id="Level" type="uint8" value="3"/>
                     <attribute id="Name" type="LSString" value="SpellDancer"/>
                     <attribute id="ProgressionType" type="uint8" value="1"/> as mentioned before type 1 = subclass
-                    <attribute id="PassivesAdded" type="LSString" value=""/>
+                    <attribute id="PassivesAdded" type="LSString" value="Spellbinder_SpellDancer_BattleDance"/>
                     <attribute id="TableUUID" type="guid" value="ac49e2c9-ce2b-474f-b28a-8bce290a9fc2"/> same UUID as the ProgressionTableUUID in ClassDescriptions.lsx
                     <attribute id="UUID" type="guid" value="8ef865fe-f784-41af-9eb9-e4997878173e"/> Give it a Unique UUID
                 </node>

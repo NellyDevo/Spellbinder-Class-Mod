@@ -185,9 +185,16 @@
     <content contentuid="ha04e15945f2141bb879f8577b6071d3e33b7" version="1">You can cast your spells to Bind them to your weapons. When you hit with a Bound weapon, also apply the effects of the Bound spell.</content>
     <content contentuid="h776580fc37504425a15f2a6d0d39ea4c7d5f" version="1">Bind Off Hand</content>
     <content contentuid="hf42b1135795c477096c7ec8df7168ce2b992" version="1">Toggle this passive on to indicate that your Spell Binding feature should bind your spell to your off-hand weapon</content>
+    
     <content contentuid="hcbcc5bebbb234fbba4f1eb64728171ca358e" version="1">Spell Binding - Armor</content>
     <content contentuid="h98eeda42e2d6420a925dfc65395c76511782" version="1">You can cast your spells to Bind them to your armor, increasing your AC by 1. When you are attacked, you may apply the effects of the bound spell as a reaction.</content>
     <content contentuid="h9ccacd6cf5fd4f57ae2fc7fa17b444b7eab8" version="1">Apply the effects of the spell bound to your Armor when you are attacked</content>
     <content contentuid="hbacfba5025ab4c508f981a5bcb38b1aa929b" version="1">Residual Magic</content>
     <content contentuid="hdad94a2c5fa8412eb46e0a2dc865dd1946f5" version="1">Your armor was recently bound and its residual magics remain for a short time to continue protecting you.</content>
+    
+    <content contentuid="hd08f9d660e974a92be8a75e65bdb222ee6f9" version="1">Battle Dance</content>
+    <content contentuid="h4a15fe1d6bd140b6acd160a3846707f5b21e" version="1">When you are attacked, you may spend your reaction to impose disadvantage on that attack.</content>
+    
+    <content contentuid="h424d6f87fdb14b7daf5cc39d1614f0b45f63" version="1">Magic Batteries</content>
+    <content contentuid="hcd63bc7878334ec38b33ee28889919962dae" version="1">Your bound spells no longer have a limited duration</content>
 </contentList>
