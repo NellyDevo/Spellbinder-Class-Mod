@@ -3,20 +3,14 @@ local EffectMap = Ext.Require("Server/DynamicSpells/Templates/HardcodedEffects.l
 
 local Spells = {}
 
----@param spellStat SpellData
-local function extractSpellEffects(spellID, spellStat)
-    local result = EffectMap[spellID]
-    if result then return result else return "TODO" end
-end
-
-local baseTemplate =
+local function baseTemplate()
+    return
 [[new entry "Shout_Spellbinder_Bind_%s"
 type "SpellData"
 data "SpellType" "Shout"
 data "CastEffect" "%s"
 data "CastSound" "%s"
 data "CastTextEvent" "%s"
-data "ContainerSpells" "%s"
 data "DamageType" "%s"
 data "DisplayName" "%s;%s"
 data "Description" "%s;%s"
@@ -42,77 +36,182 @@ data "TooltipDamageList" "%s"
 data "TooltipStatusApply" "%s"
 data "UseCosts" "%s"
 data "VerbalIntent" "%s"]]
--- OriginalSpellId
--- CastEffect
--- CastSound
--- CastTextEvent
--- formatted container spells for other spell IDs
--- DamageType
--- DisplayNameHandle
--- DisplayNameVersion
--- DescriptionHandle
--- DescriptionVersion
--- DescriptionParams
--- HitAnimationType
--- Icon
--- Spell Level
--- Spell Level
--- PrepareEffect
--- PrepareLoopSound
--- PrepareSound
--- PreviewCursor
--- SpellAnimation
--- Appropriate PropertiesTemplate
--- SpellSchool
--- SpellFlags
--- TargetEffect
--- TargetSound
--- TooltipAttackSave
--- TooltipDamageList
--- TooltipStatusApply
--- UseCosts
--- VerbalIntent
-local cantripPropertiesTemplate = "IF(not CharacterLevelGreaterThan(4) and not HasStatus('SPELLBINDER_OFFHAND_BINDING') and HasWeaponInMainHand()):ApplyEquipmentStatus(SELF,MainHand,TAGBOUNDSPELL_1_0_Projectile_Spellbinder_Bound_%s,100,10);IF(not CharacterLevelGreaterThan(4) and HasStatus('SPELLBINDER_OFFHAND_BINDING') and not (WieldingWeapon('Melee', true, false, context.Source) or WieldingWeapon('Ammunition', true, false, context.Source))):ApplyEquipmentStatus(SELF,MainHand,TAGBOUNDSPELL_1_0_Projectile_Spellbinder_Bound_%s,100,10);IF(not CharacterLevelGreaterThan(4) and HasStatus('SPELLBINDER_OFFHAND_BINDING') and (WieldingWeapon('Melee', true, false, context.Source) or WieldingWeapon('Ammunition', true, false, context.Source))):ApplyEquipmentStatus(SELF,OffHand,TAGBOUNDSPELL_1_0_Projectile_Spellbinder_Bound_%s,100,10);IF(CharacterLevelGreaterThan(4) and not CharacterLevelGreaterThan(10) and not HasStatus('SPELLBINDER_OFFHAND_BINDING') and HasWeaponInMainHand()):ApplyEquipmentStatus(SELF,MainHand,TAGBOUNDSPELL_2_0_Projectile_Spellbinder_Bound_%s,100,10);IF(CharacterLevelGreaterThan(4) and not CharacterLevelGreaterThan(10) and HasStatus('SPELLBINDER_OFFHAND_BINDING') and not (WieldingWeapon('Melee', true, false, context.Source) or WieldingWeapon('Ammunition', true, false, context.Source))):ApplyEquipmentStatus(SELF,MainHand,TAGBOUNDSPELL_2_0_Projectile_Spellbinder_Bound_%s,100,10);IF(CharacterLevelGreaterThan(4) and not CharacterLevelGreaterThan(10) and HasStatus('SPELLBINDER_OFFHAND_BINDING') and (WieldingWeapon('Melee', true, false, context.Source) or WieldingWeapon('Ammunition', true, false, context.Source))):ApplyEquipmentStatus(SELF,OffHand,TAGBOUNDSPELL_2_0_Projectile_Spellbinder_Bound_%s,100,10);IF(CharacterLevelGreaterThan(10) and not CharacterLevelGreaterThan(16) and not HasStatus('SPELLBINDER_OFFHAND_BINDING') and HasWeaponInMainHand()):ApplyEquipmentStatus(SELF,MainHand,TAGBOUNDSPELL_3_0_Projectile_Spellbinder_Bound_%s,100,10);IF(CharacterLevelGreaterThan(10) and not CharacterLevelGreaterThan(16) and HasStatus('SPELLBINDER_OFFHAND_BINDING') and not (WieldingWeapon('Melee', true, false, context.Source) or WieldingWeapon('Ammunition', true, false, context.Source))):ApplyEquipmentStatus(SELF,MainHand,TAGBOUNDSPELL_3_0_Projectile_Spellbinder_Bound_%s,100,10);IF(CharacterLevelGreaterThan(10) and not CharacterLevelGreaterThan(16) and HasStatus('SPELLBINDER_OFFHAND_BINDING') and (WieldingWeapon('Melee', true, false, context.Source) or WieldingWeapon('Ammunition', true, false, context.Source))):ApplyEquipmentStatus(SELF,OffHand,TAGBOUNDSPELL_3_0_Projectile_Spellbinder_Bound_%s,100,10);IF(CharacterLevelGreaterThan(16) and not HasStatus('SPELLBINDER_OFFHAND_BINDING') and HasWeaponInMainHand()):ApplyEquipmentStatus(SELF,MainHand,TAGBOUNDSPELL_4_0_Projectile_Spellbinder_Bound_%s,100,10);IF(CharacterLevelGreaterThan(16) and HasStatus('SPELLBINDER_OFFHAND_BINDING') and not (WieldingWeapon('Melee', true, false, context.Source) or WieldingWeapon('Ammunition', true, false, context.Source))):ApplyEquipmentStatus(SELF,MainHand,TAGBOUNDSPELL_4_0_Projectile_Spellbinder_Bound_%s,100,10);IF(CharacterLevelGreaterThan(16) and HasStatus('SPELLBINDER_OFFHAND_BINDING') and (WieldingWeapon('Melee', true, false, context.Source) or WieldingWeapon('Ammunition', true, false, context.Source))):ApplyEquipmentStatus(SELF,OffHand,TAGBOUNDSPELL_4_0_Projectile_Spellbinder_Bound_%s,100,10)"
--- 12x OriginalSpellId
-local levelledPropertiesTemplate = "IF(not HasStatus('SPELLBINDER_OFFHAND_BINDING') and HasWeaponInMainHand()):ApplyEquipmentStatus(SELF,MainHand,TAGBOUNDSPELL_%s_%s_Projectile_Spellbinder_Bound_%s,100,10);IF(HasStatus('SPELLBINDER_OFFHAND_BINDING') and not (WieldingWeapon('Melee', true, false, context.Source) or WieldingWeapon('Ammunition', true, false, context.Source))):ApplyEquipmentStatus(SELF,MainHand,TAGBOUNDSPELL_%s_%s_Projectile_Spellbinder_Bound_%s,100,10);IF(HasStatus('SPELLBINDER_OFFHAND_BINDING') and (WieldingWeapon('Melee', true, false, context.Source) or WieldingWeapon('Ammunition', true, false, context.Source))):ApplyEquipmentStatus(SELF,OffHand,TAGBOUNDSPELL_%s_%s_Projectile_Spellbinder_Bound_%s,100,10);"
--- current charge count
--- spell level
--- original spellID
--- current charge count
--- spell level
--- original spellID
+    -- OriginalSpellId
+    -- CastEffect
+    -- CastSound
+    -- CastTextEvent
+    -- DamageType
+    -- DisplayNameHandle
+    -- DisplayNameVersion
+    -- DescriptionHandle
+    -- DescriptionVersion
+    -- DescriptionParams
+    -- HitAnimationType
+    -- Icon
+    -- Spell Level
+    -- Spell Level
+    -- PrepareEffect
+    -- PrepareLoopSound
+    -- PrepareSound
+    -- PreviewCursor
+    -- SpellAnimation
+    -- Appropriate PropertiesTemplate
+    -- SpellSchool
+    -- SpellFlags
+    -- TargetEffect
+    -- TargetSound
+    -- TooltipAttackSave
+    -- TooltipDamageList
+    -- TooltipStatusApply
+    -- UseCosts
+    -- VerbalIntent
+end
+
+local function baseArmorTemplate()
+    return
+[[%s
+
+new entry "Shout_Spellbinder_Bind_Armor_%s"
+type "SpellData"
+data "SpellType" "Shout"
+using "Shout_Spellbinder_Bind_%s"
+data "SpellContainerID" "Shout_Spellbinder_Bind_Armor"
+data "SpellProperties" "%s"]]
+    -- base bind spell
+    -- original spell ID
+    -- original spell ID
+    -- formatted properties template appropriate to armor
+end
+
+local function cantripPropertiesTemplate()
+    return "IF(not CharacterLevelGreaterThan(4) and not HasStatus('SPELLBINDER_OFFHAND_BINDING') and HasWeaponInMainHand()):ApplyEquipmentStatus(SELF,MainHand,TAGBOUNDSPELL_1_0_Projectile_Spellbinder_Bound_%s,100,-1);IF(not CharacterLevelGreaterThan(4) and HasStatus('SPELLBINDER_OFFHAND_BINDING') and not (WieldingWeapon('Melee', true, false, context.Source) or WieldingWeapon('Ammunition', true, false, context.Source))):ApplyEquipmentStatus(SELF,MainHand,TAGBOUNDSPELL_1_0_Projectile_Spellbinder_Bound_%s,100,-1);IF(not CharacterLevelGreaterThan(4) and HasStatus('SPELLBINDER_OFFHAND_BINDING') and (WieldingWeapon('Melee', true, false, context.Source) or WieldingWeapon('Ammunition', true, false, context.Source))):ApplyEquipmentStatus(SELF,OffHand,TAGBOUNDSPELL_1_0_Projectile_Spellbinder_Bound_%s,100,-1);IF(CharacterLevelGreaterThan(4) and not CharacterLevelGreaterThan(10) and not HasStatus('SPELLBINDER_OFFHAND_BINDING') and HasWeaponInMainHand()):ApplyEquipmentStatus(SELF,MainHand,TAGBOUNDSPELL_2_0_Projectile_Spellbinder_Bound_%s,100,-1);IF(CharacterLevelGreaterThan(4) and not CharacterLevelGreaterThan(10) and HasStatus('SPELLBINDER_OFFHAND_BINDING') and not (WieldingWeapon('Melee', true, false, context.Source) or WieldingWeapon('Ammunition', true, false, context.Source))):ApplyEquipmentStatus(SELF,MainHand,TAGBOUNDSPELL_2_0_Projectile_Spellbinder_Bound_%s,100,-1);IF(CharacterLevelGreaterThan(4) and not CharacterLevelGreaterThan(10) and HasStatus('SPELLBINDER_OFFHAND_BINDING') and (WieldingWeapon('Melee', true, false, context.Source) or WieldingWeapon('Ammunition', true, false, context.Source))):ApplyEquipmentStatus(SELF,OffHand,TAGBOUNDSPELL_2_0_Projectile_Spellbinder_Bound_%s,100,-1);IF(CharacterLevelGreaterThan(10) and not CharacterLevelGreaterThan(16) and not HasStatus('SPELLBINDER_OFFHAND_BINDING') and HasWeaponInMainHand()):ApplyEquipmentStatus(SELF,MainHand,TAGBOUNDSPELL_3_0_Projectile_Spellbinder_Bound_%s,100,-1);IF(CharacterLevelGreaterThan(10) and not CharacterLevelGreaterThan(16) and HasStatus('SPELLBINDER_OFFHAND_BINDING') and not (WieldingWeapon('Melee', true, false, context.Source) or WieldingWeapon('Ammunition', true, false, context.Source))):ApplyEquipmentStatus(SELF,MainHand,TAGBOUNDSPELL_3_0_Projectile_Spellbinder_Bound_%s,100,-1);IF(CharacterLevelGreaterThan(10) and not CharacterLevelGreaterThan(16) and HasStatus('SPELLBINDER_OFFHAND_BINDING') and (WieldingWeapon('Melee', true, false, context.Source) or WieldingWeapon('Ammunition', true, false, context.Source))):ApplyEquipmentStatus(SELF,OffHand,TAGBOUNDSPELL_3_0_Projectile_Spellbinder_Bound_%s,100,-1);IF(CharacterLevelGreaterThan(16) and not HasStatus('SPELLBINDER_OFFHAND_BINDING') and HasWeaponInMainHand()):ApplyEquipmentStatus(SELF,MainHand,TAGBOUNDSPELL_4_0_Projectile_Spellbinder_Bound_%s,100,-1);IF(CharacterLevelGreaterThan(16) and HasStatus('SPELLBINDER_OFFHAND_BINDING') and not (WieldingWeapon('Melee', true, false, context.Source) or WieldingWeapon('Ammunition', true, false, context.Source))):ApplyEquipmentStatus(SELF,MainHand,TAGBOUNDSPELL_4_0_Projectile_Spellbinder_Bound_%s,100,-1);IF(CharacterLevelGreaterThan(16) and HasStatus('SPELLBINDER_OFFHAND_BINDING') and (WieldingWeapon('Melee', true, false, context.Source) or WieldingWeapon('Ammunition', true, false, context.Source))):ApplyEquipmentStatus(SELF,OffHand,TAGBOUNDSPELL_4_0_Projectile_Spellbinder_Bound_%s,100,-1)"
+    -- 12x OriginalSpellId
+end
+
+local function levelledPropertiesTemplate()
+    return "IF(not HasStatus('SPELLBINDER_OFFHAND_BINDING') and HasWeaponInMainHand()):ApplyEquipmentStatus(SELF,MainHand,TAGBOUNDSPELL_%s_%s_Projectile_Spellbinder_Bound_%s,100,-1);IF(HasStatus('SPELLBINDER_OFFHAND_BINDING') and not (WieldingWeapon('Melee', true, false, context.Source) or WieldingWeapon('Ammunition', true, false, context.Source))):ApplyEquipmentStatus(SELF,MainHand,TAGBOUNDSPELL_%s_%s_Projectile_Spellbinder_Bound_%s,100,-1);IF(HasStatus('SPELLBINDER_OFFHAND_BINDING') and (WieldingWeapon('Melee', true, false, context.Source) or WieldingWeapon('Ammunition', true, false, context.Source))):ApplyEquipmentStatus(SELF,OffHand,TAGBOUNDSPELL_%s_%s_Projectile_Spellbinder_Bound_%s,100,-1);"
+    -- current charge count
+    -- spell level
+    -- original spellID
+    -- current charge count
+    -- spell level
+    -- original spellID
+end
+
+local function cantripArmorPropertiesTemplate()
+    return "IF(not CharacterLevelGreaterThan(4)):ApplyStatus(TAGBOUNDARMOR_1_0_Projectile_Spellbinder_Bound_Armor_%s,100,-1);IF(CharacterLevelGreaterThan(4) and not CharacterLevelGreaterThan(10)):ApplyStatus(TAGBOUNDARMOR_2_0_Projectile_Spellbinder_Bound_Armor_%s,100,-1);IF(CharacterLevelGreaterThan(10) and not CharacterLevelGreaterThan(16)):ApplyStatus(TAGBOUNDARMOR_3_0_Projectile_Spellbinder_Bound_Armor_%s,100,-1);IF(CharacterLevelGreaterThan(16)):ApplyStatus(TAGBOUNDARMOR_4_0_Projectile_Spellbinder_Bound_Armor_%s,100,-1)"
+    -- 4x OriginalSpellId
+end
+
+local function levelledArmorPropertiesTemplate()
+    return "ApplyStatus(TAGBOUNDARMOR_%s_%s_Projectile_Spellbinder_Bound_Armor_%s,100,-1);"
+    -- charge count
+    -- spell level
+    -- original spellID
+end
+
+local function upcastTemplate()
+    return
+[[new entry "Shout_Spellbinder_Bind_%s"
+type "SpellData"
+data "SpellType" "Shout"
+using "Shout_Spellbinder_Bind_%s"
+data "PowerLevel" "%s"
+data "RootSpellID" "Shout_Spellbinder_Bind_%s"
+data "SpellProperties" "%s"
+data "TooltipAttackSave" "%s"
+data "TooltipDamageList" "%s"
+data "TooltipStatusApply" "%s"
+data "UseCosts" "%s"]]
+    -- Original Upcast spellID
+    -- root spell's SpellID
+    -- PowerLevel
+    -- root spell's SpellID
+    -- SpellProperties formatted
+    -- TooltipAttackSave
+    -- TooltipDamageList
+    -- TooltipStatusApply
+    -- UseCosts
+end
+
+local function upcastArmorTemplate()
+    return
+[[%s
+
+new entry "Shout_Spellbinder_Bind_Armor_%s"
+type "SpellData"
+data "SpellType" "Shout"
+using "Shout_Spellbinder_Bind_Armor_%s"
+data "PowerLevel" "%s"
+data "RootSpellID" "Shout_Spellbinder_Bind_Armor_%s"
+data "SpellProperties" "%s"
+data "TooltipAttackSave" "%s"
+data "TooltipDamageList" "%s"
+data "TooltipStatusApply" "%s"
+data "UseCosts" "%s"]]
+    -- base bind spell
+    -- Original Upcast spellID
+    -- root spell's SpellID
+    -- PowerLevel
+    -- root spell's SpellID
+    -- SpellProperties formatted
+    -- TooltipAttackSave
+    -- TooltipDamageList
+    -- TooltipStatusApply
+    -- UseCosts
+end
+
+local function payloadTemplate()
+    return
+[[new entry "%s_Projectile_Spellbinder_Bound_%s"
+type "SpellData"
+data "SpellType" "Projectile"
+%s
+data "ProjectileCount" "1"
+data "Trajectories" "%s"
+data "CastSound" "%s"
+data "VerbalIntent" "%s"
+data "SpellFlags" "HasHighGroundRangeExtension;RangeIgnoreVerticalThreshold;IsHarmful;IgnoreVisionBlock"
+data "HitAnimationType" "%s"
+data "SpellAnimation" "%s"
+data "DamageType" "%s"]]
+    -- spell level
+    -- original spell ID
+    -- spell effects -- this feels difficult :( (it was :()
+    -- original spell Trajectories -- might need a default?
+    -- original spell CastSound
+    -- original spell VerbalIntent
+    -- original spell HitAnimationType
+    -- original spell SpellAnimation
+    -- original spell DamageType
+end
 
 ---@param spellID string
 ---@param spellStat SpellData
 ---@return string
-Spells.CreateBaseSpell = function(spellID, spellStat, output)
+local function createBaseSpell(spellID, spellStat, output)
     local cached = Ext.Stats.GetCachedSpell(spellID)
     local spellFlags = ""
     for _,flag in pairs(spellStat.SpellFlags) do
         spellFlags = spellFlags .. flag .. ";"
     end
     local spellProperties = ""
+    local armorProperties = ""
     if spellStat.Level == 0 then
-        spellProperties = string.format(cantripPropertiesTemplate, spellID, spellID, spellID, spellID, spellID, spellID, spellID, spellID, spellID, spellID, spellID, spellID)
+        spellProperties = string.format(cantripPropertiesTemplate(), spellID, spellID, spellID, spellID, spellID, spellID, spellID, spellID, spellID, spellID, spellID, spellID)
+        armorProperties = string.format(cantripArmorPropertiesTemplate(), spellID, spellID, spellID, spellID)
     else
         local charges = __dynHelper.DetermineChargesForSpell(spellStat)
         local level = spellStat.Level
         if spellStat.PowerLevel > level then level = spellStat.PowerLevel end
-        spellProperties = string.format(levelledPropertiesTemplate, charges, level, spellID, charges, level, spellID, charges, level, spellID)
+        spellProperties = string.format(levelledPropertiesTemplate(), charges, level, spellID, charges, level, spellID, charges, level, spellID)
+        armorProperties = string.format(levelledArmorPropertiesTemplate(), charges, level, spellID)
     end
-    local containedSpells = ""
-    if spellStat.ContainerSpells and spellStat.ContainerSpells ~= "" then
-        local containedSpellTable = __dynHelper.SplitString(spellStat.ContainerSpells)
-        for _,containerID in pairs(containedSpellTable) do
-            containedSpells = containedSpells .. "Shout_Spellbinder_Bind_" .. containerID .. ";"
-        end
-    end
-    return string.format(baseTemplate,
+    local baseSpell = string.format(baseTemplate(),
         spellID,
         spellStat.CastEffect,
         spellStat.CastSound,
         spellStat.CastTextEvent,
-        containedSpells,
         spellStat.DamageType,
         cached.Description.DisplayName.Handle.Handle,
         cached.Description.DisplayName.Handle.Version,
@@ -139,40 +238,24 @@ Spells.CreateBaseSpell = function(spellID, spellStat, output)
         spellStat.UseCosts,
         spellStat.VerbalIntent
     )
+    return string.format(baseArmorTemplate(),
+        baseSpell,
+        spellID,
+        spellID,
+        armorProperties
+    )
 end
-
-local upcastTemplate =
-[[new entry "Shout_Spellbinder_Bind_%s"
-type "SpellData"
-data "SpellType" "Shout"
-using "Shout_Spellbinder_Bind_%s"
-data "PowerLevel" "%s"
-data "RootSpellID" "Shout_Spellbinder_Bind_%s"
-data "SpellProperties" "%s"
-data "TooltipAttackSave" "%s"
-data "TooltipDamageList" "%s"
-data "TooltipStatusApply" "%s"
-data "UseCosts" "%s"]]
--- Original Upcast spellID
--- root spell's SpellID
--- PowerLevel
--- root spell's SpellID
--- SpellProperties formatted
--- TooltipAttackSave
--- TooltipDamageList
--- TooltipStatusApply
--- UseCosts
 
 ---@param spellID string
 ---@param spellStat SpellData
 ---@return string
-Spells.CreateUpcastSpell = function(spellID, spellStat, output)
-    local spellProperties = ""
+local function createUpcastSpell(spellID, spellStat, output)
     local charges = __dynHelper.DetermineChargesForSpell(spellStat)
     local level = spellStat.Level
     if spellStat.PowerLevel > level then level = spellStat.PowerLevel end
-    spellProperties = string.format(levelledPropertiesTemplate, charges, level, spellID, charges, level, spellID, charges, level, spellID)
-    return string.format(upcastTemplate,
+    local spellProperties = string.format(levelledPropertiesTemplate(), charges, level, spellID, charges, level, spellID, charges, level, spellID)
+    local armorProperties = string.format(levelledArmorPropertiesTemplate(), charges, level, spellID)
+    local baseSpell = string.format(upcastTemplate(),
         spellID,
         spellStat.RootSpellID,
         spellStat.PowerLevel,
@@ -183,39 +266,43 @@ Spells.CreateUpcastSpell = function(spellID, spellStat, output)
         spellStat.TooltipStatusApply,
         spellStat.UseCosts
     )
+    return string.format(upcastArmorTemplate(),
+        baseSpell,
+        spellID,
+        spellStat.RootSpellID,
+        spellStat.PowerLevel,
+        spellStat.RootSpellID,
+        armorProperties,
+        spellStat.TooltipAttackSave,
+        spellStat.TooltipDamageList,
+        spellStat.TooltipStatusApply,
+        spellStat.UseCosts
+    )
 end
 
-local payloadTemplate =
-[[new entry "%s_Projectile_Spellbinder_Bound_%s"
-type "SpellData"
-data "SpellType" "Projectile"
-%s
-data "ProjectileCount" "1"
-data "Trajectories" "%s"
-data "CastSound" "%s"
-data "VerbalIntent" "%s"
-data "SpellFlags" "HasHighGroundRangeExtension;RangeIgnoreVerticalThreshold;IsHarmful;IgnoreVisionBlock"
-data "HitAnimationType" "%s"
-data "SpellAnimation" "%s"
-data "DamageType" "%s"]]
--- spell level
--- original spell ID
--- spell effects -- this feels difficult :( (it was :()
--- original spell Trajectories -- might need a default?
--- original spell CastSound
--- original spell VerbalIntent
--- original spell HitAnimationType
--- original spell SpellAnimation
--- original spell DamageType
+Spells.CreateSpells = function(spellID, spellStat, output)
+    local isUpcast = spellStat.PowerLevel > spellStat.Level
+    if isUpcast then
+        return createUpcastSpell(spellID, spellStat, output)
+    else
+        return createBaseSpell(spellID, spellStat, output)
+    end
+end
+
+---@param spellStat SpellData
+local function extractSpellEffects(spellID, spellStat, output)
+    local result = EffectMap[spellID]
+    if result then return result else return "TODO" end
+end
 
 ---@param spellID string
 ---@param spellStat SpellData
 ---@return string
-Spells.CreatePayload = function(spellID, spellStat)
+Spells.CreatePayload = function(spellID, spellStat, output)
     local spellEffects = extractSpellEffects(spellID, spellStat)
     local level = spellStat.Level
     if spellStat.PowerLevel > level then level = spellStat.PowerLevel end
-    return string.format(payloadTemplate,
+    return string.format(payloadTemplate(),
         level,
         spellID,
         spellEffects,

@@ -107,7 +107,7 @@
                     <attribute id="Level" type="uint8" value="3"/>
                     <attribute id="Name" type="LSString" value="MysticKnight"/>
                     <attribute id="ProgressionType" type="uint8" value="1"/> as mentioned before type 1 = subclass
-                    <attribute id="PassivesAdded" type="LSString" value=""/>
+                    <attribute id="PassivesAdded" type="LSString" value="Spellbinder_Bind_Armor"/>
                     <attribute id="TableUUID" type="guid" value="26b70d23-0f15-4a9b-a7be-8c747b9c97fe"/> same UUID as the ProgressionTableUUID in ClassDescriptions.lsx
                     <attribute id="UUID" type="guid" value="ad372847-e008-4989-b73a-31ca1bbf3887"/> Give it a Unique UUID
                 </node>

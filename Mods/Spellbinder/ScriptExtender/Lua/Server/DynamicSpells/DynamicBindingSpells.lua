@@ -1,21 +1,18 @@
 local Spells = Ext.Require("Server/DynamicSpells/Templates/SpellTemplate.lua")
 local Statuses = Ext.Require("Server/DynamicSpells/Templates/StatusTemplate.lua")
 local Passives = Ext.Require("Server/DynamicSpells/Templates/PassiveTemplate.lua")
+local Interrupts = Ext.Require("Server/DynamicSpells/Templates/InterruptTemplate.lua")
 local DynHelper = Ext.Require("Server/DynamicSpells/DynamicHelper.lua")
 
 local combiner = [[%s
 
 %s]]
 local function generateData(spellID, spell, output)
-    local isUpcast = spell.PowerLevel > spell.Level
-    if isUpcast then
-        output.data = string.format(combiner, output.data, Spells.CreateUpcastSpell(spellID, spell, output))
-    else
-        output.data = string.format(combiner, output.data, Spells.CreateBaseSpell(spellID, spell, output))
-    end
+    output.data = string.format(combiner, output.data, Spells.CreateSpells(spellID, spell, output))
     output.data = string.format(combiner, output.data, Spells.CreatePayload(spellID, spell, output))
     output.data = string.format(combiner, output.data, Statuses.CreateStatuses(spellID, spell, output))
     output.data = string.format(combiner, output.data, Passives.CreatePassive(spellID, spell, output))
+    output.data = string.format(combiner, output.data, Interrupts.CreateInterrupt(spellID, spell, output))
 end
 
 local function handleSpell(spellID, spell, output)
