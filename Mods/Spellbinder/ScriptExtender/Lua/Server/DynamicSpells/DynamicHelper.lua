@@ -34,7 +34,7 @@ DynHelper.GenerateTranslationEntry = function(text, output)
         return alreadyGenerated[text]
     end
     local handle = generateHandle()
-    output.loca = string.format(combiner, output.loca, string.format(locaTemplate, handle, text))
+    output.GeneratedLocalization = string.format(combiner, output.GeneratedLocalization, string.format(locaTemplate, handle, text))
     alreadyGenerated[text] = handle
     return handle
 end

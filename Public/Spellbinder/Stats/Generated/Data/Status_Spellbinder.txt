@@ -104,7 +104,7 @@ data "Boosts" "UnlockSpellVariant(CanQuickBind() and IsCantrip(),ModifyUseCosts(
 new entry "SPELLBINDER_RESIDUAL_MAGIC"
 type "StatusData"
 data "StatusType" "BOOST"
-data "StatusPropertyFlags" "DisableOverhead;DisableCombatlog;DisablePortraitIndicator"
+data "StatusPropertyFlags" "DisableOverhead;DisableCombatlog"
 data "StackId" "SPELLBINDER_BOUND_ARMOR"
 data "Boosts" "AC(1)"
 data "Icon" "PassiveFeature_ExtraAttack"
