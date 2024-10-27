@@ -97,6 +97,7 @@ Ext.RegisterConsoleCommand("GenerateBoundSpells", function (cmd, ...)
         _P("-- spell list guid: adds this spell list, if it exists, to the list of spells to process.")
         _P("-- If no spell lists and no spell IDs are specified, the command will generate all the spells from the default spellbinder spell lists.")
         _P("-- The command also generates new localization handles as appropriate. Those entries are dumped into a file named \"GeneratedLocalization.txt\" and you simply need to paste the contents into your own .xml localization file")
+        _P("-- I didn't find it feasible to automatically crawl every possible spell effect to generate my spell's payload effects. The effects are hardcoded, but fairly simple to template when you have human eyeballs. If you generate for a spell that is not supported, the proper spot in the payload spell will read TODO, available for you to find and replace. You can find examples on how to structure the payload effects in Server/DynamicSpells/Templates/HardcodedEffects.lua")
         return
     end
     local output = {
