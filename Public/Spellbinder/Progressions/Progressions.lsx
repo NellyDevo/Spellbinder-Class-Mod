@@ -83,7 +83,8 @@
                     <attribute id="Level" type="uint8" value="3"/>
                     <attribute id="Name" type="LSString" value="ArcaneSniper"/>
                     <attribute id="ProgressionType" type="uint8" value="1"/> as mentioned before type 1 = subclass
-                    <attribute id="PassivesAdded" type="LSString" value=""/>
+                    <attribute id="PassivesAdded" type="LSString" value="Spellbinder_ArcaneSniper_SpectralArrows"/>
+                    <attribute id="Boosts" type="LSString" value="ActionResource(SpectralArrowPoint,1,0)"/>
                     <attribute id="TableUUID" type="guid" value="2d9ebdee-94b9-4215-9b1c-a9eef9a32854"/> same UUID as the ProgressionTableUUID in ClassDescriptions.lsx
                     <attribute id="UUID" type="guid" value="1f1410b4-9f8c-4580-a23e-47f517016a06"/> Give it a Unique UUID
                 </node>

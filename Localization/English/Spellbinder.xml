@@ -197,4 +197,8 @@
     
     <content contentuid="h424d6f87fdb14b7daf5cc39d1614f0b45f63" version="1">Magic Batteries</content>
     <content contentuid="hcd63bc7878334ec38b33ee28889919962dae" version="1">Your bound spells no longer have a limited duration</content>
+    
+    <content contentuid="he2db47ec6d734e75b4fbbcbcc994e210e879" version="1">Spectral Arrows</content>
+    <content contentuid="h25bef7a82c354ac7bcf7653b0a9922032b1c" version="1">Once per Short Rest, you can conjure a Spectral Arrow in place of a regular arrow you would use, preventing its expenditure</content>
+    
 </contentList>
