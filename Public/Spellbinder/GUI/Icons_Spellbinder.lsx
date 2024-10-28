@@ -5,70 +5,70 @@
         <node id="root">
             <children>
                 <node id="IconUV"> Line 1
-                    <attribute id="MapKey" type="FixedString" value="EXAMPLE_NAME"/> put the name of the Icon, aka what it will be refered to as in your code
+                    <attribute id="MapKey" type="FixedString" value="Spellbinder_Bind_Offhand"/>
                     <attribute id="U1" type="float" value="0.0"/>
                     <attribute id="U2" type="float" value="0.1"/>
                     <attribute id="V1" type="float" value="0.0"/>
-                    <attribute id="V2" type="float" value="0.1"/> those four numbers dictate which part of the .DDS image will be spliced for this icon. currently set up for a 10 x 10 grid
+                    <attribute id="V2" type="float" value="0.1"/> 
                 </node>
 				<node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value=""/>
+                    <attribute id="MapKey" type="FixedString" value="Spellbinder_Bind"/>
                     <attribute id="U1" type="float" value="0.1"/>
                     <attribute id="U2" type="float" value="0.2"/>
                     <attribute id="V1" type="float" value="0.0"/>
                     <attribute id="V2" type="float" value="0.1"/>
                 </node>
 				<node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value=""/>
+                    <attribute id="MapKey" type="FixedString" value="Spellbinder_Bind_Armor"/>
                     <attribute id="U1" type="float" value="0.2"/>
                     <attribute id="U2" type="float" value="0.3"/>
                     <attribute id="V1" type="float" value="0.0"/>
                     <attribute id="V2" type="float" value="0.1"/>
                 </node>
 				<node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value=""/>
+                    <attribute id="MapKey" type="FixedString" value="Spellbinder_Battle_Magic"/>
                     <attribute id="U1" type="float" value="0.3"/>
                     <attribute id="U2" type="float" value="0.4"/>
                     <attribute id="V1" type="float" value="0.0"/>
                     <attribute id="V2" type="float" value="0.1"/>
                 </node>
 				<node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value=""/>
+                    <attribute id="MapKey" type="FixedString" value="Spellbinder_Battle_Dance"/>
                     <attribute id="U1" type="float" value="0.4"/>
                     <attribute id="U2" type="float" value="0.5"/>
                     <attribute id="V1" type="float" value="0.0"/>
                     <attribute id="V2" type="float" value="0.1"/>
                 </node>
 				<node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value=""/>
+                    <attribute id="MapKey" type="FixedString" value="Spellbinder_Spectral_Arrows"/>
                     <attribute id="U1" type="float" value="0.5"/>
                     <attribute id="U2" type="float" value="0.6"/>
                     <attribute id="V1" type="float" value="0.0"/>
                     <attribute id="V2" type="float" value="0.1"/>
                 </node>
 				<node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value=""/>
+                    <attribute id="MapKey" type="FixedString" value="Spellbinder_Weapon_Mastery"/>
                     <attribute id="U1" type="float" value="0.6"/>
                     <attribute id="U2" type="float" value="0.7"/>
                     <attribute id="V1" type="float" value="0.0"/>
                     <attribute id="V2" type="float" value="0.1"/>
                 </node>
 				<node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value=""/>
+                    <attribute id="MapKey" type="FixedString" value="Spellbinder_Quick_Bind"/>
                     <attribute id="U1" type="float" value="0.7"/>
                     <attribute id="U2" type="float" value="0.8"/>
                     <attribute id="V1" type="float" value="0.0"/>
                     <attribute id="V2" type="float" value="0.1"/>
                 </node>
 				<node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value=""/>
+                    <attribute id="MapKey" type="FixedString" value="Spellbinder_Magic_Batteries"/>
                     <attribute id="U1" type="float" value="0.8"/>
                     <attribute id="U2" type="float" value="0.9"/>
                     <attribute id="V1" type="float" value="0.0"/>
                     <attribute id="V2" type="float" value="0.1"/>
                 </node>
 				<node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value=""/>
+                    <attribute id="MapKey" type="FixedString" value="Spellbinder_Runic_Beacon"/>
                     <attribute id="U1" type="float" value="0.9"/>
                     <attribute id="U2" type="float" value="1.0"/>
                     <attribute id="V1" type="float" value="0.0"/>
@@ -222,7 +222,7 @@
                     <attribute id="V2" type="float" value="0.4"/>
                 </node>
 				<node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value="Spell_Spellbinder_WeaponMastery"/>
+                    <attribute id="MapKey" type="FixedString" value=""/>
                     <attribute id="U1" type="float" value="0.1"/>
                     <attribute id="U2" type="float" value="0.2"/>
                     <attribute id="V1" type="float" value="0.3"/>
@@ -278,7 +278,7 @@
                     <attribute id="V2" type="float" value="0.4"/>
                 </node>
 				<node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value=""/>
+                    <attribute id="MapKey" type="FixedString" value="PLACEHOLDER"/>
                     <attribute id="U1" type="float" value="0.9"/>
                     <attribute id="U2" type="float" value="1.0"/>
                     <attribute id="V1" type="float" value="0.3"/>
@@ -425,70 +425,70 @@
                     <attribute id="V2" type="float" value="0.6"/>
                 </node>
 				<node id="IconUV"> Line 7
-                    <attribute id="MapKey" type="FixedString" value=""/>
+                    <attribute id="MapKey" type="FixedString" value="Tooltip_Spellbinder_Bind_Offhand"/>
                     <attribute id="U1" type="float" value="0.0"/>
                     <attribute id="U2" type="float" value="0.1"/>
                     <attribute id="V1" type="float" value="0.6"/>
                     <attribute id="V2" type="float" value="0.7"/>
                 </node>
 				<node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value=""/>
+                    <attribute id="MapKey" type="FixedString" value="Tooltip_Spellbinder_Bind"/>
                     <attribute id="U1" type="float" value="0.1"/>
                     <attribute id="U2" type="float" value="0.2"/>
                     <attribute id="V1" type="float" value="0.6"/>
                     <attribute id="V2" type="float" value="0.7"/>
                 </node>
 				<node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value=""/>
+                    <attribute id="MapKey" type="FixedString" value="Tooltip_Spellbinder_Bind_Armor"/>
                     <attribute id="U1" type="float" value="0.2"/>
                     <attribute id="U2" type="float" value="0.3"/>
                     <attribute id="V1" type="float" value="0.6"/>
                     <attribute id="V2" type="float" value="0.7"/>
                 </node>
 				<node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value=""/>
+                    <attribute id="MapKey" type="FixedString" value="Tooltip_Spellbinder_Battle_Magic"/>
                     <attribute id="U1" type="float" value="0.3"/>
                     <attribute id="U2" type="float" value="0.4"/>
                     <attribute id="V1" type="float" value="0.6"/>
                     <attribute id="V2" type="float" value="0.7"/>
                 </node>
 				<node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value=""/>
+                    <attribute id="MapKey" type="FixedString" value="Tooltip_Spellbinder_Battle_Dance"/>
                     <attribute id="U1" type="float" value="0.4"/>
                     <attribute id="U2" type="float" value="0.5"/>
                     <attribute id="V1" type="float" value="0.6"/>
                     <attribute id="V2" type="float" value="0.7"/>
                 </node>
 				<node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value=""/>
+                    <attribute id="MapKey" type="FixedString" value="Tooltip_Spellbinder_Spectral_Arrows"/>
                     <attribute id="U1" type="float" value="0.5"/>
                     <attribute id="U2" type="float" value="0.6"/>
                     <attribute id="V1" type="float" value="0.6"/>
                     <attribute id="V2" type="float" value="0.7"/>
                 </node>
 				<node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value=""/>
+                    <attribute id="MapKey" type="FixedString" value="Tooltip_Spellbinder_Weapon_Mastery"/>
                     <attribute id="U1" type="float" value="0.6"/>
                     <attribute id="U2" type="float" value="0.7"/>
                     <attribute id="V1" type="float" value="0.6"/>
                     <attribute id="V2" type="float" value="0.7"/>
                 </node>
 				<node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value=""/>
+                    <attribute id="MapKey" type="FixedString" value="Tooltip_Spellbinder_Quick_Bind"/>
                     <attribute id="U1" type="float" value="0.7"/>
                     <attribute id="U2" type="float" value="0.8"/>
                     <attribute id="V1" type="float" value="0.6"/>
                     <attribute id="V2" type="float" value="0.7"/>
                 </node>
 				<node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value=""/>
+                    <attribute id="MapKey" type="FixedString" value="Tooltip_Spellbinder_Magic_Batteries"/>
                     <attribute id="U1" type="float" value="0.8"/>
                     <attribute id="U2" type="float" value="0.9"/>
                     <attribute id="V1" type="float" value="0.6"/>
                     <attribute id="V2" type="float" value="0.7"/>
                 </node>
 				<node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value=""/>
+                    <attribute id="MapKey" type="FixedString" value="Tooltip_Spellbinder_Runic_Beacon"/>
                     <attribute id="U1" type="float" value="0.9"/>
                     <attribute id="U2" type="float" value="1.0"/>
                     <attribute id="V1" type="float" value="0.6"/>

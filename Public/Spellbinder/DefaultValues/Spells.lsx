@@ -5,14 +5,14 @@
         <node id="root">
             <children>
                 <node id="DefaultValue">
-					<attribute id="Add" type="LSString" value="Target_BoomingBlade;Target_ShockingGrasp;Shout_Thunderclap;Projectile_FireBolt"/>
+					<attribute id="Add" type="LSString" value="Shout_Thunderclap;Projectile_PoisonSpray"/>
                     <attribute id="Level" type="int32" value="1"/>
                     <attribute id="SelectorId" type="LSString" value="Spellbinder Cantrips"/>
                     <attribute id="TableUUID" type="guid" value="ca9cfd96-20b1-485c-b474-b333e6396591"/>
                     <attribute id="UUID" type="guid" value="2849d689-5488-4712-a5dd-dde22816835b"/>
                 </node>
                 <node id="DefaultValue">
-					<attribute id="Add" type="LSString" value="Shout_Shield_Wizard;Shout_ZephyrStrike;Target_Smite_Wrathful"/>
+					<attribute id="Add" type="LSString" value="Shout_Shield_Wizard;Projectile_ChromaticOrb"/>
                     <attribute id="Level" type="int32" value="1"/>
                     <attribute id="SelectorId" type="LSString" value="Spellbinder Spells"/>
                     <attribute id="TableUUID" type="guid" value="ca9cfd96-20b1-485c-b474-b333e6396591"/>
