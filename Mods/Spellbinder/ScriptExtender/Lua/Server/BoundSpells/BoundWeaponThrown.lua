@@ -15,6 +15,7 @@ Ext.Entity.OnDestroy("SpellCastState", function(spellEntity)
             end
         end
 
+        if not thrownObject.StatusContainer then return end
         for _,statusID in pairs(thrownObject.StatusContainer.Statuses) do
             if string.sub(statusID, 1, #removalTag) == removalTag then
                 local spellID = string.sub(statusID, #retrieveSnip, #statusID)
