@@ -39,7 +39,7 @@
                     <attribute id="PassivesAdded" type="LSString" value="Spellbinder_Bind;Spellbinder_BindOffHand;Spellbinder_QuickBind"/> most class features usually can be done with passives
                     <attribute id="PassivesRemoved" type="LSString" value=""/>
                     <attribute id="ProgressionType" type="uint8" value="0"/> 0 means main class, 1 means subclass, 2 means race
-                    <attribute id="Selectors" type="LSString" value="SelectSpells(32893c8b-b54e-4168-83af-4f6dc7ce9388,0,1,,,,AlwaysPrepared);SelectSpells(56e512fe-093c-47b6-bada-f5b4c379f01b,1,1)"/>
+                    <attribute id="Selectors" type="LSString" value="SelectSpells(56e512fe-093c-47b6-bada-f5b4c379f01b,1,1)"/>
 					<attribute id="TableUUID" type="guid" value="ca9cfd96-20b1-485c-b474-b333e6396591"/> Same UUID as the one in ClassDescriptions.lsx this refers to the entire table
                     <attribute id="UUID" type="guid" value="b1fd3915-4aef-432a-9038-d23a749527c1"/>
                 </node>
@@ -51,7 +51,7 @@
                     <attribute id="PassivesAdded" type="LSString" value="Spellbinder_Passive_Apply_Projectile_FireBolt"/> most class features usually can be done with passives
                     <attribute id="PassivesRemoved" type="LSString" value=""/>
                     <attribute id="ProgressionType" type="uint8" value="0"/> 0 means main class, 1 means subclass, 2 means race
-                    <attribute id="Selectors" type="LSString" value="SelectPassives(df8cac8c-d186-4536-88ff-d4ace48fa7bb,1,SPELLBINDER_LOCA_FIGHTING_STYLE);SelectSpells(32893c8b-b54e-4168-83af-4f6dc7ce9388,0,1,,,,AlwaysPrepared);SelectSpells(56e512fe-093c-47b6-bada-f5b4c379f01b,1,1)"/>
+                    <attribute id="Selectors" type="LSString" value="SelectPassives(df8cac8c-d186-4536-88ff-d4ace48fa7bb,1,SPELLBINDER_LOCA_FIGHTING_STYLE);SelectSpells(56e512fe-093c-47b6-bada-f5b4c379f01b,1,1)"/>
 					<attribute id="TableUUID" type="guid" value="ca9cfd96-20b1-485c-b474-b333e6396591"/> Same UUID as the one in ClassDescriptions.lsx this refers to the entire table
                     <attribute id="UUID" type="guid" value="5c72d94b-ea0a-4a4b-9cbb-413a4ec441c7"/> a Unique UUID specificaly for this entry within the table
 					<children>
@@ -120,7 +120,7 @@
                     <attribute id="PassivesAdded" type="LSString" value=""/> most class features usually can be done with passives
                     <attribute id="PassivesRemoved" type="LSString" value=""/>
                     <attribute id="ProgressionType" type="uint8" value="0"/> 0 means main class, 1 means subclass, 2 means race
-                    <attribute id="Selectors" type="LSString" value="SelectSpells(32893c8b-b54e-4168-83af-4f6dc7ce9388,0,1,,,,AlwaysPrepared);SelectSpells(56e512fe-093c-47b6-bada-f5b4c379f01b,1,1)"/>
+                    <attribute id="Selectors" type="LSString" value="SelectSpells(56e512fe-093c-47b6-bada-f5b4c379f01b,1,1)"/>
 					<attribute id="TableUUID" type="guid" value="ca9cfd96-20b1-485c-b474-b333e6396591"/> Same UUID as the one in ClassDescriptions.lsx this refers to the entire table
                     <attribute id="UUID" type="guid" value="d4a2457e-2750-4a38-b900-dd9c3f03f70e"/>
                 </node>
@@ -132,7 +132,7 @@
                     <attribute id="PassivesAdded" type="LSString" value="UnlockedSpellSlotLevel2;ExtraAttack"/> most class features usually can be done with passives
                     <attribute id="PassivesRemoved" type="LSString" value=""/>
                     <attribute id="ProgressionType" type="uint8" value="0"/> 0 means main class, 1 means subclass, 2 means race
-                    <attribute id="Selectors" type="LSString" value="SelectPassives(06c79ede-82df-4aa2-a202-16ea5a1973bf,1,SPELLBINDER_LOCA_MAGIC_TOUCH);SelectSpells(32893c8b-b54e-4168-83af-4f6dc7ce9388,0,1,,,,AlwaysPrepared);SelectSpells(d360c3b2-4eff-4263-b87b-9a8de6e62522,1,1)"/>
+                    <attribute id="Selectors" type="LSString" value="SelectPassives(06c79ede-82df-4aa2-a202-16ea5a1973bf,1,SPELLBINDER_LOCA_MAGIC_TOUCH);SelectSpells(d360c3b2-4eff-4263-b87b-9a8de6e62522,1,1)"/>
 					<attribute id="TableUUID" type="guid" value="ca9cfd96-20b1-485c-b474-b333e6396591"/> Same UUID as the one in ClassDescriptions.lsx this refers to the entire table
                     <attribute id="UUID" type="guid" value="9e209511-2b37-456d-90f3-fd61afcbf320"/>
                 </node>
@@ -144,7 +144,7 @@
                     <attribute id="PassivesAdded" type="LSString" value="Spellbinder_RunicBeacon_Upcasting_Passive;Spellbinder_BattleMagic;Spellbinder_BattleMagic_CantripTrigger"/> most class features usually can be done with passives
                     <attribute id="PassivesRemoved" type="LSString" value="ExtraAttack"/>
                     <attribute id="ProgressionType" type="uint8" value="0"/> 0 means main class, 1 means subclass, 2 means race
-                    <attribute id="Selectors" type="LSString" value="SelectSpells(32893c8b-b54e-4168-83af-4f6dc7ce9388,0,1,,,,AlwaysPrepared);SelectSpells(d360c3b2-4eff-4263-b87b-9a8de6e62522,0,1)"/>
+                    <attribute id="Selectors" type="LSString" value="SelectSpells(d360c3b2-4eff-4263-b87b-9a8de6e62522,0,1)"/>
 					<attribute id="TableUUID" type="guid" value="ca9cfd96-20b1-485c-b474-b333e6396591"/> Same UUID as the one in ClassDescriptions.lsx this refers to the entire table
                     <attribute id="UUID" type="guid" value="e5658f3c-0152-49e0-a7b4-1ffde2744690"/>
                 </node>
@@ -156,7 +156,7 @@
                     <attribute id="PassivesAdded" type="LSString" value=""/> most class features usually can be done with passives
                     <attribute id="PassivesRemoved" type="LSString" value=""/>
                     <attribute id="ProgressionType" type="uint8" value="0"/> 0 means main class, 1 means subclass, 2 means race
-                    <attribute id="Selectors" type="LSString" value="SelectSpells(32893c8b-b54e-4168-83af-4f6dc7ce9388,0,1,,,,AlwaysPrepared);SelectSpells(d360c3b2-4eff-4263-b87b-9a8de6e62522,1,1)"/>
+                    <attribute id="Selectors" type="LSString" value="SelectSpells(d360c3b2-4eff-4263-b87b-9a8de6e62522,1,1)"/>
 					<attribute id="TableUUID" type="guid" value="ca9cfd96-20b1-485c-b474-b333e6396591"/> Same UUID as the one in ClassDescriptions.lsx this refers to the entire table
                     <attribute id="UUID" type="guid" value="9aed0d58-4d44-4777-b1dd-b1ec05426d67"/>
                 </node>
@@ -168,7 +168,7 @@
                     <attribute id="PassivesAdded" type="LSString" value=""/> most class features usually can be done with passives
                     <attribute id="PassivesRemoved" type="LSString" value=""/>
                     <attribute id="ProgressionType" type="uint8" value="0"/> 0 means main class, 1 means subclass, 2 means race
-                    <attribute id="Selectors" type="LSString" value="SelectSpells(32893c8b-b54e-4168-83af-4f6dc7ce9388,0,1,,,,AlwaysPrepared);SelectSpells(d360c3b2-4eff-4263-b87b-9a8de6e62522,0,1)"/>
+                    <attribute id="Selectors" type="LSString" value="SelectSpells(32893c8b-b54e-4168-83af-4f6dc7ce9388,1,0,,,,AlwaysPrepared);SelectSpells(d360c3b2-4eff-4263-b87b-9a8de6e62522,0,1)"/>
 					<attribute id="TableUUID" type="guid" value="ca9cfd96-20b1-485c-b474-b333e6396591"/> Same UUID as the one in ClassDescriptions.lsx this refers to the entire table
                     <attribute id="UUID" type="guid" value="2dbaad4c-7866-49f1-8780-2bb6e84ebdd4"/>
                 </node>
@@ -180,7 +180,7 @@
                     <attribute id="PassivesAdded" type="LSString" value="UnlockedSpellSlotLevel3"/> most class features usually can be done with passives
                     <attribute id="PassivesRemoved" type="LSString" value=""/>
                     <attribute id="ProgressionType" type="uint8" value="0"/> 0 means main class, 1 means subclass, 2 means race
-                    <attribute id="Selectors" type="LSString" value="SelectSpells(32893c8b-b54e-4168-83af-4f6dc7ce9388,0,1,,,,AlwaysPrepared);SelectSpells(012a228e-66f0-480f-ac19-e181822caf77,1,1)"/>
+                    <attribute id="Selectors" type="LSString" value="SelectSpells(012a228e-66f0-480f-ac19-e181822caf77,1,1)"/>
 					<attribute id="TableUUID" type="guid" value="ca9cfd96-20b1-485c-b474-b333e6396591"/> Same UUID as the one in ClassDescriptions.lsx this refers to the entire table
                     <attribute id="UUID" type="guid" value="6c268566-651a-4218-9588-b43f3681fa7c"/>
                 </node>
@@ -192,7 +192,7 @@
                     <attribute id="PassivesAdded" type="LSString" value=""/> most class features usually can be done with passives
                     <attribute id="PassivesRemoved" type="LSString" value=""/>
                     <attribute id="ProgressionType" type="uint8" value="0"/> 0 means main class, 1 means subclass, 2 means race
-                    <attribute id="Selectors" type="LSString" value="SelectSpells(32893c8b-b54e-4168-83af-4f6dc7ce9388,0,1,,,,AlwaysPrepared);SelectSpells(012a228e-66f0-480f-ac19-e181822caf77,0,1)"/>
+                    <attribute id="Selectors" type="LSString" value="SelectSpells(012a228e-66f0-480f-ac19-e181822caf77,0,1)"/>
 					<attribute id="TableUUID" type="guid" value="ca9cfd96-20b1-485c-b474-b333e6396591"/> Same UUID as the one in ClassDescriptions.lsx this refers to the entire table
                     <attribute id="UUID" type="guid" value="5f0855b9-bcf5-4e81-811a-76eeac76e894"/>
                 </node>
@@ -204,7 +204,7 @@
                     <attribute id="PassivesAdded" type="LSString" value=""/> most class features usually can be done with passives
                     <attribute id="PassivesRemoved" type="LSString" value=""/>
                     <attribute id="ProgressionType" type="uint8" value="0"/> 0 means main class, 1 means subclass, 2 means race
-                    <attribute id="Selectors" type="LSString" value="SelectSpells(32893c8b-b54e-4168-83af-4f6dc7ce9388,0,1,,,,AlwaysPrepared);SelectSpells(012a228e-66f0-480f-ac19-e181822caf77,1,1)"/>
+                    <attribute id="Selectors" type="LSString" value="SelectSpells(012a228e-66f0-480f-ac19-e181822caf77,1,1)"/>
 					<attribute id="TableUUID" type="guid" value="ca9cfd96-20b1-485c-b474-b333e6396591"/> Same UUID as the one in ClassDescriptions.lsx this refers to the entire table
                     <attribute id="UUID" type="guid" value="76acc74f-d9a0-48e9-a122-a1d04e6923e9"/>
                 </node>
@@ -216,7 +216,7 @@
                     <attribute id="PassivesAdded" type="LSString" value=""/> most class features usually can be done with passives
                     <attribute id="PassivesRemoved" type="LSString" value=""/>
                     <attribute id="ProgressionType" type="uint8" value="0"/> 0 means main class, 1 means subclass, 2 means race
-                    <attribute id="Selectors" type="LSString" value="SelectSpells(32893c8b-b54e-4168-83af-4f6dc7ce9388,0,1,,,,AlwaysPrepared);SelectSpells(012a228e-66f0-480f-ac19-e181822caf77,0,1)"/>
+                    <attribute id="Selectors" type="LSString" value="SelectSpells(012a228e-66f0-480f-ac19-e181822caf77,0,1)"/>
 					<attribute id="TableUUID" type="guid" value="ca9cfd96-20b1-485c-b474-b333e6396591"/> Same UUID as the one in ClassDescriptions.lsx this refers to the entire table
                     <attribute id="UUID" type="guid" value="a8a77170-503d-4210-a780-cd2710a95a90"/>
                 </node>
@@ -228,7 +228,7 @@
                     <attribute id="PassivesAdded" type="LSString" value="UnlockedSpellSlotLevel4"/> most class features usually can be done with passives
                     <attribute id="PassivesRemoved" type="LSString" value=""/>
                     <attribute id="ProgressionType" type="uint8" value="0"/> 0 means main class, 1 means subclass, 2 means race
-                    <attribute id="Selectors" type="LSString" value="SelectSpells(32893c8b-b54e-4168-83af-4f6dc7ce9388,0,1,,,,AlwaysPrepared);SelectSpells(963990c5-6d40-4881-80ac-6bdce6314f49,1,1)"/>
+                    <attribute id="Selectors" type="LSString" value="SelectSpells(963990c5-6d40-4881-80ac-6bdce6314f49,1,1)"/>
 					<attribute id="TableUUID" type="guid" value="ca9cfd96-20b1-485c-b474-b333e6396591"/> Same UUID as the one in ClassDescriptions.lsx this refers to the entire table
                     <attribute id="UUID" type="guid" value="83254e16-8c88-4df4-97b4-417a0f192b12"/>
                 </node>
@@ -240,7 +240,7 @@
                     <attribute id="PassivesAdded" type="LSString" value=""/> most class features usually can be done with passives
                     <attribute id="PassivesRemoved" type="LSString" value=""/>
                     <attribute id="ProgressionType" type="uint8" value="0"/> 0 means main class, 1 means subclass, 2 means race
-                    <attribute id="Selectors" type="LSString" value="SelectSpells(32893c8b-b54e-4168-83af-4f6dc7ce9388,0,1,,,,AlwaysPrepared);SelectSpells(963990c5-6d40-4881-80ac-6bdce6314f49,0,1)"/>
+                    <attribute id="Selectors" type="LSString" value="SelectSpells(963990c5-6d40-4881-80ac-6bdce6314f49,0,1)"/>
 					<attribute id="TableUUID" type="guid" value="ca9cfd96-20b1-485c-b474-b333e6396591"/> Same UUID as the one in ClassDescriptions.lsx this refers to the entire table
                     <attribute id="UUID" type="guid" value="15419c58-50f4-4c3b-83e0-b9c8b95147f7"/>
                 </node>
@@ -252,7 +252,7 @@
                     <attribute id="PassivesAdded" type="LSString" value=""/> most class features usually can be done with passives
                     <attribute id="PassivesRemoved" type="LSString" value=""/>
                     <attribute id="ProgressionType" type="uint8" value="0"/> 0 means main class, 1 means subclass, 2 means race
-                    <attribute id="Selectors" type="LSString" value="SelectSpells(32893c8b-b54e-4168-83af-4f6dc7ce9388,1,1,,,,AlwaysPrepared);SelectSpells(963990c5-6d40-4881-80ac-6bdce6314f49,1,1)"/>
+                    <attribute id="Selectors" type="LSString" value="SelectSpells(32893c8b-b54e-4168-83af-4f6dc7ce9388,1,0,,,,AlwaysPrepared);SelectSpells(963990c5-6d40-4881-80ac-6bdce6314f49,1,1)"/>
 					<attribute id="TableUUID" type="guid" value="ca9cfd96-20b1-485c-b474-b333e6396591"/> Same UUID as the one in ClassDescriptions.lsx this refers to the entire table
                     <attribute id="UUID" type="guid" value="beb5e2f9-093b-4238-b2d3-abeff7fba57a"/>
                 </node>
@@ -264,7 +264,7 @@
                     <attribute id="PassivesAdded" type="LSString" value=""/> most class features usually can be done with passives
                     <attribute id="PassivesRemoved" type="LSString" value=""/>
                     <attribute id="ProgressionType" type="uint8" value="0"/> 0 means main class, 1 means subclass, 2 means race
-                    <attribute id="Selectors" type="LSString" value="SelectSpells(32893c8b-b54e-4168-83af-4f6dc7ce9388,0,1,,,,AlwaysPrepared);SelectSpells(963990c5-6d40-4881-80ac-6bdce6314f49,0,1)"/>
+                    <attribute id="Selectors" type="LSString" value="SelectSpells(963990c5-6d40-4881-80ac-6bdce6314f49,0,1)"/>
 					<attribute id="TableUUID" type="guid" value="ca9cfd96-20b1-485c-b474-b333e6396591"/> Same UUID as the one in ClassDescriptions.lsx this refers to the entire table
                     <attribute id="UUID" type="guid" value="328fb355-4fa0-4477-88ee-bd1fb9b61ab1"/>
                 </node>
@@ -276,7 +276,7 @@
                     <attribute id="PassivesAdded" type="LSString" value="UnlockedSpellSlotLevel5"/> most class features usually can be done with passives
                     <attribute id="PassivesRemoved" type="LSString" value=""/>
                     <attribute id="ProgressionType" type="uint8" value="0"/> 0 means main class, 1 means subclass, 2 means race
-                    <attribute id="Selectors" type="LSString" value="SelectSpells(32893c8b-b54e-4168-83af-4f6dc7ce9388,0,1,,,,AlwaysPrepared);SelectSpells(966a37fb-e0d7-43b1-864c-625440e6a315,1,1)"/>
+                    <attribute id="Selectors" type="LSString" value="SelectSpells(966a37fb-e0d7-43b1-864c-625440e6a315,1,1)"/>
 					<attribute id="TableUUID" type="guid" value="ca9cfd96-20b1-485c-b474-b333e6396591"/> Same UUID as the one in ClassDescriptions.lsx this refers to the entire table
                     <attribute id="UUID" type="guid" value="12aa8ce4-496f-47f9-90e2-725dcb42f2cc"/>
                 </node>
@@ -288,7 +288,7 @@
                     <attribute id="PassivesAdded" type="LSString" value=""/> most class features usually can be done with passives
                     <attribute id="PassivesRemoved" type="LSString" value=""/>
                     <attribute id="ProgressionType" type="uint8" value="0"/> 0 means main class, 1 means subclass, 2 means race
-                    <attribute id="Selectors" type="LSString" value="SelectSpells(32893c8b-b54e-4168-83af-4f6dc7ce9388,0,1,,,,AlwaysPrepared);SelectSpells(966a37fb-e0d7-43b1-864c-625440e6a315,0,1)"/>
+                    <attribute id="Selectors" type="LSString" value="SelectSpells(966a37fb-e0d7-43b1-864c-625440e6a315,0,1)"/>
 					<attribute id="TableUUID" type="guid" value="ca9cfd96-20b1-485c-b474-b333e6396591"/> Same UUID as the one in ClassDescriptions.lsx this refers to the entire table
                     <attribute id="UUID" type="guid" value="dfffd136-85f0-4ac0-a9f6-8a963cfbc1e6"/>
                 </node>
@@ -300,7 +300,7 @@
                     <attribute id="PassivesAdded" type="LSString" value=""/> most class features usually can be done with passives
                     <attribute id="PassivesRemoved" type="LSString" value=""/>
                     <attribute id="ProgressionType" type="uint8" value="0"/> 0 means main class, 1 means subclass, 2 means race
-                    <attribute id="Selectors" type="LSString" value="SelectSpells(32893c8b-b54e-4168-83af-4f6dc7ce9388,0,1,,,,AlwaysPrepared);SelectSpells(966a37fb-e0d7-43b1-864c-625440e6a315,1,1)"/>
+                    <attribute id="Selectors" type="LSString" value="SelectSpells(966a37fb-e0d7-43b1-864c-625440e6a315,1,1)"/>
 					<attribute id="TableUUID" type="guid" value="ca9cfd96-20b1-485c-b474-b333e6396591"/> Same UUID as the one in ClassDescriptions.lsx this refers to the entire table
                     <attribute id="UUID" type="guid" value="0c9a1c54-6df0-4c40-9a57-db750d2b7303"/>
                 </node>
@@ -312,7 +312,7 @@
                     <attribute id="PassivesAdded" type="LSString" value=""/> most class features usually can be done with passives
                     <attribute id="PassivesRemoved" type="LSString" value=""/>
                     <attribute id="ProgressionType" type="uint8" value="0"/> 0 means main class, 1 means subclass, 2 means race
-                    <attribute id="Selectors" type="LSString" value="SelectSpells(32893c8b-b54e-4168-83af-4f6dc7ce9388,0,1,,,,AlwaysPrepared);SelectSpells(966a37fb-e0d7-43b1-864c-625440e6a315,0,1)"/>
+                    <attribute id="Selectors" type="LSString" value="SelectSpells(966a37fb-e0d7-43b1-864c-625440e6a315,0,1)"/>
 					<attribute id="TableUUID" type="guid" value="ca9cfd96-20b1-485c-b474-b333e6396591"/> Same UUID as the one in ClassDescriptions.lsx this refers to the entire table
                     <attribute id="UUID" type="guid" value="591cfe30-a081-4ae7-8262-6ae1b4f36dbb"/>
                 </node>

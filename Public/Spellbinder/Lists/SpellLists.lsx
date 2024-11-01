@@ -6,39 +6,34 @@
       <children>
         <node id="SpellList">
 					<attribute id="Comment" type="LSString" value="Spellbinder Cantrips" />
-                    <attribute id="Spells" type="LSString" value="Shout_BladeWard;Target_ChillTouch;Projectile_FireBolt;Target_Light;Target_MageHand;Target_MindSliver;Target_Prestidigitation;Projectile_PoisonSpray;Projectile_RayOfFrost;Target_ShockingGrasp;Shout_Thunderclap" />
-                    <attribute id="UUID" type="guid" value="32893c8b-b54e-4168-83af-4f6dc7ce9388" />
-                </node>
+          <attribute id="Spells" type="LSString" value="Shout_BladeWard;Target_ChillTouch;Projectile_FireBolt;Target_Light;Target_MageHand;Target_MindSliver;Target_Prestidigitation;Projectile_PoisonSpray;Projectile_RayOfFrost;Target_ShockingGrasp;Shout_Thunderclap" />
+          <attribute id="UUID" type="guid" value="32893c8b-b54e-4168-83af-4f6dc7ce9388" />
+        </node>
         <node id="SpellList">
 					<attribute id="Comment" type="LSString" value="Spellbinder (Level 1 Spells)" />
-                    <attribute id="Spells" type="LSString" value="Projectile_ChromaticOrb;Shout_DetectMagic;Shout_DisguiseSelf;Shout_ExpeditiousRetreat;Shout_FalseLife;Shout_FeatherFall;Target_FindFamiliar;Target_Grease;Projectile_IceKnife;Target_Jump;Target_Longstrider;Target_MageArmor;Projectile_MagicMissile;Target_ProtectionFromEvilAndGood;Projectile_RayOfSickness;Shout_Shield_Wizard;Target_HideousLaughter;Zone_Thunderwave" />
-                    <attribute id="UUID" type="guid" value="56e512fe-093c-47b6-bada-f5b4c379f01b" />
-                </node>
+          <attribute id="Spells" type="LSString" value="Projectile_ChromaticOrb;Shout_DetectMagic;Shout_DisguiseSelf;Shout_ExpeditiousRetreat;Shout_FalseLife;Shout_FeatherFall;Target_FindFamiliar;Target_Grease;Projectile_IceKnife;Target_Jump;Target_Longstrider;Target_MageArmor;Projectile_MagicMissile;Target_ProtectionFromEvilAndGood;Projectile_RayOfSickness;Shout_Shield_Wizard;Target_HideousLaughter;Zone_Thunderwave" />
+          <attribute id="UUID" type="guid" value="56e512fe-093c-47b6-bada-f5b4c379f01b" />
+        </node>
         <node id="SpellList">
 					<attribute id="Comment" type="LSString" value="Spellbinder (Level 2 Spells)" />
-                    <attribute id="Spells" type="LSString" value="Target_Blindness;Shout_Blur;Target_CloudOfDaggers;Target_CrownOfMadness;Target_Darkness;Target_Darkvision;Shout_DetectThoughts;Target_EnhanceAbility;Target_EnlargeReduce;Target_HoldPerson;Target_Invisibility;Target_Levitate;Target_MagicWeapon;Shout_MirrorImage;Target_MistyStep;Target_PhantasmalForce;Projectile_RayOfEnfeeblement;Projectile_ScorchingRay;Shout_SeeInvisibility;Target_Suggestion;Target_Web" />
-                    <attribute id="UUID" type="guid" value="d360c3b2-4eff-4263-b87b-9a8de6e62522" />
-                </node>
+          <attribute id="Spells" type="LSString" value="Target_Blindness;Shout_Blur;Target_CloudOfDaggers;Target_CrownOfMadness;Target_Darkness;Target_Darkvision;Shout_DetectThoughts;Target_EnhanceAbility;Target_EnlargeReduce;Target_HoldPerson;Target_Invisibility;Target_Levitate;Target_MagicWeapon;Shout_MirrorImage;Target_MistyStep;Target_PhantasmalForce;Projectile_RayOfEnfeeblement;Projectile_ScorchingRay;Shout_SeeInvisibility;Target_Suggestion;Target_Web;Projectile_ChromaticOrb;Shout_DetectMagic;Shout_DisguiseSelf;Shout_ExpeditiousRetreat;Shout_FalseLife;Shout_FeatherFall;Target_FindFamiliar;Target_Grease;Projectile_IceKnife;Target_Jump;Target_Longstrider;Target_MageArmor;Projectile_MagicMissile;Target_ProtectionFromEvilAndGood;Projectile_RayOfSickness;Shout_Shield_Wizard;Target_HideousLaughter;Zone_Thunderwave" />
+          <attribute id="UUID" type="guid" value="d360c3b2-4eff-4263-b87b-9a8de6e62522" />
+        </node>
         <node id="SpellList">
 					<attribute id="Comment" type="LSString" value="Spellbinder (Level 3 Spells)" />
-                    <attribute id="Spells" type="LSString" value="Target_BestowCurse;Shout_Blink;Target_Counterspell;Target_DispelMagic;Projectile_Fireball;Target_Fly;Target_GlyphOfWarding;Target_Haste;Zone_LightningBolt;Target_ProtectionFromEnergy;Target_RemoveCurse;Target_Slow;Shout_WaterWalk" />
-                    <attribute id="UUID" type="guid" value="012a228e-66f0-480f-ac19-e181822caf77" /> 
-                </node>
+          <attribute id="Spells" type="LSString" value="Target_BestowCurse;Shout_Blink;Target_Counterspell;Target_DispelMagic;Projectile_Fireball;Target_Fly;Target_GlyphOfWarding;Target_Haste;Zone_LightningBolt;Target_ProtectionFromEnergy;Target_RemoveCurse;Target_Slow;Shout_WaterWalk;arget_Blindness;Shout_Blur;Target_CloudOfDaggers;Target_CrownOfMadness;Target_Darkness;Target_Darkvision;Shout_DetectThoughts;Target_EnhanceAbility;Target_EnlargeReduce;Target_HoldPerson;Target_Invisibility;Target_Levitate;Target_MagicWeapon;Shout_MirrorImage;Target_MistyStep;Target_PhantasmalForce;Projectile_RayOfEnfeeblement;Projectile_ScorchingRay;Shout_SeeInvisibility;Target_Suggestion;Target_Web;Projectile_ChromaticOrb;Shout_DetectMagic;Shout_DisguiseSelf;Shout_ExpeditiousRetreat;Shout_FalseLife;Shout_FeatherFall;Target_FindFamiliar;Target_Grease;Projectile_IceKnife;Target_Jump;Target_Longstrider;Target_MageArmor;Projectile_MagicMissile;Target_ProtectionFromEvilAndGood;Projectile_RayOfSickness;Shout_Shield_Wizard;Target_HideousLaughter;Zone_Thunderwave" />
+          <attribute id="UUID" type="guid" value="012a228e-66f0-480f-ac19-e181822caf77" /> 
+        </node>
         <node id="SpellList">
 					<attribute id="Comment" type="LSString" value="Spellbinder (Level 4 Spells)" />
-                    <attribute id="Spells" type="LSString" value="Target_Banishment;Target_CharmMonster;Target_FreedomOfMovement;Target_Invisibility_Greater;Target_ResilientSphere;Target_Polymorph;Target_Stoneskin;Projectile_VitriolicSphere" />
-                    <attribute id="UUID" type="guid" value="963990c5-6d40-4881-80ac-6bdce6314f49" /> 
-                </node>
+          <attribute id="Spells" type="LSString" value="Target_Banishment;Target_CharmMonster;Target_FreedomOfMovement;Target_Invisibility_Greater;Target_ResilientSphere;Target_Polymorph;Target_Stoneskin;Projectile_VitriolicSphere;Target_BestowCurse;Shout_Blink;Target_Counterspell;Target_DispelMagic;Projectile_Fireball;Target_Fly;Target_GlyphOfWarding;Target_Haste;Zone_LightningBolt;Target_ProtectionFromEnergy;Target_RemoveCurse;Target_Slow;Shout_WaterWalk;arget_Blindness;Shout_Blur;Target_CloudOfDaggers;Target_CrownOfMadness;Target_Darkness;Target_Darkvision;Shout_DetectThoughts;Target_EnhanceAbility;Target_EnlargeReduce;Target_HoldPerson;Target_Invisibility;Target_Levitate;Target_MagicWeapon;Shout_MirrorImage;Target_MistyStep;Target_PhantasmalForce;Projectile_RayOfEnfeeblement;Projectile_ScorchingRay;Shout_SeeInvisibility;Target_Suggestion;Target_Web;Projectile_ChromaticOrb;Shout_DetectMagic;Shout_DisguiseSelf;Shout_ExpeditiousRetreat;Shout_FalseLife;Shout_FeatherFall;Target_FindFamiliar;Target_Grease;Projectile_IceKnife;Target_Jump;Target_Longstrider;Target_MageArmor;Projectile_MagicMissile;Target_ProtectionFromEvilAndGood;Projectile_RayOfSickness;Shout_Shield_Wizard;Target_HideousLaughter;Zone_Thunderwave" />
+          <attribute id="UUID" type="guid" value="963990c5-6d40-4881-80ac-6bdce6314f49" /> 
+        </node>
         <node id="SpellList">
 					<attribute id="Comment" type="LSString" value="Spellbinder (Level 5 Spells)" />
-                    <attribute id="Spells" type="LSString" value="Target_Cloudkill;Target_Contagion;Target_DominatePerson;Target_HoldMonster;Target_SynapticStatic" />
-                    <attribute id="UUID" type="guid" value="966a37fb-e0d7-43b1-864c-625440e6a315" /> 
-                </node>
-        <node id="SpellList">
-					<attribute id="Comment" type="LSString" value="Spellbinder (Level 5 Spells)" />
-                    <attribute id="Spells" type="LSString" value="Shout_Spellbinder_Bind_Target_HideousLaughter" />
-                    <attribute id="UUID" type="guid" value="3df6d1ca-740f-4a34-9964-f60da1aa6fc8" /> 
-                </node>
+          <attribute id="Spells" type="LSString" value="Target_Cloudkill;Target_Contagion;Target_DominatePerson;Target_HoldMonster;Target_SynapticStatic;Target_Banishment;Target_CharmMonster;Target_FreedomOfMovement;Target_Invisibility_Greater;Target_ResilientSphere;Target_Polymorph;Target_Stoneskin;Projectile_VitriolicSphere;Target_BestowCurse;Shout_Blink;Target_Counterspell;Target_DispelMagic;Projectile_Fireball;Target_Fly;Target_GlyphOfWarding;Target_Haste;Zone_LightningBolt;Target_ProtectionFromEnergy;Target_RemoveCurse;Target_Slow;Shout_WaterWalk;arget_Blindness;Shout_Blur;Target_CloudOfDaggers;Target_CrownOfMadness;Target_Darkness;Target_Darkvision;Shout_DetectThoughts;Target_EnhanceAbility;Target_EnlargeReduce;Target_HoldPerson;Target_Invisibility;Target_Levitate;Target_MagicWeapon;Shout_MirrorImage;Target_MistyStep;Target_PhantasmalForce;Projectile_RayOfEnfeeblement;Projectile_ScorchingRay;Shout_SeeInvisibility;Target_Suggestion;Target_Web;Projectile_ChromaticOrb;Shout_DetectMagic;Shout_DisguiseSelf;Shout_ExpeditiousRetreat;Shout_FalseLife;Shout_FeatherFall;Target_FindFamiliar;Target_Grease;Projectile_IceKnife;Target_Jump;Target_Longstrider;Target_MageArmor;Projectile_MagicMissile;Target_ProtectionFromEvilAndGood;Projectile_RayOfSickness;Shout_Shield_Wizard;Target_HideousLaughter;Zone_Thunderwave" />
+          <attribute id="UUID" type="guid" value="966a37fb-e0d7-43b1-864c-625440e6a315" /> 
+        </node>
       </children>
     </node>
   </region>
