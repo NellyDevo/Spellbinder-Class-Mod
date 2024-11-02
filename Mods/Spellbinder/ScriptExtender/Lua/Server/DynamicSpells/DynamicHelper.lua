@@ -26,7 +26,7 @@ end
 local alreadyGenerated = {}
 local combiner = [[%s
 %s]]
-local locaTemplate = '<content contentuid="%s" version="1">%s</content>'
+local locaTemplate = '    <content contentuid="%s" version="1">%s</content>'
 ---@param text string
 ---@param output table
 DynHelper.GenerateTranslationEntry = function(text, output)

@@ -104,6 +104,7 @@ Ext.RegisterConsoleCommand("GenerateBoundSpells", function (cmd, ...)
         AllBoundSpellData = comment,
         GeneratedLocalization = comment
     }
+    local handled = {}
     if args.Separated then
         output.AllBoundSpellData = nil
     end
@@ -115,14 +116,20 @@ Ext.RegisterConsoleCommand("GenerateBoundSpells", function (cmd, ...)
         local list = Ext.StaticData.Get(listID, "SpellList")
         if list ~= nil then
             for _,spellID in pairs(list.Spells) do
-                handleSpell(spellID, output)
+                if not handled[spellID] then
+                    handleSpell(spellID, output)
+                    handled[spellID] = true
+                end
             end
         else
             _P("No spell list found with guid: " .. listID)
         end
     end
     for _,spellID in pairs(args.Spells) do
-        handleSpell(spellID, output)
+        if not handled[spellID] then
+            handleSpell(spellID, output)
+            handled[spellID] = true
+        end
     end
     for outputFile,outputResult in pairs(output) do
         Ext.IO.SaveFile(outputFile .. ".txt", outputResult)

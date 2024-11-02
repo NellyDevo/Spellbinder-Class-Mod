@@ -6,6 +6,7 @@ Ext.Require("Server/BoundSpells/BoundWeaponThrown.lua")
 Ext.Require("Server/BoundSpells/RemoveBoundSpellTag.lua")
 Ext.Require("Server/BoundSpells/BoundSpellDynamicDuration.lua")
 Ext.Require("Server/BoundSpells/UnlockBindSpells.lua")
+Ext.Require("Server/BoundSpells/RemoveRecentlyBoundStatus.lua")
 Ext.Require("Server/SpectralArrows.lua")
 
 function LazyExport(fileName, entity)

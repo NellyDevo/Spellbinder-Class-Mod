@@ -41,12 +41,14 @@ type "StatusData"
 data "StatusType" "BOOST"
 data "StackId" "SPELLBINDER_BOUND_SPELL"
 data "StatusPropertyFlags" "IgnoreResting;DisableCombatlog;ApplyToDead;DisableOverhead"
+data "Boosts" "Tag(SPELLBINDER_BOUND)"
 data "Passives" "Spellbinder_Bound_Spell_%s"
 data "Icon" "%s"
 %s
 data "StatusGroups" "SG_RemoveOnRespec"
 data "DisplayName" "%s;%s"
-data "StackType" "Overwrite"]]
+data "StackType" "Overwrite"
+data "OnRemoveFunctors" "ApplyStatus(SPELLBINDER_RECENTLY_BOUND,100,1)"]]
     -- Current Generation Progress
     -- Spell Level
     -- Original Spell Id

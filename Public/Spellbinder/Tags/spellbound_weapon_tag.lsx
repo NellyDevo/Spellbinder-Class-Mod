@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<save>
+	<version major="4" minor="0" revision="0" build="58" />
+	<region id="Tags">
+		<node id="Tags">
+			<attribute id="Description" type="LSString" value="Used to mark whether a weapon has a spell bound to it" />
+			<attribute id="DisplayDescription" type="TranslatedString" handle="ha10f45aaf39545b89623755943459540f7b2" version="1" />
+			<attribute id="DisplayName" type="TranslatedString" handle="h8a782a6c58a7484c83061bdf07bdfe338bg4" version="1" />
+			<attribute id="Icon" type="FixedString" value="Spellbinder_Bind" />
+			<attribute id="Name" type="FixedString" value="SPELLBINDER_BOUND" />
+			<attribute id="UUID" type="guid" value="17a0c173-ebcd-4118-a146-e69d02e35862" />
+		</node>
+	</region>
+</save>
