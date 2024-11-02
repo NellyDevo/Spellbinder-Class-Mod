@@ -4,7 +4,7 @@ local SpellEffectMap = {}
 SpellEffectMap.Target_ChillTouch = [[data "SpellProperties" "ApplyStatus(CHILL_TOUCH,100,1);DealDamage(LevelMapValue(D8Cantrip), Necrotic,Magical)"]]
 SpellEffectMap.Projectile_FireBolt = [[data "SpellProperties" "GROUND:SurfaceChange(Ignite);GROUND:SurfaceChange(Melt);DealDamage(1d10,Fire,Magical)"]]
 SpellEffectMap.Target_Light = [[data "SpellProperties" "ApplyEquipmentStatus(MainHand,LIGHT,100,-1)"]]
-SpellEffectMap.Target_MindSliver = [[data "SpellRoll" "not SavingThrow(Ability.Intelligence, SourceSpellDC(),,true)"
+SpellEffectMap.Target_MindSliver = [[data "SpellRoll" "not SavingThrow(Ability.Intelligence, SourceSpellDC(),false,true)"
 data "SpellSuccess" "DealDamage(1d6,Psychic,Magical);ApplyStatus(MIND_SLIVER,100,2)"
 data "SpellFail" "IF(HasPassive('PotentCantrip',context.Source)):DealDamage((1d8)/2,Psychic,Magical)"]]
 SpellEffectMap.Projectile_PoisonSpray = [[data "SpellRoll" "not SavingThrow(Ability.Constitution, SourceSpellDC(),AdvantageOnPoisoned(),true)"
@@ -79,7 +79,7 @@ SpellEffectMap.Projectile_RayOfSickness_3 = [[data "SpellProperties" "IF(not Sav
 SpellEffectMap.Projectile_RayOfSickness_4 = [[data "SpellProperties" "IF(not SavingThrow(Ability.Constitution, SourceSpellDC(),AdvantageOnPoisoned(),true)):ApplyStatus(POISONED,100,2);DealDamage(5d8,Poison,Magical)"]]
 SpellEffectMap.Projectile_RayOfSickness_5 = [[data "SpellProperties" "IF(not SavingThrow(Ability.Constitution, SourceSpellDC(),AdvantageOnPoisoned(),true)):ApplyStatus(POISONED,100,2);DealDamage(6d8,Poison,Magical)"]]
 SpellEffectMap.Projectile_RayOfSickness_6 = [[data "SpellProperties" "IF(not SavingThrow(Ability.Constitution, SourceSpellDC(),AdvantageOnPoisoned(),true)):ApplyStatus(POISONED,100,2);DealDamage(7d8,Poison,Magical)"]]
-SpellEffectMap.Target_HideousLaughter =   [[data "SpellRoll" "not SavingThrow(Ability.Wisdom, SourceSpellDC(),,true)"
+SpellEffectMap.Target_HideousLaughter =   [[data "SpellRoll" "not SavingThrow(Ability.Wisdom, SourceSpellDC(),false,true)"
 data "SpellSuccess" "ApplyStatus(HIDEOUS_LAUGHTER,100,10)"
 data "SpellFail" "ApplyStatus(SAVED_AGAINST_HOSTILE_SPELL_DOMINATED,100,0)"]]
 SpellEffectMap.Target_HideousLaughter_2 = SpellEffectMap.Target_HideousLaughter
@@ -87,7 +87,7 @@ SpellEffectMap.Target_HideousLaughter_3 = SpellEffectMap.Target_HideousLaughter
 SpellEffectMap.Target_HideousLaughter_4 = SpellEffectMap.Target_HideousLaughter
 SpellEffectMap.Target_HideousLaughter_5 = SpellEffectMap.Target_HideousLaughter
 SpellEffectMap.Target_HideousLaughter_6 = SpellEffectMap.Target_HideousLaughter
-SpellEffectMap.Target_Blindness = [[data "SpellRoll" "not SavingThrow(Ability.Constitution, SourceSpellDC(),,true)"
+SpellEffectMap.Target_Blindness = [[data "SpellRoll" "not SavingThrow(Ability.Constitution, SourceSpellDC(),false,true)"
 data "SpellSuccess" "ApplyStatus(BLINDNESS,100,10)"
 data "SpellFail" "ApplyStatus(SAVED_AGAINST_HOSTILE_SPELL, 100, 0)"]]
 SpellEffectMap.Target_Blindness_3 = SpellEffectMap.Target_Blindness
@@ -106,7 +106,7 @@ SpellEffectMap.Target_Darkvision_3 = SpellEffectMap.Target_Darkvision
 SpellEffectMap.Target_Darkvision_4 = SpellEffectMap.Target_Darkvision
 SpellEffectMap.Target_Darkvision_5 = SpellEffectMap.Target_Darkvision
 SpellEffectMap.Target_Darkvision_6 = SpellEffectMap.Target_Darkvision
-SpellEffectMap.Target_HoldPerson = [[data "SpellRoll" "not SavingThrow(Ability.Wisdom, SourceSpellDC(),,true)"
+SpellEffectMap.Target_HoldPerson = [[data "SpellRoll" "not SavingThrow(Ability.Wisdom, SourceSpellDC(),false,true)"
 data "SpellSuccess" "ApplyStatus(HOLD_PERSON,100,10)"
 data "SpellFail" "ApplyStatus(SAVED_AGAINST_HOSTILE_SPELL,100,0)"]]
 SpellEffectMap.Target_HoldPerson_3 = SpellEffectMap.Target_HoldPerson
@@ -132,7 +132,7 @@ SpellEffectMap.Target_MagicWeapon_3 = SpellEffectMap.Target_MagicWeapon
 SpellEffectMap.Target_MagicWeapon_4 = [[data "SpellProperties" "ApplyEquipmentStatus(MainHand,MAGIC_WEAPON_4,100,-1)"]]
 SpellEffectMap.Target_MagicWeapon_5 = SpellEffectMap.Target_MagicWeapon_4
 SpellEffectMap.Target_MagicWeapon_6 = [[data "SpellProperties" "ApplyEquipmentStatus(MainHand,MAGIC_WEAPON_6,100,-1)"]]
-SpellEffectMap.Target_PhantasmalForce = [[data "SpellRoll" "not SavingThrow(Ability.Intelligence, SourceSpellDC(),,true)"
+SpellEffectMap.Target_PhantasmalForce = [[data "SpellRoll" "not SavingThrow(Ability.Intelligence, SourceSpellDC(),false,true)"
 data "SpellSuccess" "ApplyStatus(PHANTASMAL_FORCE,100,10)"
 data "SpellFail" "ApplyStatus(SAVED_AGAINST_HOSTILE_SPELL,100,0)"]]
 SpellEffectMap.Target_PhantasmalForce_3 = SpellEffectMap.Target_PhantasmalForce
@@ -153,7 +153,7 @@ SpellEffectMap.Projectile_ScorchingRay_7 = SpellEffectMap.Projectile_ScorchingRa
 SpellEffectMap.Projectile_ScorchingRay_8 = SpellEffectMap.Projectile_ScorchingRay
 SpellEffectMap.Projectile_ScorchingRay_9 = SpellEffectMap.Projectile_ScorchingRay
 SpellEffectMap.Projectile_ScorchingRay_10 = SpellEffectMap.Projectile_ScorchingRay
-SpellEffectMap.Target_Suggestion = [[data "SpellRoll" "not SavingThrow(Ability.Wisdom, SourceSpellDC(),,true)"
+SpellEffectMap.Target_Suggestion = [[data "SpellRoll" "not SavingThrow(Ability.Wisdom, SourceSpellDC(),false,true)"
 data "SpellSuccess" "ApplyStatus(SUGGESTION,100,600)"]]
 SpellEffectMap.Target_Suggestion_3 = SpellEffectMap.Target_Suggestion
 SpellEffectMap.Target_Suggestion_4 = SpellEffectMap.Target_Suggestion
@@ -182,13 +182,13 @@ SpellEffectMap.Target_RemoveCurse = [[data "SpellProperties" "RemoveStatus(SG_Cu
 SpellEffectMap.Target_RemoveCurse_4 = SpellEffectMap.Target_RemoveCurse
 SpellEffectMap.Target_RemoveCurse_5 = SpellEffectMap.Target_RemoveCurse
 SpellEffectMap.Target_RemoveCurse_6 = SpellEffectMap.Target_RemoveCurse
-SpellEffectMap.Target_Slow = [[data "SpellRoll" "not SavingThrow(Ability.Wisdom, SourceSpellDC(),,true)"
+SpellEffectMap.Target_Slow = [[data "SpellRoll" "not SavingThrow(Ability.Wisdom, SourceSpellDC(),false,true)"
 data "SpellSuccess" "ApplyStatus(SLOW,100,10)"
 data "SpellFail" "ApplyStatus(SAVED_AGAINST_HOSTILE_SPELL,100,0)"]]
 SpellEffectMap.Target_Slow_4 = SpellEffectMap.Target_Slow
 SpellEffectMap.Target_Slow_5 = SpellEffectMap.Target_Slow
 SpellEffectMap.Target_Slow_6 = SpellEffectMap.Target_Slow
-SpellEffectMap.Target_Banishment = [[data "SpellRoll" "not SavingThrow(Ability.Charisma, SourceSpellDC(),,true)"
+SpellEffectMap.Target_Banishment = [[data "SpellRoll" "not SavingThrow(Ability.Charisma, SourceSpellDC(),false,true)"
 data "SpellSuccess" "ApplyStatus(BANISHED,100,2);ApplyStatus(SELF,BANISHMENT_OWNER,100,2)"
 data "SpellFail" "ApplyStatus(SAVED_AGAINST_HOSTILE_SPELL_BANISHMENT, 100, 0)"]]
 SpellEffectMap.Target_Banishment_5 = SpellEffectMap.Target_Banishment
@@ -211,7 +211,7 @@ data "SpellSuccess" "ApplyStatus(RESILIENT_SPHERE,100,3)"
 data "SpellFail" "ApplyStatus(SAVED_AGAINST_HOSTILE_SPELL,100,0)"]]
 SpellEffectMap.Target_ResilientSphere_5 = SpellEffectMap.Target_ResilientSphere
 SpellEffectMap.Target_ResilientSphere_6 = SpellEffectMap.Target_ResilientSphere
-SpellEffectMap.Target_Polymorph = [[data "SpellRoll" "not SavingThrow(Ability.Wisdom, SourceSpellDC(),,true)"
+SpellEffectMap.Target_Polymorph = [[data "SpellRoll" "not SavingThrow(Ability.Wisdom, SourceSpellDC(),false,true)"
 data "SpellSuccess" "ApplyStatus(POLYMORPH_SHEEP,100,5)"
 data "SpellFail" "ApplyStatus(SAVED_AGAINST_HOSTILE_SPELL_POLYMORPHED, 100, 0)"]]
 SpellEffectMap.Target_Polymorph_5 = SpellEffectMap.Target_Polymorph
@@ -236,7 +236,7 @@ SpellEffectMap.Target_DominatePerson = [[data "SpellRoll" "not SavingThrow(Abili
 data "SpellSuccess" "ApplyStatus(DOMINATE_PERSON,100,10)"
 data "SpellFail" "ApplyStatus(SAVED_AGAINST_HOSTILE_SPELL_DOMINATED, 100, 0)"]]
 SpellEffectMap.Target_DominatePerson_6 = SpellEffectMap.Target_DominatePerson
-SpellEffectMap.Target_HoldMonster = [[data "SpellRoll" "not SavingThrow(Ability.Wisdom, SourceSpellDC(),,true)"
+SpellEffectMap.Target_HoldMonster = [[data "SpellRoll" "not SavingThrow(Ability.Wisdom, SourceSpellDC(),false,true)"
 data "SpellSuccess" "ApplyStatus(HOLD_MONSTER,100,10)"
 data "SpellFail" "ApplyStatus(SAVED_AGAINST_HOSTILE_SPELL, 100, 0)"]]
 SpellEffectMap.Target_HoldMonster_6 = SpellEffectMap.Target_HoldMonster

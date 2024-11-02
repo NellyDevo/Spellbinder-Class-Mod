@@ -171,16 +171,17 @@ data "ProjectileCount" "1"
 data "Trajectories" "%s"
 data "CastSound" "%s"
 data "VerbalIntent" "%s"
-data "SpellFlags" "HasHighGroundRangeExtension;RangeIgnoreVerticalThreshold;IsHarmful;IgnoreVisionBlock"
+data "SpellFlags" "HasHighGroundRangeExtension;RangeIgnoreVerticalThreshold;IsHarmful;IgnoreVisionBlock%s"
 data "HitAnimationType" "%s"
 data "SpellAnimation" "%s"
 data "DamageType" "%s"]]
     -- spell level
     -- original spell ID
     -- spell effects -- this feels difficult :( (it was :()
-    -- original spell Trajectories -- might need a default?
+    -- original spell Trajectories, default to 792ba497-a6ea-46bc-81cb-deb78e4dd9d3 if empty
     -- original spell CastSound
     -- original spell VerbalIntent
+    -- if original spell has concentration, ;IsConcentration. Otherwise empty string
     -- original spell HitAnimationType
     -- original spell SpellAnimation
     -- original spell DamageType
@@ -193,7 +194,9 @@ local function createBaseSpell(spellID, spellStat, output)
     local cached = Ext.Stats.GetCachedSpell(spellID)
     local spellFlags = ""
     for _,flag in pairs(spellStat.SpellFlags) do
-        spellFlags = spellFlags .. flag .. ";"
+        if flag ~= "IsConcentration" then
+            spellFlags = spellFlags .. flag .. ";"
+        end
     end
     local spellProperties = ""
     local armorProperties = ""
@@ -301,14 +304,24 @@ end
 Spells.CreatePayload = function(spellID, spellStat, output)
     local spellEffects = extractSpellEffects(spellID, spellStat)
     local level = spellStat.Level
+    local withConc = ""
+    for _,flag in pairs(spellStat.SpellFlags) do
+        if flag == "IsConcentration" then
+            withConc = ";IsConcentration"
+            break
+        end
+    end
+    local trajectories = "792ba497-a6ea-46bc-81cb-deb78e4dd9d3"
+    if not (spellStat.Trajectories == "" or spellStat.Trajectories == nil) then trajectories = spellStat.Trajectories end
     if spellStat.PowerLevel > level then level = spellStat.PowerLevel end
     return string.format(payloadTemplate(),
         level,
         spellID,
         spellEffects,
-        spellStat.Trajectories,
+        trajectories,
         spellStat.CastSound,
         spellStat.VerbalIntent,
+        withConc,
         spellStat.HitAnimationType,
         spellStat.SpellAnimation,
         spellStat.DamageType
