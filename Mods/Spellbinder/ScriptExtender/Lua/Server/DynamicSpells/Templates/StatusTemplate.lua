@@ -95,7 +95,7 @@ type "StatusData"
 data "StatusType" "BOOST"
 using "TAGBOUNDSPELL_1_%s_Projectile_Spellbinder_Bound_%s"
 data "DisplayName" "%s"
-data "OnRemoveFunctors" "ApplyStatus(TAGBOUNDSPELL_%s_%s_Projectile_Spellbinder_Bound_%s,100,context.Target.TAGBOUNDSPELL_%s_%s_Projectile_Spellbinder_Bound_%s.Duration)"]]
+data "OnRemoveFunctors" "ApplyStatus(TAGBOUNDSPELL_%s_%s_Projectile_Spellbinder_Bound_%s,100,-1)"]]
     -- Current Generation Progress
     -- Charge Count
     -- Spell Level
@@ -106,9 +106,9 @@ data "OnRemoveFunctors" "ApplyStatus(TAGBOUNDSPELL_%s_%s_Projectile_Spellbinder_
     -- Charge Count Minus 1
     -- Spell Level
     -- Original spell ID
-    -- Charge Count
-    -- Spell Level
-    -- Original spell ID
+    ---- Charge Count
+    ---- Spell Level
+    ---- Original spell ID
 end
 
 local function statusArmorChargesTemplate()
@@ -189,9 +189,6 @@ Statuses.CreateStatuses = function(spellID, spellStat, output)
                 spellID,
                 handle,
                 i - 1,
-                level,
-                spellID,
-                i,
                 level,
                 spellID
             )
