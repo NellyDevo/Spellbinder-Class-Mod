@@ -1,21 +1,38 @@
 local function unlockSpells(characterEntity, uuid)
-    local toProcess = {}
-    local hasBindSpell = false
-    local hasBindArmor = false
-    for _,known in pairs(characterEntity.SpellBook.Spells) do
-        table.insert(toProcess, "SPELLBINDER_UNLOCK_BIND%s" .. known.Id.OriginatorPrototype)
-        if known.Id.OriginatorPrototype == "Shout_Spellbinder_Bind_Spell" then hasBindSpell = true end
-        if known.Id.OriginatorPrototype == "Shout_Spellbinder_Bind_Armor" then hasBindArmor = true end
-    end
-    if #toProcess > 0 and (hasBindSpell or hasBindArmor) then
-        for _,toLearn in pairs(toProcess) do
-            local spellID = string.format(toLearn, "_")
-            local armorID = string.format(toLearn, "_ARMOR_")
-            if hasBindSpell and Osi.HasActiveStatus(uuid, spellID) == 0 then
-                Osi.ApplyStatus(uuid, spellID, -1)
+    local spellPrefix = "SPELLBINDER_UNLOCK_BIND_"
+    local armorPrefix = "SPELLBINDER_UNLOCK_BIND_ARMOR_"
+    local hasBindSpell = Osi.HasPassive(uuid, "Spellbinder_Bind") == 1
+    local hasBindArmor = Osi.HasPassive(uuid, "Spellbinder_Bind_Armor") == 1
+    if hasBindSpell or hasBindArmor then
+        local toAdd = {}
+        for _,known in pairs(characterEntity.SpellBook.Spells) do
+            local toKnow = {}
+            if hasBindSpell then
+                toKnow.Spell = spellPrefix .. known.Id.OriginatorPrototype
             end
-            if hasBindArmor and Osi.HasActiveStatus(uuid, armorID) == 0 then
-                Osi.ApplyStatus(uuid, armorID, -1)
+            if hasBindArmor then
+                toKnow.Armor = armorPrefix .. known.Id.OriginatorPrototype
+            end
+            toAdd[known.Id.OriginatorPrototype] = toKnow
+        end
+        for _,statusID in pairs(characterEntity.StatusContainer.Statuses) do
+            if string.sub(statusID, 1, #spellPrefix) == spellPrefix then
+                local prefix = spellPrefix
+                if string.find(statusID, "_BIND_ARMOR_") then prefix = armorPrefix end
+                local spellID = string.sub(statusID, #prefix)
+                if toAdd[spellID] == nil then
+                    Osi.RemoveStatus(uuid, statusID)
+                else
+                    if toAdd[spellID].Spell == statusID then toAdd[spellID].Spell = nil end
+                    if toAdd[spellID].Armor == statusID then toAdd[spellID].Armor = nil end
+                end
+            end
+        end
+        for _,statusPair in pairs(toAdd) do
+            for _,statusID in pairs(statusPair) do
+                if Osi.HasActiveStatus(uuid, statusID) == 0 then
+                    Osi.ApplyStatus(uuid, statusID, -1)
+                end
             end
         end
     end
