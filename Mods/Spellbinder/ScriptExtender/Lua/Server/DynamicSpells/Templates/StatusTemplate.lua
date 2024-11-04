@@ -3,21 +3,25 @@ local VFX = Ext.Require("Server/DynamicSpells/Templates/VisualEffectHandler.lua"
 
 local Statuses = {}
 
-local function statusUnlockTemplate()
-    return
+local function statusUnlockSpell(spellStat, spellID)
+    local resourceGuid = ",AddChildren,d136c5d9-0ff0-43da-ceac-4aa7f807bfd6"
+    if spellStat.Level == 0 then resourceGuid = "" end
+    return string.format(
 [[new entry "SPELLBINDER_UNLOCK_BIND_%s"
 type "StatusData"
 data "StatusType" "BOOST"
 data "StackId" "SPELLBINDER_UNLOCK_BIND_%s"
 data "StatusGroups" "SG_RemoveOnRespec"
 data "StatusPropertyFlags" "DisableOverhead;DisableCombatlog;DisablePortraitIndicator;IgnoreResting"
-data "Boosts" "UnlockSpell(Shout_Spellbinder_Bind_%s %s)"]]
-    -- Original Spell Id x3
-    -- if cantrip, "", else the string ",AddChildren,d136c5d9-0ff0-43da-ceac-4aa7f807bfd6"
+data "Boosts" "UnlockSpell(Shout_Spellbinder_Bind_%s%s)"]],
+    spellID, spellID, spellID,
+    resourceGuid)
 end
 
-local function statusArmorUnlockTemplate()
-    return
+local function statusUnlockArmor(progress, spellStat, spellID)
+    local resourceGuid = ",AddChildren,d136c5d9-0ff0-43da-ceac-4aa7f807bfd6"
+    if spellStat.Level == 0 then resourceGuid = "" end
+    return string.format(
 [[%s
 
 new entry "SPELLBINDER_UNLOCK_BIND_ARMOR_%s"
@@ -26,17 +30,18 @@ data "StatusType" "BOOST"
 data "StackId" "SPELLBINDER_UNLOCK_BIND_ARMOR_%s"
 data "StatusGroups" "SG_RemoveOnRespec"
 data "StatusPropertyFlags" "DisableOverhead;DisableCombatlog;DisablePortraitIndicator;IgnoreResting"
-data "Boosts" "UnlockSpell(Shout_Spellbinder_Bind_Armor_%s %s)"]]
-    -- current generation progress
-    -- Original Spell Id x3
-    -- if cantrip, "", else the string ",AddChildren,d136c5d9-0ff0-43da-ceac-4aa7f807bfd6"
+data "Boosts" "UnlockSpell(Shout_Spellbinder_Bind_Armor_%s%s)"]],
+    progress,
+    spellID, spellID, spellID,
+    resourceGuid)
 end
 
-local function statusFirstChargeTemplate()
-    return
+local function statusFirstCharge(progress, spellStat, spellID)
+    local cached = Ext.Stats.GetCachedSpell(spellID)
+    return string.format(
 [[%s
 
-new entry "TAGBOUNDSPELL_1_%s_Projectile_Spellbinder_Bound_%s"
+new entry "TAGBOUNDSPELL_1_%s"
 type "StatusData"
 data "StatusType" "BOOST"
 data "StackId" "SPELLBINDER_BOUND_SPELL"
@@ -48,22 +53,22 @@ data "Icon" "%s"
 data "StatusGroups" "SG_RemoveOnRespec"
 data "DisplayName" "%s;%s"
 data "StackType" "Overwrite"
-data "OnRemoveFunctors" "ApplyStatus(SPELLBINDER_RECENTLY_BOUND,100,1)"]]
-    -- Current Generation Progress
-    -- Spell Level
-    -- Original Spell Id
-    -- Original Spell Id
-    -- Orignal Spell Icon
-    -- VFX handler return
-    -- DisplayNameHandle
-    -- DisplayNameVersion
+data "OnRemoveFunctors" "ApplyStatus(SPELLBINDER_RECENTLY_BOUND,100,1)"]],
+    progress,
+    spellID,
+    spellID,
+    spellStat.Icon,
+    VFX.GetVFXFor(spellID, spellStat),
+    cached.Description.DisplayName.Handle.Handle,
+    cached.Description.DisplayName.Handle.Version)
 end
 
-local function statusArmorFirstChargeTemplate()
-    return
+local function statusArmorFirstCharge(progress, spellStat, spellID)
+    local cached = Ext.Stats.GetCachedSpell(spellID)
+    return string.format(
 [[%s
 
-new entry "TAGBOUNDARMOR_1_%s_Projectile_Spellbinder_Bound_Armor_%s"
+new entry "TAGBOUNDARMOR_1_%s"
 type "StatusData"
 data "StatusType" "BOOST"
 data "StackId" "SPELLBINDER_BOUND_ARMOR"
@@ -75,67 +80,82 @@ data "DisplayName" "%s;%s"
 data "Description" "%s;%s"
 data "DescriptionParams" "%s"
 data "StackType" "Overwrite"
-data "OnRemoveFunctors" "ApplyStatus(SPELLBINDER_RESIDUAL_MAGIC,100,1)"]]
-    -- Current Generation Progress
-    -- Spell Level
-    -- Original Spell Id
-    -- Original Spell Id
-    -- Orignal Spell Icon
-    -- DisplayNameHandle
-    -- DisplayNameVersion
-    -- DescriptionHandle
-    -- DescriptionVersion
-    -- original description params
+data "OnRemoveFunctors" "ApplyStatus(SPELLBINDER_RESIDUAL_MAGIC,100,1)"]],
+    progress,
+    spellID,
+    spellID,
+    spellStat.Icon,
+    cached.Description.DisplayName.Handle.Handle,
+    cached.Description.DisplayName.Handle.Version,
+    cached.Description.Description.Handle.Handle,
+    cached.Description.Description.Handle.Version,
+    spellStat.DescriptionParams)
 end
 
-local function statusChargesTemplate()
-    return
+local function statusCharges(progress, spellID, currentCharge, generatedHandle)
+    return string.format(
 [[%s
 
-new entry "TAGBOUNDSPELL_%s_%s_Projectile_Spellbinder_Bound_%s"
+new entry "TAGBOUNDSPELL_%s_%s"
 type "StatusData"
 data "StatusType" "BOOST"
-using "TAGBOUNDSPELL_1_%s_Projectile_Spellbinder_Bound_%s"
+using "TAGBOUNDSPELL_1_%s"
 data "DisplayName" "%s"
-data "OnRemoveFunctors" "ApplyStatus(TAGBOUNDSPELL_%s_%s_Projectile_Spellbinder_Bound_%s,100,-1)"]]
-    -- Current Generation Progress
-    -- Charge Count
-    -- Spell Level
-    -- Original Spell ID
-    -- Spell Level
-    -- Original Spell ID
-    -- GENERATE a new handle for: "OriginalSpellName - ChargeCount Charges"
-    -- Charge Count Minus 1
-    -- Spell Level
-    -- Original spell ID
-    ---- Charge Count
-    ---- Spell Level
-    ---- Original spell ID
+data "OnRemoveFunctors" "ApplyStatus(TAGBOUNDSPELL_%s_%s,100,-1)"]],
+    progress,
+    currentCharge,
+    spellID,
+    spellID,
+    generatedHandle,
+    currentCharge - 1,
+    spellID)
 end
 
-local function statusArmorChargesTemplate()
-    return
+local function statusArmorCharges(progress, spellID, currentCharge, generatedHandle)
+    return string.format(
 [[%s
 
-new entry "TAGBOUNDARMOR_%s_%s_Projectile_Spellbinder_Bound_Armor_%s"
+new entry "TAGBOUNDARMOR_%s_%s"
 type "StatusData"
 data "StatusType" "BOOST"
-using "TAGBOUNDARMOR_1_%s_Projectile_Spellbinder_Bound_Armor_%s"
+using "TAGBOUNDARMOR_1_%s"
 data "DisplayName" "%s"
-data "OnRemoveFunctors" "ApplyStatus(TAGBOUNDARMOR_%s_%s_Projectile_Spellbinder_Bound_Armor_%s,100,TAGBOUNDARMOR_%s_%s_Projectile_Spellbinder_Bound_Armor_%s.Duration)"]]
-    -- Current Generation Progress
-    -- Charge Count
-    -- Spell Level
-    -- Original Spell ID
-    -- Spell Level
-    -- Original Spell ID
-    -- GENERATE a new handle for: "OriginalSpellName - ChargeCount Charges"
-    -- Charge Count Minus 1
-    -- Spell Level
-    -- Original spell ID
-    -- Charge Count
-    -- Spell Level
-    -- Original spell ID
+data "OnRemoveFunctors" "ApplyStatus(TAGBOUNDARMOR_%s_%s,100,TAGBOUNDARMOR_%s_%s.Duration)"]],
+    progress,
+    currentCharge,
+    spellID,
+    spellID,
+    generatedHandle,
+    currentCharge - 1,
+    spellID,
+    currentCharge,
+    spellID)
+end
+
+local function statusDeliverPayload(progress, spellID)
+    return string.format(
+[[%s
+
+new entry "STATUS_CASTER_TRIGGER_%s"
+type "StatusData"
+data "StatusType" "BOOST"
+data "Passives" "Passive_Trigger_%s"
+data "StatusPropertyFlags" "DisableOverhead;DisableCombatlog;DisablePortraitIndicator;IgnoreResting"
+
+new entry "STATUS_TARGET_TRIGGER_%s"
+type "StatusData"
+data "StatusType" "BOOST"
+data "RemoveEvents" "OnSourceStatusApplied"
+data "RemoveConditions" "HasStatus('STATUS_RESOLVED_%s',context.Source)"
+data "OnRemoveFunctors" "IF(RemoveCause(StatusRemoveCause.Condition)):UseSpell(Target_Spellbinder_Bound_%s,true,true,true);IF(RemoveCause(StatusRemoveCause.Condition)):RemoveStatus(SELF,STATUS_CASTER_TRIGGER_%s)"
+data "StatusPropertyFlags" "DisableOverhead;DisableCombatlog;DisablePortraitIndicator;IgnoreResting"
+
+new entry "STATUS_RESOLVED_%s"
+type "StatusData"
+data "StatusType" "BOOST"
+data "StatusPropertyFlags" "DisableOverhead;DisableCombatlog;DisablePortraitIndicator;IgnoreResting"]],
+    progress,
+    spellID, spellID, spellID, spellID, spellID, spellID, spellID)
 end
 
 ---@param spellID string
@@ -143,74 +163,19 @@ end
 ---@return string
 Statuses.CreateStatuses = function(spellID, spellStat, output)
     local cached = Ext.Stats.GetCachedSpell(spellID)
+    local retVal = statusUnlockSpell(spellStat, spellID)
+    retVal = statusUnlockArmor(retVal, spellStat, spellID)
+    retVal = statusFirstCharge(retVal, spellStat, spellID)
+    retVal = statusArmorFirstCharge(retVal, spellStat, spellID)
     local charges = __dynHelper.DetermineChargesForSpell(spellStat)
-    local level = spellStat.Level
-    local resourceGuid = ",AddChildren,d136c5d9-0ff0-43da-ceac-4aa7f807bfd6"
-    if level == 0 then resourceGuid = "" end
-    if spellStat.PowerLevel > level then level = spellStat.PowerLevel end
-    local retVal = string.format(statusUnlockTemplate(),
-        spellID, spellID, spellID,
-        resourceGuid
-    )
-    retVal = string.format(statusArmorUnlockTemplate(),
-        retVal,
-        spellID, spellID, spellID,
-        resourceGuid
-    )
-    retVal = string.format(statusFirstChargeTemplate(),
-        retVal,
-        level,
-        spellID,
-        spellID,
-        spellStat.Icon,
-        VFX.GetVFXFor(spellID, spellStat),
-        cached.Description.DisplayName.Handle.Handle,
-        cached.Description.DisplayName.Handle.Version
-    )
-    retVal = string.format(statusArmorFirstChargeTemplate(),
-        retVal,
-        level,
-        spellID,
-        spellID,
-        spellStat.Icon,
-        cached.Description.DisplayName.Handle.Handle,
-        cached.Description.DisplayName.Handle.Version,
-        cached.Description.Description.Handle.Handle,
-        cached.Description.Description.Handle.Version,
-        spellStat.DescriptionParams
-    )
     if charges > 1 then
         for i=2,charges,1 do
             local handle = __dynHelper.GenerateTranslationEntry(Ext.Loca.GetTranslatedString(cached.Description.DisplayName.Handle.Handle, tostring(cached.Description.DisplayName.Handle.Version)) .. " - " .. i .. " Charges", output)
-            retVal = string.format(statusChargesTemplate(),
-                retVal,
-                i,
-                level,
-                spellID,
-                level,
-                spellID,
-                handle,
-                i - 1,
-                level,
-                spellID
-            )
-            retVal = string.format(statusArmorChargesTemplate(),
-                retVal,
-                i,
-                level,
-                spellID,
-                level,
-                spellID,
-                handle,
-                i - 1,
-                level,
-                spellID,
-                i,
-                level,
-                spellID
-            )
+            retVal = statusCharges(retVal, spellID, i, handle)
+            retVal = statusArmorCharges(retVal, spellID, i, handle)
         end
     end
+    retVal = statusDeliverPayload(retVal, spellID)
     return retVal
 end
 

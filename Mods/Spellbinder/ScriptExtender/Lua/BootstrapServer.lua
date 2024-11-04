@@ -9,6 +9,8 @@ Ext.Require("Server/BoundSpells/UnlockBindSpells.lua")
 Ext.Require("Server/BoundSpells/RemoveRecentlyBoundStatus.lua")
 Ext.Require("Server/SpectralArrows.lua")
 
+--Ext.Require("NuclearDumps.lua")
+
 function LazyExport(fileName, entity)
     Ext.IO.SaveFile(fileName .. ".json", Ext.DumpExport(entity:GetAllComponents()))
 end

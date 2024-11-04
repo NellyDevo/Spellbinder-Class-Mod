@@ -7,4 +7,9 @@ Ext.Osiris.RegisterListener("CastSpell", 5, "before", function (caster, spell, s
             Osi.RemoveStatus(itemEntry.Item.Uuid.EntityUuid, "SPELLBINDER_RECENTLY_BOUND")
         end
     end
+    if Osi.HasActiveStatus(caster, "SPELLBINDER_LOOP_STOPPER") == 1 then
+        Ext.Timer.WaitFor(300, function ()
+            Osi.RemoveStatus(caster, "SPELLBINDER_LOOP_STOPPER")
+        end)
+    end
 end)
