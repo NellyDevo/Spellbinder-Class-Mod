@@ -225,8 +225,14 @@
 
     <content contentuid="hbebccbced817402f9a1795a8572547fa4g5e" version="1">Pick maneuvers from the Battle Master fighter subclass. These maneuvers follow all the same rules, except they expend your Mystic Dice instead of Superiority Dice.</content>
     <content contentuid="h4fb8837286fc45a68b80e72a110ac6ea382e" version="1">Arcane Maneuvers</content>
+
     <content contentuid="h1238acf08ce8452dad79e4a20f6cd93e4897" version="1">Arcane Resistance</content>
-    <content contentuid="h9ac673291e1b42cebbd43d39d9a9a077ggbf" version="1">Spend an <LSTag Type="ActionResource" Tooltip="ArcaneResistancePoint">Arcane Resistance Point</LSTag> to gain <LSTag Tooltip="Advantage">Advantage</LSTag> on your <LSTag Tooltip="SavingThrow">Saving Throw</LSTag> against a spell or magical effect.</content>
+    <content contentuid="h9ac673291e1b42cebbd43d39d9a9a077ggbf" version="1">Spend an Arcane Resistance Point to gain Advantage on your Saving Throw against a spell or magical effect.</content>
     <content contentuid="h1f41fa5aeb39441baea0a8ef384430dde5b5" version="1">Arcane Resistance</content>
     <content contentuid="ha52055faed8243dabfd6c2cd64af2cefccf1" version="1">Used to gain advantage on failed saving throws against spells or magical effects.</content>
+    
+    <content contentuid="ha965c802ed734a0bad9cfd8704b8c3562423" version="1">Reweave</content>
+    <content contentuid="h984e13a52abc4b958c66f847ecdb37cbf8fb" version="1">When you cast a cantrip without binding it, you may also bind one charge of that cantrip to the weapon you're holding.</content>
+    <content contentuid="hd3f096776f2a4b37980a0ce89be22df2bdee" version="1">Reweave</content>
+    <content contentuid="hddb374afc17a41ca9a1207743ad927ab8d13" version="1">Used to bind residual energies from your cantrips.</content>
 </contentList>

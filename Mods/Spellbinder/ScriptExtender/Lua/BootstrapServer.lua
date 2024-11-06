@@ -7,6 +7,7 @@ Ext.Require("Server/BoundSpells/RemoveBoundSpellTag.lua")
 Ext.Require("Server/BoundSpells/BoundSpellDynamicDuration.lua")
 Ext.Require("Server/BoundSpells/UnlockBindSpells.lua")
 Ext.Require("Server/BoundSpells/RemoveRecentlyBoundStatus.lua")
+Ext.Require("Server/BoundSpells/ReweaveToBind.lua")
 Ext.Require("Server/SpectralArrows.lua")
 
 --Ext.Require("NuclearDumps.lua")
