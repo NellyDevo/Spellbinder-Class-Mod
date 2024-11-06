@@ -49,3 +49,19 @@ function BoundRangedOffHandSpellCheck()
     end
     return ConditionResult(false)
 end
+
+function HasNoMediumOrHeavyArmor(entity)
+    entity = entity or context.Target
+    local armors = {GetItemInEquipmentSlot(EquipmentSlot.Helmet,entity),GetItemInEquipmentSlot(EquipmentSlot.Breast,entity),GetItemInEquipmentSlot(EquipmentSlot.Cloak,entity),GetItemInEquipmentSlot(EquipmentSlot.Boots,entity),GetItemInEquipmentSlot(EquipmentSlot.Gloves,entity)}
+    local types = {ArmorType.Hide,ArmorType.ChainShirt,ArmorType.ScaleMail,ArmorType.BreastPlate,ArmorType.HalfPlate,ArmorType.RingMail,ArmorType.ChainMail,ArmorType.Splint,ArmorType.Plate}
+    for _,armor in pairs(armors) do
+        if armor and armor.IsValid then
+            for _,type in pairs(types) do
+                if armor.ArmorType == type then
+                    return ConditionResult(false)
+                end
+            end
+        end
+    end
+    return ConditionResult(true)
+end

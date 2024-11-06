@@ -181,7 +181,7 @@
                     <attribute id="Level" type="uint8" value="7"/>
                     <attribute id="Name" type="LSString" value="SpellDancer"/>
                     <attribute id="ProgressionType" type="uint8" value="1"/>
-                    <attribute id="PassivesAdded" type="LSString" value=""/>
+                    <attribute id="PassivesAdded" type="LSString" value="Spellbinder_SpellDancer_MagicalArc_Marker"/>
                     <attribute id="TableUUID" type="guid" value="ac49e2c9-ce2b-474f-b28a-8bce290a9fc2"/>
                     <attribute id="UUID" type="guid" value="031cda5e-c38c-4d0a-bdbb-80bf611efe92"/>
                 </node>
