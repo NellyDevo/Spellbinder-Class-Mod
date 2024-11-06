@@ -7,15 +7,9 @@ local function interrupt(spellID, spellStat)
     return string.format(
 [[new entry "Spellbinder_Bound_Armor_%s"
 type "InterruptData"
-data "InterruptContext" "OnPostRoll"
-data "InterruptContextScope" "Nearby"
-data "Container" "YesNoDecision"
-data "Conditions" "IsAbleToReact(context.Observer) and Self(context.Observer, context.Target) and IsMeleeAttack()"
+using "Spellbinder_Bound_Armor_BaseInterrupt"
 data "Properties" "UseSpell(SWAP,Target_Spellbinder_Bound_%s,true,true,true,,true);ApplyStatus(OBSERVER_OBSERVER,STATUS_SPELLBINDER_BOUND_ARMOR_REMOVER,100,0)"
 data "DisplayName" "%s;%s"
-data "Description" "h9ccacd6cf5fd4f57ae2fc7fa17b444b7eab8"
-data "Cost" "ReactionActionPoint:1"
-data "InterruptDefaultValue" "Ask;Enabled"
 data "Icon" "%s"]],
     spellID, spellID,
     cached.Description.DisplayName.Handle.Handle,

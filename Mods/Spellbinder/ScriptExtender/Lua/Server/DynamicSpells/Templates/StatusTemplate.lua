@@ -10,9 +10,8 @@ local function statusUnlockSpell(spellStat, spellID)
 [[new entry "SPELLBINDER_UNLOCK_BIND_%s"
 type "StatusData"
 data "StatusType" "BOOST"
+using "SPELLBINDER_UNLOCK_BIND_BASE_STATUS"
 data "StackId" "SPELLBINDER_UNLOCK_BIND_%s"
-data "StatusGroups" "SG_RemoveOnRespec"
-data "StatusPropertyFlags" "DisableOverhead;DisableCombatlog;DisablePortraitIndicator;IgnoreResting"
 data "Boosts" "UnlockSpell(Shout_Spellbinder_Bind_%s%s)"]],
     spellID, spellID, spellID,
     resourceGuid)
@@ -27,9 +26,8 @@ local function statusUnlockArmor(progress, spellStat, spellID)
 new entry "SPELLBINDER_UNLOCK_BIND_ARMOR_%s"
 type "StatusData"
 data "StatusType" "BOOST"
+using "SPELLBINDER_UNLOCK_BIND_BASE_STATUS"
 data "StackId" "SPELLBINDER_UNLOCK_BIND_ARMOR_%s"
-data "StatusGroups" "SG_RemoveOnRespec"
-data "StatusPropertyFlags" "DisableOverhead;DisableCombatlog;DisablePortraitIndicator;IgnoreResting"
 data "Boosts" "UnlockSpell(Shout_Spellbinder_Bind_Armor_%s%s)"]],
     progress,
     spellID, spellID, spellID,
@@ -44,16 +42,11 @@ local function statusFirstCharge(progress, spellStat, spellID)
 new entry "TAGBOUNDSPELL_1_%s"
 type "StatusData"
 data "StatusType" "BOOST"
-data "StackId" "SPELLBINDER_BOUND_SPELL"
-data "StatusPropertyFlags" "IgnoreResting;DisableCombatlog;ApplyToDead;DisableOverhead"
-data "Boosts" "Tag(SPELLBINDER_BOUND)"
+using "SPELLBINDER_BOUND_BASE_WEAPON_STATUS"
 data "Passives" "Spellbinder_Bound_Spell_%s"
 data "Icon" "%s"
 %s
-data "StatusGroups" "SG_RemoveOnRespec"
-data "DisplayName" "%s;%s"
-data "StackType" "Overwrite"
-data "OnRemoveFunctors" "ApplyStatus(SPELLBINDER_RECENTLY_BOUND,100,1)"]],
+data "DisplayName" "%s;%s"]],
     progress,
     spellID,
     spellID,
@@ -71,16 +64,12 @@ local function statusArmorFirstCharge(progress, spellStat, spellID)
 new entry "TAGBOUNDARMOR_1_%s"
 type "StatusData"
 data "StatusType" "BOOST"
-data "StackId" "SPELLBINDER_BOUND_ARMOR"
-data "StatusPropertyFlags" "IgnoreResting;DisableCombatlog;ApplyToDead;DisableOverhead"
+using "SPELLBINDER_BOUND_BASE_ARMOR_STATUS"
 data "Boosts" "UnlockInterrupt(Spellbinder_Bound_Armor_%s);AC(1)"
 data "Icon" "%s"
-data "StatusGroups" "SG_RemoveOnRespec"
 data "DisplayName" "%s;%s"
 data "Description" "%s;%s"
-data "DescriptionParams" "%s"
-data "StackType" "Overwrite"
-data "OnRemoveFunctors" "ApplyStatus(SPELLBINDER_RESIDUAL_MAGIC,100,1)"]],
+data "DescriptionParams" "%s"]],
     progress,
     spellID,
     spellID,

@@ -29,3 +29,23 @@ end
 function GetBindCost()
     return context.HitDescription.SpellPowerLevel + 1
 end
+
+function BoundRangedSpellCheck()
+    if HasPassive('Spellbinder_ArcaneSniper_TelekineticProjectiles',context.Source).Result then
+        local mainHandEntity = GetItemInEquipmentSlot(EquipmentSlot.RangedMainHand, context.Source)
+        if mainHandEntity.IsValid then
+            return Tagged('SPELLBINDER_BOUND', mainHandEntity) & HasStringInSpellRoll('RangedWeaponAttack')
+        end
+    end
+    return ConditionResult(false)
+end
+
+function BoundRangedOffHandSpellCheck()
+    if HasPassive('Spellbinder_ArcaneSniper_TelekineticProjectiles',context.Source).Result then
+        local offHandEntity = GetItemInEquipmentSlot(EquipmentSlot.RangedOffHand, context.Source)
+        if offHandEntity.IsValid then
+            return Tagged('SPELLBINDER_BOUND', offHandEntity) & HasStringInSpellRoll('RangedOffHandWeaponAttack') & ~HasStringInSpellRoll('RangedWeaponAttack')
+        end
+    end
+    return ConditionResult(false)
+end

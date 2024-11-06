@@ -160,6 +160,39 @@
 					<attribute id="TableUUID" type="guid" value="ca9cfd96-20b1-485c-b474-b333e6396591"/> Same UUID as the one in ClassDescriptions.lsx this refers to the entire table
                     <attribute id="UUID" type="guid" value="9aed0d58-4d44-4777-b1dd-b1ec05426d67"/>
                 </node>
+                <node id="Progression"> Arcane Sniper Level 7
+                    <attribute id="Level" type="uint8" value="7"/>
+                    <attribute id="Name" type="LSString" value="ArcaneSniper"/>
+                    <attribute id="ProgressionType" type="uint8" value="1"/>
+                    <attribute id="PassivesAdded" type="LSString" value="Spellbinder_ArcaneSniper_TelekineticProjectiles"/>
+                    <attribute id="Boosts" type="LSString" value="ActionResource(SpectralArrowPoint,1,0)"/>
+                    <attribute id="TableUUID" type="guid" value="2d9ebdee-94b9-4215-9b1c-a9eef9a32854"/>
+                    <attribute id="UUID" type="guid" value="7ce3a64a-d998-46ea-8b3b-ddcc3f400807"/>
+                </node>
+				<node id="Progression"> Enchanter Level 7
+                    <attribute id="Level" type="uint8" value="7"/>
+                    <attribute id="Name" type="LSString" value="Enchanter"/>
+                    <attribute id="ProgressionType" type="uint8" value="1"/>
+                    <attribute id="PassivesAdded" type="LSString" value=""/>
+                    <attribute id="TableUUID" type="guid" value="966e3e81-32cc-4a27-a60e-5e11be70b98f"/>
+                    <attribute id="UUID" type="guid" value="a31b58f3-1924-46ce-816c-6b3c86957bef"/>
+                </node>
+				<node id="Progression"> Spell Dancer Level 7
+                    <attribute id="Level" type="uint8" value="7"/>
+                    <attribute id="Name" type="LSString" value="SpellDancer"/>
+                    <attribute id="ProgressionType" type="uint8" value="1"/>
+                    <attribute id="PassivesAdded" type="LSString" value=""/>
+                    <attribute id="TableUUID" type="guid" value="ac49e2c9-ce2b-474f-b28a-8bce290a9fc2"/>
+                    <attribute id="UUID" type="guid" value="031cda5e-c38c-4d0a-bdbb-80bf611efe92"/>
+                </node>
+				<node id="Progression"> Mystic Knight Level 7
+                    <attribute id="Level" type="uint8" value="7"/>
+                    <attribute id="Name" type="LSString" value="MysticKnight"/>
+                    <attribute id="ProgressionType" type="uint8" value="1"/>
+                    <attribute id="PassivesAdded" type="LSString" value=""/>
+                    <attribute id="TableUUID" type="guid" value="26b70d23-0f15-4a9b-a7be-8c747b9c97fe"/>
+                    <attribute id="UUID" type="guid" value="c7b386a7-4cc7-4cba-b594-68b8d580e06c"/>
+                </node>
                 <node id="Progression"> Mainclass Level 8
                     <attribute id="AllowImprovement" type="bool" value="true"/> Whether your class get a feat at his level. Does not work for level 1.
                     <attribute id="Boosts" type="LSString" value=""/> Adds resource, proficiency, etc.
