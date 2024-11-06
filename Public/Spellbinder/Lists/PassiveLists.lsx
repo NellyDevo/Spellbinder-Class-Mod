@@ -16,6 +16,10 @@
                     <attribute id="Passives" type="LSString" value="Spellbinder_MagicTouch_Arcana,Spellbinder_MagicTouch_History,Spellbinder_MagicTouch_Investigation,Spellbinder_MagicTouch_Nature,Spellbinder_MagicTouch_Religion"/>
                     <attribute id="UUID" type="guid" value="06c79ede-82df-4aa2-a202-16ea5a1973bf"/>
                 </node>
+                <node id="PassiveList"> Arcane Maneuvers
+                    <attribute id="Passives" type="LSString" value="Spellbinder_MysticKnight_CommanderStrike_Maneuver,Spellbinder_MysticKnight_DisarmingAttack,Spellbinder_MysticKnight_DistractingStrike,Spellbinder_MysticKnight_EvasiveFootwork,Spellbinder_MysticKnight_FeintingAttack,Spellbinder_MysticKnight_GoadingAttack,Spellbinder_MysticKnight_ManeuveringAttack,Spellbinder_MysticKnight_MenacingAttack,Spellbinder_MysticKnight_PrecisionAttack,Spellbinder_MysticKnight_PushingAttack,Spellbinder_MysticKnight_Rally,Spellbinder_MysticKnight_Riposte,Spellbinder_MysticKnight_SweepingAttack,Spellbinder_MysticKnight_TripAttack"/>
+                    <attribute id="UUID" type="guid" value="e91ebae1-0ec7-401a-bc32-829302a2a396"/>
+                </node>
             </children>
         </node>
     </region>

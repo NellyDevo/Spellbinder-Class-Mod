@@ -209,6 +209,11 @@
     <content contentuid="haedb89a68428476589d3bde6d33aa08838gd" version="1">Magical Arc</content>
     <content contentuid="h475e3a2cbcde40a2a977804e49323d747073" version="1">When you consume a charge of a levelled bound spell, gain AC equal to your Charasma Modifier for 1 round.</content>
     
+    <content contentuid="h4064116ce1d640bd903824659456626ea1d4" version="1">Mystic Dice</content>
+    <content contentuid="hce5dfc9a8a214b71a55afc019c39c1296851" version="1">Used to fuel your subclass powers.</content>
+    <content contentuid="h3743dbf6d648477aa4851754f04eaf71e27b" version="1">Mystic Dice</content>
+    <content contentuid="hcb9efeb3509a494da26f8bbab170caccfbgg" version="1">You have a number of d8s equal to your Proficiency bonus to spend on your subclass powers. These dice refresh on short rest.</content>
+
     <content contentuid="hc4cd8e353f2d47929daf35ba7717fc16e24e" version="1">Magical Wellspring</content>
     <content contentuid="h77190fb899ca422cb3e99ce7566fa00965d0" version="1">Whenever you hit with a weapon attack, you may expend a Mystic Die and add it to the damage roll. This extra damage is your choice of acid, cold, fire, lightning, or thunder damage. You can add this extra damage only once per round.</content>
     <content contentuid="h6716234d36f344a08490b474d3fb8a56g76a" version="1">Magical Wellspring - Acid</content>
@@ -217,8 +222,7 @@
     <content contentuid="hc03d596e3a3a47f88816ecee77720cbae569" version="1">Magical Wellspring - Lightning</content>
     <content contentuid="hb2d9926d5dbc4fd6acfeaa53faf6d3a9adga" version="1">Magical Wellspring - Thunder</content>
     <content contentuid="hac312ed029c84eff89e684d50cb6d573bf0f" version="1">Once per round, when you hit with a weapon attack, expend a Mystic Die and add it to the damage roll as [1] damage.</content>
-    <content contentuid="h4064116ce1d640bd903824659456626ea1d4" version="1">Mystic Dice</content>
-    <content contentuid="hce5dfc9a8a214b71a55afc019c39c1296851" version="1">Used to fuel your Enchanter powers.</content>
-    <content contentuid="h3743dbf6d648477aa4851754f04eaf71e27b" version="1">Mystic Dice</content>
-    <content contentuid="hcb9efeb3509a494da26f8bbab170caccfbgg" version="1">You have a number of d8s equal to your Proficiency bonus to spend on your Enchanter powers. These dice refresh on short rest.</content>
+    
+    <content contentuid="hbebccbced817402f9a1795a8572547fa4g5e" version="1">Pick maneuvers from the Battle Master fighter subclass. These maneuvers follow all the same rules, except they expend your Mystic Dice instead of Superiority Dice.</content>
+    <content contentuid="h4fb8837286fc45a68b80e72a110ac6ea382e" version="1">Arcane Maneuvers</content>
 </contentList>
