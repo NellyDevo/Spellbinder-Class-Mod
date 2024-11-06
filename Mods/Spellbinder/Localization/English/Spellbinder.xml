@@ -222,7 +222,11 @@
     <content contentuid="hc03d596e3a3a47f88816ecee77720cbae569" version="1">Magical Wellspring - Lightning</content>
     <content contentuid="hb2d9926d5dbc4fd6acfeaa53faf6d3a9adga" version="1">Magical Wellspring - Thunder</content>
     <content contentuid="hac312ed029c84eff89e684d50cb6d573bf0f" version="1">Once per round, when you hit with a weapon attack, expend a Mystic Die and add it to the damage roll as [1] damage.</content>
-    
+
     <content contentuid="hbebccbced817402f9a1795a8572547fa4g5e" version="1">Pick maneuvers from the Battle Master fighter subclass. These maneuvers follow all the same rules, except they expend your Mystic Dice instead of Superiority Dice.</content>
     <content contentuid="h4fb8837286fc45a68b80e72a110ac6ea382e" version="1">Arcane Maneuvers</content>
+    <content contentuid="h1238acf08ce8452dad79e4a20f6cd93e4897" version="1">Arcane Resistance</content>
+    <content contentuid="h9ac673291e1b42cebbd43d39d9a9a077ggbf" version="1">Spend an <LSTag Type="ActionResource" Tooltip="ArcaneResistancePoint">Arcane Resistance Point</LSTag> to gain <LSTag Tooltip="Advantage">Advantage</LSTag> on your <LSTag Tooltip="SavingThrow">Saving Throw</LSTag> against a spell or magical effect.</content>
+    <content contentuid="h1f41fa5aeb39441baea0a8ef384430dde5b5" version="1">Arcane Resistance</content>
+    <content contentuid="ha52055faed8243dabfd6c2cd64af2cefccf1" version="1">Used to gain advantage on failed saving throws against spells or magical effects.</content>
 </contentList>

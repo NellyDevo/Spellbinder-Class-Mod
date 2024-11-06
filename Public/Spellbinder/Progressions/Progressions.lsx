@@ -208,10 +208,10 @@
                 </node>
                 <node id="Progression"> Mainclass Level 9
                     <attribute id="AllowImprovement" type="bool" value="false"/> Whether your class get a feat at his level. Does not work for level 1.
-                    <attribute id="Boosts" type="LSString" value="ActionResource(SpellSlot,2,3)"/> Adds resource, proficiency, etc.
+                    <attribute id="Boosts" type="LSString" value="ActionResource(SpellSlot,2,3);ActionResource(ArcaneResistancePoint,1,0)"/> Adds resource, proficiency, etc.
                     <attribute id="Level" type="uint8" value="9"/> Class Level for this entry
                     <attribute id="Name" type="LSString" value="Spellbinder"/> Name of the class, keep it consistent with class description
-                    <attribute id="PassivesAdded" type="LSString" value="UnlockedSpellSlotLevel3"/> most class features usually can be done with passives
+                    <attribute id="PassivesAdded" type="LSString" value="UnlockedSpellSlotLevel3;Spellbinder_ArcaneResistance"/> most class features usually can be done with passives
                     <attribute id="PassivesRemoved" type="LSString" value=""/>
                     <attribute id="ProgressionType" type="uint8" value="0"/> 0 means main class, 1 means subclass, 2 means race
                     <attribute id="Selectors" type="LSString" value="SelectSpells(012a228e-66f0-480f-ac19-e181822caf77,1,1)"/>
@@ -256,7 +256,7 @@
                 </node>
                 <node id="Progression"> Mainclass Level 13
                     <attribute id="AllowImprovement" type="bool" value="false"/> Whether your class get a feat at his level. Does not work for level 1.
-                    <attribute id="Boosts" type="LSString" value="ActionResource(SpellSlot,1,4)"/> Adds resource, proficiency, etc.
+                    <attribute id="Boosts" type="LSString" value="ActionResource(SpellSlot,1,4);ActionResource(ArcaneResistancePoint,1,0)"/> Adds resource, proficiency, etc.
                     <attribute id="Level" type="uint8" value="13"/> Class Level for this entry
                     <attribute id="Name" type="LSString" value="Spellbinder"/> Name of the class, keep it consistent with class description
                     <attribute id="PassivesAdded" type="LSString" value="UnlockedSpellSlotLevel4"/> most class features usually can be done with passives
