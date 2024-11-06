@@ -7,14 +7,7 @@ Ext.Entity.OnCreate("ServerProjectileSpell", function (e)
             local itemGUID = state.field_80.Uuid.EntityUuid
             local amount = Osi.GetStackAmount(itemGUID)
             Osi.SetStackAmount(itemGUID, amount + 1)
-            local resource = state.Caster.ActionResources.Resources["7fd974bd-65c9-4791-8c93-59adc123eac4"]
-            if resource ~= nil then
-                local current = resource[1].Amount
-                if current > 0 then
-                    resource[1].Amount = current - 1
-                    state.Caster:Replicate("ActionResources")
-                end
-            end
+            Osi.ApplyStatus(state.Caster.Uuid.EntityUuid, "SPELLBINDER_SPECTRAL_ARROWS_SPEND", 0)
         end
     end
 end)
