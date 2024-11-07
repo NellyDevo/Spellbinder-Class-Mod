@@ -65,3 +65,7 @@ function HasNoMediumOrHeavyArmor(entity)
     end
     return ConditionResult(true)
 end
+
+function ArrowOfForceCheck(entity)
+    return SpellId('Projectile_Spellbinder_ArcaneSniper_ArrowOfForce')
+end
