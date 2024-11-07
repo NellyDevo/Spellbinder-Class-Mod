@@ -246,4 +246,9 @@
 
     <content contentuid="h0b336a4728db4019a6ee721362e024d115g7" version="1">Magikinesis</content>
     <content contentuid="h17e52f11229d423b9f3ebda5833c7c2ac877" version="1">Whenever you miss with a weapon attack, you may roll a Mystic Die and add it to the attack roll, possibly causing it to hit. If it does, the die is expended.</content>
+    
+    <content contentuid="h9b43c4ec621249c5a8e7623aac4d96148gd1" version="1">Ethereal Presence</content>
+    <content contentuid="h034b39f1ce5b411fac84632b6dd239472gd5" version="1">You can cast Misty Step a number of times per long rest equal to your Charisma modifier.</content>
+    <content contentuid="h6eb2cbb658cd40e2b8f3dbdf6af0aaf5e80a" version="1">You learn Misty Step. You can also cast Misty Step without using a spell slot a number of times per long rest equal to your Charisma modifier.</content>
+    
 </contentList>
