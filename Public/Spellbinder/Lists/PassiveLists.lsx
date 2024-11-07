@@ -5,7 +5,7 @@
         <node id="root">
             <children>
                 <node id="PassiveList"> Fighting Styles
-                    <attribute id="Passives" type="LSString" value="FightingStyle_Archery,FightingStyle_Defense,FightingStyle_Dueling,FightingStyle_GreatWeaponFighting,FightingStyle_Protection,FightingStyle_TwoWeaponFighting"/>
+                    <attribute id="Passives" type="LSString" value="FightingStyle_Spellbinder_Spellsword,FightingStyle_Archery,FightingStyle_Defense,FightingStyle_Dueling,FightingStyle_GreatWeaponFighting,FightingStyle_Protection,FightingStyle_TwoWeaponFighting"/>
                     <attribute id="UUID" type="guid" value="df8cac8c-d186-4536-88ff-d4ace48fa7bb"/>
                 </node>
                 <node id="PassiveList"> Weapon Mastery

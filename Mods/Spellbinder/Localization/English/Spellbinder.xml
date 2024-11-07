@@ -235,4 +235,7 @@
     <content contentuid="h984e13a52abc4b958c66f847ecdb37cbf8fb" version="1">When you cast a cantrip without binding it, you may also bind one charge of that cantrip to the weapon you're holding.</content>
     <content contentuid="hd3f096776f2a4b37980a0ce89be22df2bdee" version="1">Reweave</content>
     <content contentuid="hddb374afc17a41ca9a1207743ad927ab8d13" version="1">Used to bind residual energies from your cantrips.</content>
+    
+    <content contentuid="hed20898c073e4784814f0ad2b66ae6fd2ad0" version="1">Spellsword</content>
+    <content contentuid="hf887d44c412b416293014a19da42aa28a3a8" version="1">Whenever you cast a spell, get a +2 bonus on all weapon attack rolls until your next turn.</content>
 </contentList>
