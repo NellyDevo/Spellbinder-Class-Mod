@@ -279,7 +279,7 @@
                                     <attribute id="w" type="int16" value="48" />
                                 </node>
                             </children>
-                        </node>       
+                        </node>
 
                         <node id="Object">
                             <attribute id="MapKey" type="FixedString" value="Assets/ActionResources_c/Icons/Resources/QuickBindPoint.png" />
@@ -343,6 +343,432 @@
                         </node>
                         <node id="Object">
                             <attribute id="MapKey" type="FixedString" value="Assets/Shared/Resources/QuickBindPoint.png" />
+                            <children>
+                                <node id="entries">
+                                    <attribute id="h" type="int16" value="48" />
+                                    <attribute id="mipcount" type="int8" value="1" />
+                                    <attribute id="w" type="int16" value="48" />
+                                </node>
+                            </children>
+                        </node>
+
+                        <node id="Object">
+                            <attribute id="MapKey" type="FixedString" value="Assets/ActionResources_c/Icons/Resources/SpectralArrowPoint.png" />
+                            <children>
+                                <node id="entries">
+                                    <attribute id="h" type="int16" value="64" />
+                                    <attribute id="mipcount" type="int8" value="1" />
+                                    <attribute id="w" type="int16" value="44" />
+                                </node>
+                            </children>
+                        </node>
+                        <node id="Object">
+                            <attribute id="MapKey" type="FixedString" value="Assets/ActionResources_c/Icons/SpectralArrowPoint.png" />
+                            <children>
+                                <node id="entries">
+                                    <attribute id="h" type="int16" value="80" />
+                                    <attribute id="mipcount" type="int8" value="1" />
+                                    <attribute id="w" type="int16" value="80" />
+                                </node>
+                            </children>
+                        </node>
+                        <node id="Object">
+                            <attribute id="MapKey" type="FixedString" value="Assets/CC/icons_resources/SpectralArrowPoint.png" />
+                            <children>
+                                <node id="entries">
+                                    <attribute id="h" type="int16" value="128" />
+                                    <attribute id="mipcount" type="int8" value="1" />
+                                    <attribute id="w" type="int16" value="128" />
+                                </node>
+                            </children>
+                        </node>
+                        <node id="Object">
+                            <attribute id="MapKey" type="FixedString" value="Assets/Shared/Resources/Highlight/SpectralArrowPoint.png" />
+                            <children>
+                                <node id="entries">
+                                    <attribute id="h" type="int16" value="48" />
+                                    <attribute id="mipcount" type="int8" value="1" />
+                                    <attribute id="w" type="int16" value="48" />
+                                </node>
+                            </children>
+                        </node>
+                        <node id="Object">
+                            <attribute id="MapKey" type="FixedString" value="Assets/Shared/Resources/Missing/SpectralArrowPoint.png" />
+                            <children>
+                                <node id="entries">
+                                    <attribute id="h" type="int16" value="48" />
+                                    <attribute id="mipcount" type="int8" value="1" />
+                                    <attribute id="w" type="int16" value="48" />
+                                </node>
+                            </children>
+                        </node>
+                        <node id="Object">
+                            <attribute id="MapKey" type="FixedString" value="Assets/Shared/Resources/Used/SpectralArrowPoint.png" />
+                            <children>
+                                <node id="entries">
+                                    <attribute id="h" type="int16" value="48" />
+                                    <attribute id="mipcount" type="int8" value="1" />
+                                    <attribute id="w" type="int16" value="48" />
+                                </node>
+                            </children>
+                        </node>
+                        <node id="Object">
+                            <attribute id="MapKey" type="FixedString" value="Assets/Shared/Resources/SpectralArrowPoint.png" />
+                            <children>
+                                <node id="entries">
+                                    <attribute id="h" type="int16" value="48" />
+                                    <attribute id="mipcount" type="int8" value="1" />
+                                    <attribute id="w" type="int16" value="48" />
+                                </node>
+                            </children>
+                        </node>
+
+                        <node id="Object">
+                            <attribute id="MapKey" type="FixedString" value="Assets/ActionResources_c/Icons/Resources/MysticDie.png" />
+                            <children>
+                                <node id="entries">
+                                    <attribute id="h" type="int16" value="64" />
+                                    <attribute id="mipcount" type="int8" value="1" />
+                                    <attribute id="w" type="int16" value="44" />
+                                </node>
+                            </children>
+                        </node>
+                        <node id="Object">
+                            <attribute id="MapKey" type="FixedString" value="Assets/ActionResources_c/Icons/MysticDie.png" />
+                            <children>
+                                <node id="entries">
+                                    <attribute id="h" type="int16" value="80" />
+                                    <attribute id="mipcount" type="int8" value="1" />
+                                    <attribute id="w" type="int16" value="80" />
+                                </node>
+                            </children>
+                        </node>
+                        <node id="Object">
+                            <attribute id="MapKey" type="FixedString" value="Assets/CC/icons_resources/MysticDie.png" />
+                            <children>
+                                <node id="entries">
+                                    <attribute id="h" type="int16" value="128" />
+                                    <attribute id="mipcount" type="int8" value="1" />
+                                    <attribute id="w" type="int16" value="128" />
+                                </node>
+                            </children>
+                        </node>
+                        <node id="Object">
+                            <attribute id="MapKey" type="FixedString" value="Assets/Shared/Resources/Highlight/MysticDie.png" />
+                            <children>
+                                <node id="entries">
+                                    <attribute id="h" type="int16" value="48" />
+                                    <attribute id="mipcount" type="int8" value="1" />
+                                    <attribute id="w" type="int16" value="48" />
+                                </node>
+                            </children>
+                        </node>
+                        <node id="Object">
+                            <attribute id="MapKey" type="FixedString" value="Assets/Shared/Resources/Missing/MysticDie.png" />
+                            <children>
+                                <node id="entries">
+                                    <attribute id="h" type="int16" value="48" />
+                                    <attribute id="mipcount" type="int8" value="1" />
+                                    <attribute id="w" type="int16" value="48" />
+                                </node>
+                            </children>
+                        </node>
+                        <node id="Object">
+                            <attribute id="MapKey" type="FixedString" value="Assets/Shared/Resources/Used/MysticDie.png" />
+                            <children>
+                                <node id="entries">
+                                    <attribute id="h" type="int16" value="48" />
+                                    <attribute id="mipcount" type="int8" value="1" />
+                                    <attribute id="w" type="int16" value="48" />
+                                </node>
+                            </children>
+                        </node>
+                        <node id="Object">
+                            <attribute id="MapKey" type="FixedString" value="Assets/Shared/Resources/MysticDie.png" />
+                            <children>
+                                <node id="entries">
+                                    <attribute id="h" type="int16" value="48" />
+                                    <attribute id="mipcount" type="int8" value="1" />
+                                    <attribute id="w" type="int16" value="48" />
+                                </node>
+                            </children>
+                        </node>
+
+                        <node id="Object">
+                            <attribute id="MapKey" type="FixedString" value="Assets/ActionResources_c/Icons/Resources/ArcaneResistancePoint.png" />
+                            <children>
+                                <node id="entries">
+                                    <attribute id="h" type="int16" value="64" />
+                                    <attribute id="mipcount" type="int8" value="1" />
+                                    <attribute id="w" type="int16" value="44" />
+                                </node>
+                            </children>
+                        </node>
+                        <node id="Object">
+                            <attribute id="MapKey" type="FixedString" value="Assets/ActionResources_c/Icons/ArcaneResistancePoint.png" />
+                            <children>
+                                <node id="entries">
+                                    <attribute id="h" type="int16" value="80" />
+                                    <attribute id="mipcount" type="int8" value="1" />
+                                    <attribute id="w" type="int16" value="80" />
+                                </node>
+                            </children>
+                        </node>
+                        <node id="Object">
+                            <attribute id="MapKey" type="FixedString" value="Assets/CC/icons_resources/ArcaneResistancePoint.png" />
+                            <children>
+                                <node id="entries">
+                                    <attribute id="h" type="int16" value="128" />
+                                    <attribute id="mipcount" type="int8" value="1" />
+                                    <attribute id="w" type="int16" value="128" />
+                                </node>
+                            </children>
+                        </node>
+                        <node id="Object">
+                            <attribute id="MapKey" type="FixedString" value="Assets/Shared/Resources/Highlight/ArcaneResistancePoint.png" />
+                            <children>
+                                <node id="entries">
+                                    <attribute id="h" type="int16" value="48" />
+                                    <attribute id="mipcount" type="int8" value="1" />
+                                    <attribute id="w" type="int16" value="48" />
+                                </node>
+                            </children>
+                        </node>
+                        <node id="Object">
+                            <attribute id="MapKey" type="FixedString" value="Assets/Shared/Resources/Missing/ArcaneResistancePoint.png" />
+                            <children>
+                                <node id="entries">
+                                    <attribute id="h" type="int16" value="48" />
+                                    <attribute id="mipcount" type="int8" value="1" />
+                                    <attribute id="w" type="int16" value="48" />
+                                </node>
+                            </children>
+                        </node>
+                        <node id="Object">
+                            <attribute id="MapKey" type="FixedString" value="Assets/Shared/Resources/Used/ArcaneResistancePoint.png" />
+                            <children>
+                                <node id="entries">
+                                    <attribute id="h" type="int16" value="48" />
+                                    <attribute id="mipcount" type="int8" value="1" />
+                                    <attribute id="w" type="int16" value="48" />
+                                </node>
+                            </children>
+                        </node>
+                        <node id="Object">
+                            <attribute id="MapKey" type="FixedString" value="Assets/Shared/Resources/ArcaneResistancePoint.png" />
+                            <children>
+                                <node id="entries">
+                                    <attribute id="h" type="int16" value="48" />
+                                    <attribute id="mipcount" type="int8" value="1" />
+                                    <attribute id="w" type="int16" value="48" />
+                                </node>
+                            </children>
+                        </node>
+
+                        <node id="Object">
+                            <attribute id="MapKey" type="FixedString" value="Assets/ActionResources_c/Icons/Resources/ReweavePoint.png" />
+                            <children>
+                                <node id="entries">
+                                    <attribute id="h" type="int16" value="64" />
+                                    <attribute id="mipcount" type="int8" value="1" />
+                                    <attribute id="w" type="int16" value="44" />
+                                </node>
+                            </children>
+                        </node>
+                        <node id="Object">
+                            <attribute id="MapKey" type="FixedString" value="Assets/ActionResources_c/Icons/ReweavePoint.png" />
+                            <children>
+                                <node id="entries">
+                                    <attribute id="h" type="int16" value="80" />
+                                    <attribute id="mipcount" type="int8" value="1" />
+                                    <attribute id="w" type="int16" value="80" />
+                                </node>
+                            </children>
+                        </node>
+                        <node id="Object">
+                            <attribute id="MapKey" type="FixedString" value="Assets/CC/icons_resources/ReweavePoint.png" />
+                            <children>
+                                <node id="entries">
+                                    <attribute id="h" type="int16" value="128" />
+                                    <attribute id="mipcount" type="int8" value="1" />
+                                    <attribute id="w" type="int16" value="128" />
+                                </node>
+                            </children>
+                        </node>
+                        <node id="Object">
+                            <attribute id="MapKey" type="FixedString" value="Assets/Shared/Resources/Highlight/ReweavePoint.png" />
+                            <children>
+                                <node id="entries">
+                                    <attribute id="h" type="int16" value="48" />
+                                    <attribute id="mipcount" type="int8" value="1" />
+                                    <attribute id="w" type="int16" value="48" />
+                                </node>
+                            </children>
+                        </node>
+                        <node id="Object">
+                            <attribute id="MapKey" type="FixedString" value="Assets/Shared/Resources/Missing/ReweavePoint.png" />
+                            <children>
+                                <node id="entries">
+                                    <attribute id="h" type="int16" value="48" />
+                                    <attribute id="mipcount" type="int8" value="1" />
+                                    <attribute id="w" type="int16" value="48" />
+                                </node>
+                            </children>
+                        </node>
+                        <node id="Object">
+                            <attribute id="MapKey" type="FixedString" value="Assets/Shared/Resources/Used/ReweavePoint.png" />
+                            <children>
+                                <node id="entries">
+                                    <attribute id="h" type="int16" value="48" />
+                                    <attribute id="mipcount" type="int8" value="1" />
+                                    <attribute id="w" type="int16" value="48" />
+                                </node>
+                            </children>
+                        </node>
+                        <node id="Object">
+                            <attribute id="MapKey" type="FixedString" value="Assets/Shared/Resources/ReweavePoint.png" />
+                            <children>
+                                <node id="entries">
+                                    <attribute id="h" type="int16" value="48" />
+                                    <attribute id="mipcount" type="int8" value="1" />
+                                    <attribute id="w" type="int16" value="48" />
+                                </node>
+                            </children>
+                        </node>
+
+                        <node id="Object">
+                            <attribute id="MapKey" type="FixedString" value="Assets/ActionResources_c/Icons/Resources/ArrowOfForcePoint.png" />
+                            <children>
+                                <node id="entries">
+                                    <attribute id="h" type="int16" value="64" />
+                                    <attribute id="mipcount" type="int8" value="1" />
+                                    <attribute id="w" type="int16" value="44" />
+                                </node>
+                            </children>
+                        </node>
+                        <node id="Object">
+                            <attribute id="MapKey" type="FixedString" value="Assets/ActionResources_c/Icons/ArrowOfForcePoint.png" />
+                            <children>
+                                <node id="entries">
+                                    <attribute id="h" type="int16" value="80" />
+                                    <attribute id="mipcount" type="int8" value="1" />
+                                    <attribute id="w" type="int16" value="80" />
+                                </node>
+                            </children>
+                        </node>
+                        <node id="Object">
+                            <attribute id="MapKey" type="FixedString" value="Assets/CC/icons_resources/ArrowOfForcePoint.png" />
+                            <children>
+                                <node id="entries">
+                                    <attribute id="h" type="int16" value="128" />
+                                    <attribute id="mipcount" type="int8" value="1" />
+                                    <attribute id="w" type="int16" value="128" />
+                                </node>
+                            </children>
+                        </node>
+                        <node id="Object">
+                            <attribute id="MapKey" type="FixedString" value="Assets/Shared/Resources/Highlight/ArrowOfForcePoint.png" />
+                            <children>
+                                <node id="entries">
+                                    <attribute id="h" type="int16" value="48" />
+                                    <attribute id="mipcount" type="int8" value="1" />
+                                    <attribute id="w" type="int16" value="48" />
+                                </node>
+                            </children>
+                        </node>
+                        <node id="Object">
+                            <attribute id="MapKey" type="FixedString" value="Assets/Shared/Resources/Missing/ArrowOfForcePoint.png" />
+                            <children>
+                                <node id="entries">
+                                    <attribute id="h" type="int16" value="48" />
+                                    <attribute id="mipcount" type="int8" value="1" />
+                                    <attribute id="w" type="int16" value="48" />
+                                </node>
+                            </children>
+                        </node>
+                        <node id="Object">
+                            <attribute id="MapKey" type="FixedString" value="Assets/Shared/Resources/Used/ArrowOfForcePoint.png" />
+                            <children>
+                                <node id="entries">
+                                    <attribute id="h" type="int16" value="48" />
+                                    <attribute id="mipcount" type="int8" value="1" />
+                                    <attribute id="w" type="int16" value="48" />
+                                </node>
+                            </children>
+                        </node>
+                        <node id="Object">
+                            <attribute id="MapKey" type="FixedString" value="Assets/Shared/Resources/ArrowOfForcePoint.png" />
+                            <children>
+                                <node id="entries">
+                                    <attribute id="h" type="int16" value="48" />
+                                    <attribute id="mipcount" type="int8" value="1" />
+                                    <attribute id="w" type="int16" value="48" />
+                                </node>
+                            </children>
+                        </node>
+
+                        <node id="Object">
+                            <attribute id="MapKey" type="FixedString" value="Assets/ActionResources_c/Icons/Resources/EtherealPresencePoint.png" />
+                            <children>
+                                <node id="entries">
+                                    <attribute id="h" type="int16" value="64" />
+                                    <attribute id="mipcount" type="int8" value="1" />
+                                    <attribute id="w" type="int16" value="44" />
+                                </node>
+                            </children>
+                        </node>
+                        <node id="Object">
+                            <attribute id="MapKey" type="FixedString" value="Assets/ActionResources_c/Icons/EtherealPresencePoint.png" />
+                            <children>
+                                <node id="entries">
+                                    <attribute id="h" type="int16" value="80" />
+                                    <attribute id="mipcount" type="int8" value="1" />
+                                    <attribute id="w" type="int16" value="80" />
+                                </node>
+                            </children>
+                        </node>
+                        <node id="Object">
+                            <attribute id="MapKey" type="FixedString" value="Assets/CC/icons_resources/EtherealPresencePoint.png" />
+                            <children>
+                                <node id="entries">
+                                    <attribute id="h" type="int16" value="128" />
+                                    <attribute id="mipcount" type="int8" value="1" />
+                                    <attribute id="w" type="int16" value="128" />
+                                </node>
+                            </children>
+                        </node>
+                        <node id="Object">
+                            <attribute id="MapKey" type="FixedString" value="Assets/Shared/Resources/Highlight/EtherealPresencePoint.png" />
+                            <children>
+                                <node id="entries">
+                                    <attribute id="h" type="int16" value="48" />
+                                    <attribute id="mipcount" type="int8" value="1" />
+                                    <attribute id="w" type="int16" value="48" />
+                                </node>
+                            </children>
+                        </node>
+                        <node id="Object">
+                            <attribute id="MapKey" type="FixedString" value="Assets/Shared/Resources/Missing/EtherealPresencePoint.png" />
+                            <children>
+                                <node id="entries">
+                                    <attribute id="h" type="int16" value="48" />
+                                    <attribute id="mipcount" type="int8" value="1" />
+                                    <attribute id="w" type="int16" value="48" />
+                                </node>
+                            </children>
+                        </node>
+                        <node id="Object">
+                            <attribute id="MapKey" type="FixedString" value="Assets/Shared/Resources/Used/EtherealPresencePoint.png" />
+                            <children>
+                                <node id="entries">
+                                    <attribute id="h" type="int16" value="48" />
+                                    <attribute id="mipcount" type="int8" value="1" />
+                                    <attribute id="w" type="int16" value="48" />
+                                </node>
+                            </children>
+                        </node>
+                        <node id="Object">
+                            <attribute id="MapKey" type="FixedString" value="Assets/Shared/Resources/EtherealPresencePoint.png" />
                             <children>
                                 <node id="entries">
                                     <attribute id="h" type="int16" value="48" />
