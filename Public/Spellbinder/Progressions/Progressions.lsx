@@ -255,7 +255,7 @@
                     <attribute id="Level" type="uint8" value="11"/>
                     <attribute id="Name" type="LSString" value="Enchanter"/>
                     <attribute id="ProgressionType" type="uint8" value="1"/>
-                    <attribute id="PassivesAdded" type="LSString" value=""/>
+                    <attribute id="PassivesAdded" type="LSString" value="Spellbinder_Enchanter_Magikinesis"/>
                     <attribute id="TableUUID" type="guid" value="966e3e81-32cc-4a27-a60e-5e11be70b98f"/>
                     <attribute id="UUID" type="guid" value="466e22ca-da28-4837-8222-9a9c980da16f"/>
                 </node>

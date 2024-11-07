@@ -69,3 +69,13 @@ end
 function ArrowOfForceCheck(entity)
     return SpellId('Projectile_Spellbinder_ArcaneSniper_ArrowOfForce')
 end
+
+function TryMysticDieBoost()
+    local result = context.InterruptedRoll.Total
+    local target = context.InterruptedRoll.Difficulty
+    local num = Roll(1, DiceType.d8, 0)
+    local newTotal = result + num
+    local success = newTotal >= target
+    local probability = 1.0-((target - result)/8)
+    return ConditionResult(success,{},{},probability)
+end
