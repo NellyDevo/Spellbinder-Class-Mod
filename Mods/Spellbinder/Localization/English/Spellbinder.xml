@@ -250,5 +250,7 @@
     <content contentuid="h9b43c4ec621249c5a8e7623aac4d96148gd1" version="1">Ethereal Presence</content>
     <content contentuid="h034b39f1ce5b411fac84632b6dd239472gd5" version="1">You can cast Misty Step a number of times per long rest equal to your Charisma modifier.</content>
     <content contentuid="h6eb2cbb658cd40e2b8f3dbdf6af0aaf5e80a" version="1">You learn Misty Step. You can also cast Misty Step without using a spell slot a number of times per long rest equal to your Charisma modifier.</content>
-    
+
+    <content contentuid="h3eda01c193e74e2280848ebe1b51431159ab" version="1">Uncanny Athleticism</content>
+    <content contentuid="h71379fabde4248348bc26fabe8d29b65ac0b" version="1">Whenever you fail a Strength, Dextertiy, or Constitution Saving Throw, you may add your Mystic Die to your roll, possibly causing it to succeed.</content>
 </contentList>

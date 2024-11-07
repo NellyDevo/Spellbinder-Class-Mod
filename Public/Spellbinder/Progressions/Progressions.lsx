@@ -271,7 +271,7 @@
                     <attribute id="Level" type="uint8" value="11"/>
                     <attribute id="Name" type="LSString" value="MysticKnight"/>
                     <attribute id="ProgressionType" type="uint8" value="1"/>
-                    <attribute id="PassivesAdded" type="LSString" value=""/>
+                    <attribute id="PassivesAdded" type="LSString" value="Spellbinder_MysticKnight_UncannyAthleticism"/>
                     <attribute id="Selectors" type="LSString" value="SelectPassives(e91ebae1-0ec7-401a-bc32-829302a2a396,1,SPELLBINDER_LOCA_ARCANE_MANEUVERS)"/>
                     <attribute id="TableUUID" type="guid" value="26b70d23-0f15-4a9b-a7be-8c747b9c97fe"/>
                     <attribute id="UUID" type="guid" value="d3a41883-2f61-4054-85af-e2fe6873853c"/>
