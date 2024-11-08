@@ -56,7 +56,7 @@
 	                <attribute id="DiceType" type="uint32" value="8"/>
                     <attribute id="Name" type="FixedString" value="MysticDie"/>
                     <attribute id="PartyActionResource" type="bool" value="false"/>
-                    <attribute id="ReplenishType" type="FixedString" value="ShortRest"/>
+                    <attribute id="ReplenishType" type="FixedString" value="Rest"/>
                     <attribute id="ShowOnActionResourcePanel" type="bool" value="true"/>
                     <attribute id="UUID" type="guid" value="8808dfba-e085-4285-8ab0-cc12f5dfdcd1"/>
                     <attribute id="UpdatesSpellPowerLevel" type="bool" value="false"/>

@@ -90,13 +90,15 @@ type "StatusData"
 data "StatusType" "BOOST"
 using "TAGBOUNDSPELL_1_%s"
 data "DisplayName" "%s"
-data "OnRemoveFunctors" "ApplyStatus(TAGBOUNDSPELL_%s_%s,100,-1)"]],
+data "OnRemoveFunctors" "ApplyStatus(TAGBOUNDSPELL_%s_%s,100,context.Target.TAGBOUNDSPELL_%s_%s.Duration)"]],
     progress,
     currentCharge,
     spellID,
     spellID,
     generatedHandle,
     currentCharge - 1,
+    spellID,
+    currentCharge,
     spellID)
 end
 

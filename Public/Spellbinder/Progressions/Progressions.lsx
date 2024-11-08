@@ -92,7 +92,7 @@
                     <attribute id="Level" type="uint8" value="3"/>
                     <attribute id="Name" type="LSString" value="Enchanter"/>
                     <attribute id="ProgressionType" type="uint8" value="1"/> 
-                    <attribute id="PassivesAdded" type="LSString" value="Spellbinder_Enchanter_Magic_Batteries"/>
+                    <attribute id="PassivesAdded" type="LSString" value="Spellbinder_Enchanter_MagicalWellspring;Spellbinder_MysticDice"/>
                     <attribute id="TableUUID" type="guid" value="966e3e81-32cc-4a27-a60e-5e11be70b98f"/> 
                     <attribute id="UUID" type="guid" value="43b3f5ca-558f-41cc-94b4-f33dcb566e9e"/> 
                 </node>
@@ -173,7 +173,7 @@
                     <attribute id="Level" type="uint8" value="7"/>
                     <attribute id="Name" type="LSString" value="Enchanter"/>
                     <attribute id="ProgressionType" type="uint8" value="1"/>
-                    <attribute id="PassivesAdded" type="LSString" value="Spellbinder_Enchanter_MagicalWellspring;Spellbinder_MysticDice"/>
+                    <attribute id="PassivesAdded" type="LSString" value="Spellbinder_MysticDice_ShortRest"/>
                     <attribute id="TableUUID" type="guid" value="966e3e81-32cc-4a27-a60e-5e11be70b98f"/>
                     <attribute id="UUID" type="guid" value="a31b58f3-1924-46ce-816c-6b3c86957bef"/>
                 </node>
@@ -189,7 +189,7 @@
                     <attribute id="Level" type="uint8" value="7"/>
                     <attribute id="Name" type="LSString" value="MysticKnight"/>
                     <attribute id="ProgressionType" type="uint8" value="1"/>
-                    <attribute id="PassivesAdded" type="LSString" value="Spellbinder_MysticDice"/>
+                    <attribute id="PassivesAdded" type="LSString" value="Spellbinder_MysticDice;Spellbinder_MysticDice_ShortRest"/>
                     <attribute id="Selectors" type="LSString" value="SelectPassives(e91ebae1-0ec7-401a-bc32-829302a2a396,2,SPELLBINDER_LOCA_ARCANE_MANEUVERS)"/>
                     <attribute id="TableUUID" type="guid" value="26b70d23-0f15-4a9b-a7be-8c747b9c97fe"/>
                     <attribute id="UUID" type="guid" value="c7b386a7-4cc7-4cba-b594-68b8d580e06c"/>
