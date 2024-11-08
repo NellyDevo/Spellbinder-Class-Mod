@@ -164,7 +164,8 @@ using "%s"
 data "SpellFlags" "HasHighGroundRangeExtension;RangeIgnoreVerticalThreshold;IsHarmful;IgnoreVisionBlock;ImmediateCast%s"
 data "TargetRadius" "100"
 data "TargetConditions" ""
-data "UseCosts" ""]],
+data "UseCosts" ""
+data "AmountOfTargets" "1"]],
     spellID,
     spellID,
     spellEffects,

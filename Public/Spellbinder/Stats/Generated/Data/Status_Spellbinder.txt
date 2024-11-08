@@ -110,6 +110,12 @@ data "StatusType" "BOOST"
 data "StackId" "SPELLBINDER_BOUND_SPELL_REMOVER"
 data "StatusPropertyFlags" "DisableOverhead;DisableCombatlog;DisablePortraitIndicator"
 
+new entry "SPELLBINDER_WEAPON_REMOVAL_MARKER"
+type "StatusData"
+data "StatusType" "BOOST"
+data "StackId" "SPELLBINDER_BOUND_SPELL_REMOVER_MARKER"
+//data "StatusPropertyFlags" "DisableOverhead;DisableCombatlog;DisablePortraitIndicator"
+
 new entry "STATUS_SPELLBINDER_BOUND_ARMOR_REMOVER"
 type "StatusData"
 data "StatusType" "BOOST"

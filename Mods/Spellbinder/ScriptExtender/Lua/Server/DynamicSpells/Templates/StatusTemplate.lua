@@ -46,14 +46,16 @@ using "SPELLBINDER_BOUND_BASE_WEAPON_STATUS"
 data "Passives" "Spellbinder_Bound_Spell_%s"
 data "Icon" "%s"
 %s
-data "DisplayName" "%s;%s"]],
+data "DisplayName" "%s;%s"
+data "AuraStatuses" "IF(Self()):ApplyStatus(SPELLBINDER_TELEKINETIC_PROJECTILES_MARKER,100,-1);IF(Self()):ApplyStatus(STATUS_SELF_TRIGGER_%s,100,-1)"]],
     progress,
     spellID,
     spellID,
     spellStat.Icon,
     VFX.GetVFXFor(spellID, spellStat),
     cached.Description.DisplayName.Handle.Handle,
-    cached.Description.DisplayName.Handle.Version)
+    cached.Description.DisplayName.Handle.Version,
+    spellID)
 end
 
 local function statusArmorFirstCharge(progress, spellStat, spellID)
@@ -127,10 +129,15 @@ local function statusDeliverPayload(progress, spellID)
     return string.format(
 [[%s
 
-new entry "STATUS_CASTER_TRIGGER_%s"
+new entry "STATUS_SELF_TRIGGER_%s"
 type "StatusData"
 data "StatusType" "BOOST"
 data "Passives" "Passive_Trigger_%s"
+data "StatusPropertyFlags" "DisableOverhead;DisableCombatlog;DisablePortraitIndicator;IgnoreResting"
+
+new entry "STATUS_CASTER_TRIGGER_%s"
+type "StatusData"
+data "StatusType" "BOOST"
 data "StatusPropertyFlags" "DisableOverhead;DisableCombatlog;DisablePortraitIndicator;IgnoreResting"
 
 new entry "STATUS_TARGET_TRIGGER_%s"
@@ -146,7 +153,7 @@ type "StatusData"
 data "StatusType" "BOOST"
 data "StatusPropertyFlags" "DisableOverhead;DisableCombatlog;DisablePortraitIndicator;IgnoreResting"]],
     progress,
-    spellID, spellID, spellID, spellID, spellID, spellID, spellID)
+    spellID, spellID, spellID, spellID, spellID, spellID, spellID, spellID)
 end
 
 ---@param spellID string
