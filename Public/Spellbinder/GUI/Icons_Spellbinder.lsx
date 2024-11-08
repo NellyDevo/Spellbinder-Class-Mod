@@ -75,105 +75,105 @@
                     <attribute id="V2" type="float" value="0.1"/>
                 </node>
 				<node id="IconUV"> Line 2
-                    <attribute id="MapKey" type="FixedString" value=""/>
+                    <attribute id="MapKey" type="FixedString" value="Spellbinder_Arcane_Resistance"/>
                     <attribute id="U1" type="float" value="0.0"/>
                     <attribute id="U2" type="float" value="0.1"/>
                     <attribute id="V1" type="float" value="0.1"/>
                     <attribute id="V2" type="float" value="0.2"/>
                 </node>
 				<node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value=""/>
+                    <attribute id="MapKey" type="FixedString" value="Spellbinder_Arrows_Of_Force"/>
                     <attribute id="U1" type="float" value="0.1"/>
                     <attribute id="U2" type="float" value="0.2"/>
                     <attribute id="V1" type="float" value="0.1"/>
                     <attribute id="V2" type="float" value="0.2"/>
                 </node>
 				<node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value=""/>
+                    <attribute id="MapKey" type="FixedString" value="Spellbinder_Magical_Arc"/>
                     <attribute id="U1" type="float" value="0.2"/>
                     <attribute id="U2" type="float" value="0.3"/>
                     <attribute id="V1" type="float" value="0.1"/>
                     <attribute id="V2" type="float" value="0.2"/>
                 </node>
 				<node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value=""/>
+                    <attribute id="MapKey" type="FixedString" value="Spellbinder_Magical_Wellspring"/>
                     <attribute id="U1" type="float" value="0.3"/>
                     <attribute id="U2" type="float" value="0.4"/>
                     <attribute id="V1" type="float" value="0.1"/>
                     <attribute id="V2" type="float" value="0.2"/>
                 </node>
 				<node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value=""/>
+                    <attribute id="MapKey" type="FixedString" value="Spellbinder_Magical_Wellspring_Acid"/>
                     <attribute id="U1" type="float" value="0.4"/>
                     <attribute id="U2" type="float" value="0.5"/>
                     <attribute id="V1" type="float" value="0.1"/>
                     <attribute id="V2" type="float" value="0.2"/>
                 </node>
 				<node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value=""/>
+                    <attribute id="MapKey" type="FixedString" value="Spellbinder_Magical_Wellspring_Cold"/>
                     <attribute id="U1" type="float" value="0.5"/>
                     <attribute id="U2" type="float" value="0.6"/>
                     <attribute id="V1" type="float" value="0.1"/>
                     <attribute id="V2" type="float" value="0.2"/>
                 </node>
 				<node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value=""/>
+                    <attribute id="MapKey" type="FixedString" value="Spellbinder_Magical_Wellspring_Fire"/>
                     <attribute id="U1" type="float" value="0.6"/>
                     <attribute id="U2" type="float" value="0.7"/>
                     <attribute id="V1" type="float" value="0.1"/>
                     <attribute id="V2" type="float" value="0.2"/>
                 </node>
 				<node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value=""/>
+                    <attribute id="MapKey" type="FixedString" value="Spellbinder_Magical_Wellspring_Lightning"/>
                     <attribute id="U1" type="float" value="0.7"/>
                     <attribute id="U2" type="float" value="0.8"/>
                     <attribute id="V1" type="float" value="0.1"/>
                     <attribute id="V2" type="float" value="0.2"/>
                 </node>
 				<node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value=""/>
+                    <attribute id="MapKey" type="FixedString" value="Spellbinder_Magical_Wellspring_Thunder"/>
                     <attribute id="U1" type="float" value="0.8"/>
                     <attribute id="U2" type="float" value="0.9"/>
                     <attribute id="V1" type="float" value="0.1"/>
                     <attribute id="V2" type="float" value="0.2"/>
                 </node>
 				<node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value=""/>
+                    <attribute id="MapKey" type="FixedString" value="Spellbinder_Magikinesis"/>
                     <attribute id="U1" type="float" value="0.9"/>
                     <attribute id="U2" type="float" value="1.0"/>
                     <attribute id="V1" type="float" value="0.1"/>
                     <attribute id="V2" type="float" value="0.2"/>
                 </node>
 				<node id="IconUV"> Line 3
-                    <attribute id="MapKey" type="FixedString" value=""/>
+                    <attribute id="MapKey" type="FixedString" value="Spellbinder_Reweave"/>
                     <attribute id="U1" type="float" value="0.0"/>
                     <attribute id="U2" type="float" value="0.1"/>
                     <attribute id="V1" type="float" value="0.2"/>
                     <attribute id="V2" type="float" value="0.3"/>
                 </node>
 				<node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value=""/>
+                    <attribute id="MapKey" type="FixedString" value="Spellbinder_Spellsword"/>
                     <attribute id="U1" type="float" value="0.1"/>
                     <attribute id="U2" type="float" value="0.2"/>
                     <attribute id="V1" type="float" value="0.2"/>
                     <attribute id="V2" type="float" value="0.3"/>
                 </node>
 				<node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value=""/>
+                    <attribute id="MapKey" type="FixedString" value="Spellbinder_Telekinetic_Projectiles"/>
                     <attribute id="U1" type="float" value="0.2"/>
                     <attribute id="U2" type="float" value="0.3"/>
                     <attribute id="V1" type="float" value="0.2"/>
                     <attribute id="V2" type="float" value="0.3"/>
                 </node>
 				<node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value=""/>
+                    <attribute id="MapKey" type="FixedString" value="Spellbinder_Uncanny_Athleticism"/>
                     <attribute id="U1" type="float" value="0.3"/>
                     <attribute id="U2" type="float" value="0.4"/>
                     <attribute id="V1" type="float" value="0.2"/>
                     <attribute id="V2" type="float" value="0.3"/>
                 </node>
 				<node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value=""/>
+                    <attribute id="MapKey" type="FixedString" value="Spellbinder_Mystic_Dice"/>
                     <attribute id="U1" type="float" value="0.4"/>
                     <attribute id="U2" type="float" value="0.5"/>
                     <attribute id="V1" type="float" value="0.2"/>

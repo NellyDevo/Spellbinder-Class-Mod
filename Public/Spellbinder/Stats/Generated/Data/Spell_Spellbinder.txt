@@ -289,6 +289,7 @@ data "UseCosts" "ActionPoint:1;ArrowOfForcePoint:1"
 data "PrepareEffect" "f9785481-e126-4499-b00e-f36fa02cd196"
 data "CastEffect" "655f8b6b-f392-4c5d-8d74-d2a9df5f8f9d"
 data "DamageType" "Force"
+data "Icon" "Spellbinder_Arrows_Of_Force"
 
 new entry "Target_Spellbinder_EtherealPresence_MistyStep"
 type "SpellData"

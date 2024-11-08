@@ -878,6 +878,156 @@
                                 </node>
                             </children>
                         </node>
+                        <node id="Object">
+                            <attribute id="MapKey" type="FixedString" value="Assets/Tooltips/Icons/Spellbinder_Arcane_Resistance.png" />
+                            <children>
+                                <node id="entries">
+                                    <attribute id="h" type="int16" value="380" />
+                                    <attribute id="mipcount" type="int8" value="1" />
+                                    <attribute id="w" type="int16" value="380" />
+                                </node>
+                            </children>
+                        </node>
+                        <node id="Object">
+                            <attribute id="MapKey" type="FixedString" value="Assets/Tooltips/Icons/Spellbinder_Arrows_Of_Force.png" />
+                            <children>
+                                <node id="entries">
+                                    <attribute id="h" type="int16" value="380" />
+                                    <attribute id="mipcount" type="int8" value="1" />
+                                    <attribute id="w" type="int16" value="380" />
+                                </node>
+                            </children>
+                        </node>
+                        <node id="Object">
+                            <attribute id="MapKey" type="FixedString" value="Assets/Tooltips/Icons/Spellbinder_Magical_Arc.png" />
+                            <children>
+                                <node id="entries">
+                                    <attribute id="h" type="int16" value="380" />
+                                    <attribute id="mipcount" type="int8" value="1" />
+                                    <attribute id="w" type="int16" value="380" />
+                                </node>
+                            </children>
+                        </node>
+                        <node id="Object">
+                            <attribute id="MapKey" type="FixedString" value="Assets/Tooltips/Icons/Spellbinder_Magical_Wellspring.png" />
+                            <children>
+                                <node id="entries">
+                                    <attribute id="h" type="int16" value="380" />
+                                    <attribute id="mipcount" type="int8" value="1" />
+                                    <attribute id="w" type="int16" value="380" />
+                                </node>
+                            </children>
+                        </node>
+                        <node id="Object">
+                            <attribute id="MapKey" type="FixedString" value="Assets/Tooltips/Icons/Spellbinder_Magical_Wellspring_Acid.png" />
+                            <children>
+                                <node id="entries">
+                                    <attribute id="h" type="int16" value="380" />
+                                    <attribute id="mipcount" type="int8" value="1" />
+                                    <attribute id="w" type="int16" value="380" />
+                                </node>
+                            </children>
+                        </node>
+                        <node id="Object">
+                            <attribute id="MapKey" type="FixedString" value="Assets/Tooltips/Icons/Spellbinder_Magical_Wellspring_Cold.png" />
+                            <children>
+                                <node id="entries">
+                                    <attribute id="h" type="int16" value="380" />
+                                    <attribute id="mipcount" type="int8" value="1" />
+                                    <attribute id="w" type="int16" value="380" />
+                                </node>
+                            </children>
+                        </node>
+                        <node id="Object">
+                            <attribute id="MapKey" type="FixedString" value="Assets/Tooltips/Icons/Spellbinder_Magical_Wellspring_Fire.png" />
+                            <children>
+                                <node id="entries">
+                                    <attribute id="h" type="int16" value="380" />
+                                    <attribute id="mipcount" type="int8" value="1" />
+                                    <attribute id="w" type="int16" value="380" />
+                                </node>
+                            </children>
+                        </node>
+                        <node id="Object">
+                            <attribute id="MapKey" type="FixedString" value="Assets/Tooltips/Icons/Spellbinder_Magical_Wellspring_Lightning.png" />
+                            <children>
+                                <node id="entries">
+                                    <attribute id="h" type="int16" value="380" />
+                                    <attribute id="mipcount" type="int8" value="1" />
+                                    <attribute id="w" type="int16" value="380" />
+                                </node>
+                            </children>
+                        </node>
+                        <node id="Object">
+                            <attribute id="MapKey" type="FixedString" value="Assets/Tooltips/Icons/Spellbinder_Magical_Wellspring_Thunder.png" />
+                            <children>
+                                <node id="entries">
+                                    <attribute id="h" type="int16" value="380" />
+                                    <attribute id="mipcount" type="int8" value="1" />
+                                    <attribute id="w" type="int16" value="380" />
+                                </node>
+                            </children>
+                        </node>
+                        <node id="Object">
+                            <attribute id="MapKey" type="FixedString" value="Assets/Tooltips/Icons/Spellbinder_Magikinesis.png" />
+                            <children>
+                                <node id="entries">
+                                    <attribute id="h" type="int16" value="380" />
+                                    <attribute id="mipcount" type="int8" value="1" />
+                                    <attribute id="w" type="int16" value="380" />
+                                </node>
+                            </children>
+                        </node>
+                        <node id="Object">
+                            <attribute id="MapKey" type="FixedString" value="Assets/Tooltips/Icons/Spellbinder_Reweave.png" />
+                            <children>
+                                <node id="entries">
+                                    <attribute id="h" type="int16" value="380" />
+                                    <attribute id="mipcount" type="int8" value="1" />
+                                    <attribute id="w" type="int16" value="380" />
+                                </node>
+                            </children>
+                        </node>
+                        <node id="Object">
+                            <attribute id="MapKey" type="FixedString" value="Assets/Tooltips/Icons/Spellbinder_Spellsword.png" />
+                            <children>
+                                <node id="entries">
+                                    <attribute id="h" type="int16" value="380" />
+                                    <attribute id="mipcount" type="int8" value="1" />
+                                    <attribute id="w" type="int16" value="380" />
+                                </node>
+                            </children>
+                        </node>
+                        <node id="Object">
+                            <attribute id="MapKey" type="FixedString" value="Assets/Tooltips/Icons/Spellbinder_Telekinetic_Projectiles.png" />
+                            <children>
+                                <node id="entries">
+                                    <attribute id="h" type="int16" value="380" />
+                                    <attribute id="mipcount" type="int8" value="1" />
+                                    <attribute id="w" type="int16" value="380" />
+                                </node>
+                            </children>
+                        </node>
+                        <node id="Object">
+                            <attribute id="MapKey" type="FixedString" value="Assets/Tooltips/Icons/Spellbinder_Uncanny_Athleticism.png" />
+                            <children>
+                                <node id="entries">
+                                    <attribute id="h" type="int16" value="380" />
+                                    <attribute id="mipcount" type="int8" value="1" />
+                                    <attribute id="w" type="int16" value="380" />
+                                </node>
+                            </children>
+                        </node>
+                        <node id="Object">
+                            <attribute id="MapKey" type="FixedString" value="Assets/Tooltips/Icons/Spellbinder_Mystic_Dice.png" />
+                            <children>
+                                <node id="entries">
+                                    <attribute id="h" type="int16" value="380" />
+                                    <attribute id="mipcount" type="int8" value="1" />
+                                    <attribute id="w" type="int16" value="380" />
+                                </node>
+                            </children>
+                        </node>
 
                         <node id="Object">
                             <attribute id="MapKey" type="FixedString" value="Assets/ControllerUIIcons/skills_png/Spellbinder_Battle_Dance.png" />
@@ -971,6 +1121,156 @@
                         </node>
                         <node id="Object">
                             <attribute id="MapKey" type="FixedString" value="Assets/ControllerUIIcons/skills_png/Spellbinder_Weapon_Mastery.png" />
+                            <children>
+                                <node id="entries">
+                                    <attribute id="h" type="int16" value="144" />
+                                    <attribute id="mipcount" type="int8" value="1" />
+                                    <attribute id="w" type="int16" value="144" />
+                                </node>
+                            </children>
+                        </node>
+                        <node id="Object">
+                            <attribute id="MapKey" type="FixedString" value="Assets/ControllerUIIcons/skills_png/Spellbinder_Arcane_Resistance.png" />
+                            <children>
+                                <node id="entries">
+                                    <attribute id="h" type="int16" value="144" />
+                                    <attribute id="mipcount" type="int8" value="1" />
+                                    <attribute id="w" type="int16" value="144" />
+                                </node>
+                            </children>
+                        </node>
+                        <node id="Object">
+                            <attribute id="MapKey" type="FixedString" value="Assets/ControllerUIIcons/skills_png/Spellbinder_Arrows_Of_Force.png" />
+                            <children>
+                                <node id="entries">
+                                    <attribute id="h" type="int16" value="144" />
+                                    <attribute id="mipcount" type="int8" value="1" />
+                                    <attribute id="w" type="int16" value="144" />
+                                </node>
+                            </children>
+                        </node>
+                        <node id="Object">
+                            <attribute id="MapKey" type="FixedString" value="Assets/ControllerUIIcons/skills_png/Spellbinder_Magical_Arc.png" />
+                            <children>
+                                <node id="entries">
+                                    <attribute id="h" type="int16" value="144" />
+                                    <attribute id="mipcount" type="int8" value="1" />
+                                    <attribute id="w" type="int16" value="144" />
+                                </node>
+                            </children>
+                        </node>
+                        <node id="Object">
+                            <attribute id="MapKey" type="FixedString" value="Assets/ControllerUIIcons/skills_png/Spellbinder_Magical_Wellspring.png" />
+                            <children>
+                                <node id="entries">
+                                    <attribute id="h" type="int16" value="144" />
+                                    <attribute id="mipcount" type="int8" value="1" />
+                                    <attribute id="w" type="int16" value="144" />
+                                </node>
+                            </children>
+                        </node>
+                        <node id="Object">
+                            <attribute id="MapKey" type="FixedString" value="Assets/ControllerUIIcons/skills_png/Spellbinder_Magical_Wellspring_Acid.png" />
+                            <children>
+                                <node id="entries">
+                                    <attribute id="h" type="int16" value="144" />
+                                    <attribute id="mipcount" type="int8" value="1" />
+                                    <attribute id="w" type="int16" value="144" />
+                                </node>
+                            </children>
+                        </node>
+                        <node id="Object">
+                            <attribute id="MapKey" type="FixedString" value="Assets/ControllerUIIcons/skills_png/Spellbinder_Magical_Wellspring_Cold.png" />
+                            <children>
+                                <node id="entries">
+                                    <attribute id="h" type="int16" value="144" />
+                                    <attribute id="mipcount" type="int8" value="1" />
+                                    <attribute id="w" type="int16" value="144" />
+                                </node>
+                            </children>
+                        </node>
+                        <node id="Object">
+                            <attribute id="MapKey" type="FixedString" value="Assets/ControllerUIIcons/skills_png/Spellbinder_Magical_Wellspring_Fire.png" />
+                            <children>
+                                <node id="entries">
+                                    <attribute id="h" type="int16" value="144" />
+                                    <attribute id="mipcount" type="int8" value="1" />
+                                    <attribute id="w" type="int16" value="144" />
+                                </node>
+                            </children>
+                        </node>
+                        <node id="Object">
+                            <attribute id="MapKey" type="FixedString" value="Assets/ControllerUIIcons/skills_png/Spellbinder_Magical_Wellspring_Lightning.png" />
+                            <children>
+                                <node id="entries">
+                                    <attribute id="h" type="int16" value="144" />
+                                    <attribute id="mipcount" type="int8" value="1" />
+                                    <attribute id="w" type="int16" value="144" />
+                                </node>
+                            </children>
+                        </node>
+                        <node id="Object">
+                            <attribute id="MapKey" type="FixedString" value="Assets/ControllerUIIcons/skills_png/Spellbinder_Magical_Wellspring_Thunder.png" />
+                            <children>
+                                <node id="entries">
+                                    <attribute id="h" type="int16" value="144" />
+                                    <attribute id="mipcount" type="int8" value="1" />
+                                    <attribute id="w" type="int16" value="144" />
+                                </node>
+                            </children>
+                        </node>
+                        <node id="Object">
+                            <attribute id="MapKey" type="FixedString" value="Assets/ControllerUIIcons/skills_png/Spellbinder_Magikinesis.png" />
+                            <children>
+                                <node id="entries">
+                                    <attribute id="h" type="int16" value="144" />
+                                    <attribute id="mipcount" type="int8" value="1" />
+                                    <attribute id="w" type="int16" value="144" />
+                                </node>
+                            </children>
+                        </node>
+                        <node id="Object">
+                            <attribute id="MapKey" type="FixedString" value="Assets/ControllerUIIcons/skills_png/Spellbinder_Reweave.png" />
+                            <children>
+                                <node id="entries">
+                                    <attribute id="h" type="int16" value="144" />
+                                    <attribute id="mipcount" type="int8" value="1" />
+                                    <attribute id="w" type="int16" value="144" />
+                                </node>
+                            </children>
+                        </node>
+                        <node id="Object">
+                            <attribute id="MapKey" type="FixedString" value="Assets/ControllerUIIcons/skills_png/Spellbinder_Spellsword.png" />
+                            <children>
+                                <node id="entries">
+                                    <attribute id="h" type="int16" value="144" />
+                                    <attribute id="mipcount" type="int8" value="1" />
+                                    <attribute id="w" type="int16" value="144" />
+                                </node>
+                            </children>
+                        </node>
+                        <node id="Object">
+                            <attribute id="MapKey" type="FixedString" value="Assets/ControllerUIIcons/skills_png/Spellbinder_Telekinetic_Projectiles.png" />
+                            <children>
+                                <node id="entries">
+                                    <attribute id="h" type="int16" value="144" />
+                                    <attribute id="mipcount" type="int8" value="1" />
+                                    <attribute id="w" type="int16" value="144" />
+                                </node>
+                            </children>
+                        </node>
+                        <node id="Object">
+                            <attribute id="MapKey" type="FixedString" value="Assets/ControllerUIIcons/skills_png/Spellbinder_Uncanny_Athleticism.png" />
+                            <children>
+                                <node id="entries">
+                                    <attribute id="h" type="int16" value="144" />
+                                    <attribute id="mipcount" type="int8" value="1" />
+                                    <attribute id="w" type="int16" value="144" />
+                                </node>
+                            </children>
+                        </node>
+                        <node id="Object">
+                            <attribute id="MapKey" type="FixedString" value="Assets/ControllerUIIcons/skills_png/Spellbinder_Mystic_Dice.png" />
                             <children>
                                 <node id="entries">
                                     <attribute id="h" type="int16" value="144" />
