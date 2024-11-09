@@ -165,7 +165,8 @@ data "SpellFlags" "HasHighGroundRangeExtension;RangeIgnoreVerticalThreshold;IsHa
 data "TargetRadius" "100"
 data "TargetConditions" ""
 data "UseCosts" ""
-data "AmountOfTargets" "1"]],
+data "AmountOfTargets" "1"
+data "RootSpellID" ""]],
     spellID,
     spellID,
     spellEffects,
