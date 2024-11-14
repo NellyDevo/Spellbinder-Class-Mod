@@ -161,10 +161,10 @@ type "SpellData"
 data "SpellType" "Target"
 using "%s"
 %s
-data "SpellFlags" "HasHighGroundRangeExtension;RangeIgnoreVerticalThreshold;IsHarmful;IgnoreVisionBlock;ImmediateCast%s"
+data "SpellFlags" "HasHighGroundRangeExtension;RangeIgnoreVerticalThreshold;IsHarmful;IgnoreVisionBlock;ImmediateCast;IsSpell%s"
 data "TargetRadius" "100"
 data "TargetConditions" ""
-data "UseCosts" ""
+data "UseCosts" "FauxTagIsBoundSpell:1"
 data "AmountOfTargets" "1"
 data "RootSpellID" ""]],
     spellID,

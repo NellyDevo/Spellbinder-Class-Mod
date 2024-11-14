@@ -117,6 +117,21 @@
                     <attribute id="UUID" type="guid" value="77a9fd60-e7fe-40a7-84c2-8e2aeff5a8ff"/>
                     <attribute id="UpdatesSpellPowerLevel" type="bool" value="false"/>
                 </node>
+                <node id="ActionResourceDefinition">
+                    <attribute id="Description" type="TranslatedString" handle="he5dc38e27f7c413196762f0aefebc9b12b17" version="1"/>
+                    <attribute id="DisplayName" type="TranslatedString" handle="h6e04ee738e0f4ab2ac38699a974187eee0c2" version="1"/>
+                    <attribute id="Error" type="FixedString" value="ActionResourceDefinitions_New_Stat_4_Error"/>
+                    <attribute id="IsSpellResource" type="bool" value="false"/>
+                    <attribute id="MaxLevel" type="uint32" value="0"/>
+                    <attribute id="MaxValue" type="uint32" value="0"/>
+                    <attribute id="Name" type="FixedString" value="FauxTagIsBoundSpell"/>
+                    <attribute id="PartyActionResource" type="bool" value="false"/>
+                    <attribute id="ReplenishType" type="FixedString" value="Turn"/>
+                    <attribute id="ShowOnActionResourcePanel" type="bool" value="false"/>
+                    <attribute id="IsHidden" type="bool" value="false"/>
+                    <attribute id="UUID" type="guid" value="b72980d3-f5b2-4a44-8a5c-d09b104f27e0"/>
+                    <attribute id="UpdatesSpellPowerLevel" type="bool" value="false"/>
+                </node>
             </children>
         </node>
     </region>

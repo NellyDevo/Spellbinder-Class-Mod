@@ -1,5 +1,6 @@
 Ext.Osiris.RegisterListener("CastSpell", 5, "before", function (caster, spell, spellType, spellElement, storyActionID)
     local entity = Ext.Entity.Get(caster)
+    if not entity or not entity.InventoryOwner or not entity.InventoryOwner.Inventories then return end
     local inventoryEntity = entity.InventoryOwner.Inventories[2]
     if not inventoryEntity or not inventoryEntity.InventoryContainer or not inventoryEntity.InventoryContainer.Items then return end
     for _,itemEntry in pairs(inventoryEntity.InventoryContainer.Items) do

@@ -79,3 +79,7 @@ function TryMysticDieBoost()
     local probability = 1.0-((target - result)/8)
     return ConditionResult(success,{},{},probability)
 end
+
+function IsThrownAttackEvenWithoutFinesse()
+    return IsUnarmedAttack() & SpellTypeIs(SpellType.Throw)
+end
