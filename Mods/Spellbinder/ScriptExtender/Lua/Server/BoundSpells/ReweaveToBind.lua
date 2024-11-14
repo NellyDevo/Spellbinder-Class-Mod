@@ -24,10 +24,10 @@ Ext.Osiris.RegisterListener("CastedSpell", 5, "before", function(caster, spell, 
                     offHand = Osi.GetEquippedItem(caster, "Melee Offhand Weapon")
                 end
                 if bindOffHand and offHand then
-                    Osi.ApplyStatus(offHand, statusID, -1, 1, caster)
+                    Osi.ApplyStatus(offHand, statusID, 10, 1, caster)
                     Osi.ApplyStatus(caster, "SPELLBINDER_REWEAVE_SPEND", 0)
                 elseif mainHand then
-                    Osi.ApplyStatus(mainHand, statusID, -1, 1, caster)
+                    Osi.ApplyStatus(mainHand, statusID, 10, 1, caster)
                     Osi.ApplyStatus(caster, "SPELLBINDER_REWEAVE_SPEND", 0)
                 end
             end
