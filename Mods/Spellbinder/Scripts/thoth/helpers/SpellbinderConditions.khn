@@ -8,9 +8,9 @@ end
 
 function SpellAutoResolveOnAllyWithDisadvantage(ability, dc, result)
     result = result or false
-    ally = Ally()
+    local ally = Ally()
     if not ally.Result then
-        st = ~SavingThrow(ability, dc, false, true)
+        local st = ~SavingThrow(ability, dc, false, true)
         return ConditionResult(st.Result,{},{},st.Chance)
     end
     return ConditionResult(result)
