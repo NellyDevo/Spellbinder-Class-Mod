@@ -83,3 +83,11 @@ end
 function IsThrownAttackEvenWithoutFinesse()
     return IsUnarmedAttack() & SpellTypeIs(SpellType.Throw)
 end
+
+function WasAttackWeaponBound()
+    local attackWeapon = GetAttackWeapon()
+    if attackWeapon.IsValid then
+        return Tagged('SPELLBINDER_BOUND', attackWeapon)
+    end
+    return ConditionResult(false)
+end

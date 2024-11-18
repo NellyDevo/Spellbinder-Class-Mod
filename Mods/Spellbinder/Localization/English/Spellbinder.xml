@@ -350,4 +350,7 @@
     <content contentuid="h9e797dd53a5848a49edee617e59560ad86d7" version="1">Mastering Tridents</content>
     <content contentuid="h93afc1b068254c10a685f52d084ac6f93cde" version="1">Mastering Warhammers</content>
     <content contentuid="h4dee9f7864aa42598973c59901ebe1ba7b2e" version="1">Mastering Warpicks</content>
+
+    <content contentuid="ha6cf49e1aa7f473c9334a43611256c3ff15a" version="1">Whenever you expend a charge of a Bound spell, you can move up to [1]. You do not provoke attacks of opportunity this turn.</content>
+    <content contentuid="h1af7b610ca5a4bd48e462dec69cc2595a4ae" version="1">You can move an extra [1] this round. You do not provoke attacks of opportunity this round.</content>
 </contentList>
