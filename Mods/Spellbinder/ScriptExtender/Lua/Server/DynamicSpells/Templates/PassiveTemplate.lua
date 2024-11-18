@@ -4,14 +4,11 @@ local Passives = {}
 
 local function weaponPassive(spellID, spellStat)
     local magicalArc = ""
-    if spellStat.Level > 0 then
-        magicalArc = "IF(not HasStatus('SPELLBINDER_LOOP_STOPPER',context.Source) and HasPassive('Spellbinder_SpellDancer_MagicalArc_Marker', context.Source)):ApplyStatus(SELF,SPELLBINDER_SPELL_DANCER_MAGICAL_ARC,100,1);"
-    end
     return string.format(
 [[new entry "Spellbinder_Bound_Spell_%s"
 type "PassiveData"
 using "Spellbinder_Bound_Spell_BasePassive"
-data "StatsFunctors" "IF(not HasStatus('SPELLBINDER_LOOP_STOPPER',context.Source)):ApplyStatus(STATUS_TARGET_TRIGGER_%s,100,1);IF(not HasStatus('SPELLBINDER_LOOP_STOPPER',context.Source)):ApplyStatus(SELF,STATUS_CASTER_TRIGGER_%s,100,1);IF(not HasStatus('SPELLBINDER_LOOP_STOPPER',context.Source)):ApplyEquipmentStatus(SELF,GetAttackWeapon(),SPELLBINDER_WEAPON_REMOVAL_MARKER,100,1)%s;IF(not HasStatus('SPELLBINDER_LOOP_STOPPER',context.Source)):ApplyStatus(SELF,SPELLBINDER_LOOP_STOPPER)"]],
+data "StatsFunctors" "IF(not HasStatus('SPELLBINDER_LOOP_STOPPER',context.Source)):ApplyStatus(STATUS_TARGET_TRIGGER_%s,100,1);IF(not HasStatus('SPELLBINDER_LOOP_STOPPER',context.Source)):ApplyStatus(SELF,STATUS_CASTER_TRIGGER_%s,100,1);IF(not HasStatus('SPELLBINDER_LOOP_STOPPER',context.Source)):ApplyEquipmentStatus(SELF,GetAttackWeapon(),SPELLBINDER_WEAPON_REMOVAL_MARKER,100,1);IF(not HasStatus('SPELLBINDER_LOOP_STOPPER',context.Source)):ApplyStatus(SELF,SPELLBINDER_SPELL_DANCER_MAGICAL_ARC,100,0);IF(not HasStatus('SPELLBINDER_LOOP_STOPPER',context.Source)):ApplyStatus(SELF,SPELLBINDER_LOOP_STOPPER)"]],
     spellID, spellID, spellID, magicalArc)
 end
 

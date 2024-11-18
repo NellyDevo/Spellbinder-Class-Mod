@@ -2,9 +2,7 @@ Ext.Osiris.RegisterListener("StatusApplied", 4, "after", function (object, statu
     if status == "SPELLBINDER_SPELLDANCER_BATTLE_DANCE_APPLIER" then
         if Osi.HasActiveStatus(object, "SPELLBINDER_SPELLDANCER_BATTLE_DANCE_TRACKER") == 0 then
             local characterEntity = Ext.Entity.Get(object)
-            LazyExport("CharacterEntity", characterEntity)
             local actionResource = characterEntity.ActionResources.Resources["d6b2369d-84f0-4ca4-a3a7-62d2d192a185"][1]
-            _D(actionResource)
             local used = actionResource.MaxAmount - actionResource.Amount
             Osi.ApplyStatus(object, "SPELLBINDER_SPELLDANCER_BATTLE_DANCE_TRACKER", used, 1)
         end
