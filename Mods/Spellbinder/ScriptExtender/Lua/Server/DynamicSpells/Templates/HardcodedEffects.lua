@@ -468,4 +468,256 @@ data "SpellSuccess" "ApplyStatus(HOLD_MONSTER,100,10)"
 data "SpellFail" "ApplyStatus(SAVED_AGAINST_HOSTILE_SPELL, 100, 0)"]]
 SpellEffectMap.Target_HoldMonster_6 = SpellEffectMap.Target_HoldMonster
 
+SpellEffectMap.Target_Prestidigitation_Fire = [[data "SpellProperties" "TARGET:IF(Character() and (HasStatus('DIPPED_FIRE',GetActiveWeapon()) or HasStatus('BURNING',GetActiveWeapon()))):ApplyEquipmentStatus(MainHand,BURNING_REMOVAL,100,0)"
+data "SpellRoll" ""
+data "SpellSuccess" ""
+data "SpellFail" ""]]
+SpellEffectMap.Target_Prestidigitation_Clean = [[data "SpellProperties" "TARGET:IF(Character()):ApplyStatus(PRESTIDIGITATION,100,1);TARGET:IF(Character()):ApplyStatus(SOAP_WASH,100,1)"
+data "SpellRoll" ""
+data "SpellSuccess" ""
+data "SpellFail" ""]]
+SpellEffectMap.Target_EnhanceAbility_BearsEndurance = [[data "SpellProperties" "ApplyStatus(BEARS_ENDURANCE, 100, -1)"
+data "SpellRoll" ""
+data "SpellSuccess" ""
+data "SpellFail" ""]]
+SpellEffectMap.Target_EnhanceAbility_BearsEndurance_3 = SpellEffectMap.Target_EnhanceAbility_BearsEndurance
+SpellEffectMap.Target_EnhanceAbility_BearsEndurance_4 = SpellEffectMap.Target_EnhanceAbility_BearsEndurance
+SpellEffectMap.Target_EnhanceAbility_BearsEndurance_5 = SpellEffectMap.Target_EnhanceAbility_BearsEndurance
+SpellEffectMap.Target_EnhanceAbility_BearsEndurance_6 = SpellEffectMap.Target_EnhanceAbility_BearsEndurance
+SpellEffectMap.Target_EnhanceAbility_BullsStrength = [[data "SpellProperties" "ApplyStatus(BULLS_STRENGTH, 100, -1)"
+data "SpellRoll" ""
+data "SpellSuccess" ""
+data "SpellFail" ""]]
+SpellEffectMap.Target_EnhanceAbility_BullsStrength_3 = SpellEffectMap.Target_EnhanceAbility_BullsStrength
+SpellEffectMap.Target_EnhanceAbility_BullsStrength_4 = SpellEffectMap.Target_EnhanceAbility_BullsStrength
+SpellEffectMap.Target_EnhanceAbility_BullsStrength_5 = SpellEffectMap.Target_EnhanceAbility_BullsStrength
+SpellEffectMap.Target_EnhanceAbility_BullsStrength_6 = SpellEffectMap.Target_EnhanceAbility_BullsStrength
+SpellEffectMap.Target_EnhanceAbility_CatsGrace = [[data "SpellProperties" "ApplyStatus(CATS_GRACE, 100, -1)"
+data "SpellRoll" ""
+data "SpellSuccess" ""
+data "SpellFail" ""]]
+SpellEffectMap.Target_EnhanceAbility_CatsGrace_3 = SpellEffectMap.Target_EnhanceAbility_CatsGrace
+SpellEffectMap.Target_EnhanceAbility_CatsGrace_4 = SpellEffectMap.Target_EnhanceAbility_CatsGrace
+SpellEffectMap.Target_EnhanceAbility_CatsGrace_5 = SpellEffectMap.Target_EnhanceAbility_CatsGrace
+SpellEffectMap.Target_EnhanceAbility_CatsGrace_6 = SpellEffectMap.Target_EnhanceAbility_CatsGrace
+SpellEffectMap.Target_EnhanceAbility_EaglesSplendor = [[data "SpellProperties" "ApplyStatus(EAGLES_SPLENDOR, 100, -1)"
+data "SpellRoll" ""
+data "SpellSuccess" ""
+data "SpellFail" ""]]
+SpellEffectMap.Target_EnhanceAbility_EaglesSplendor_3 = SpellEffectMap.Target_EnhanceAbility_EaglesSplendor
+SpellEffectMap.Target_EnhanceAbility_EaglesSplendor_4 = SpellEffectMap.Target_EnhanceAbility_EaglesSplendor
+SpellEffectMap.Target_EnhanceAbility_EaglesSplendor_5 = SpellEffectMap.Target_EnhanceAbility_EaglesSplendor
+SpellEffectMap.Target_EnhanceAbility_EaglesSplendor_6 = SpellEffectMap.Target_EnhanceAbility_EaglesSplendor
+SpellEffectMap.Target_EnhanceAbility_FoxsCunning = [[data "SpellProperties" "ApplyStatus(FOXS_CUNNING, 100, -1)"
+data "SpellRoll" ""
+data "SpellSuccess" ""
+data "SpellFail" ""]]
+SpellEffectMap.Target_EnhanceAbility_FoxsCunning_3 = SpellEffectMap.Target_EnhanceAbility_FoxsCunning
+SpellEffectMap.Target_EnhanceAbility_FoxsCunning_4 = SpellEffectMap.Target_EnhanceAbility_FoxsCunning
+SpellEffectMap.Target_EnhanceAbility_FoxsCunning_5 = SpellEffectMap.Target_EnhanceAbility_FoxsCunning
+SpellEffectMap.Target_EnhanceAbility_FoxsCunning_6 = SpellEffectMap.Target_EnhanceAbility_FoxsCunning
+SpellEffectMap.Target_EnhanceAbility_OwlsWisdom = [[data "SpellProperties" "ApplyStatus(OWLS_WISDOM, 100, -1)"
+data "SpellRoll" ""
+data "SpellSuccess" ""
+data "SpellFail" ""]]
+SpellEffectMap.Target_EnhanceAbility_OwlsWisdom_3 = SpellEffectMap.Target_EnhanceAbility_OwlsWisdom
+SpellEffectMap.Target_EnhanceAbility_OwlsWisdom_4 = SpellEffectMap.Target_EnhanceAbility_OwlsWisdom
+SpellEffectMap.Target_EnhanceAbility_OwlsWisdom_5 = SpellEffectMap.Target_EnhanceAbility_OwlsWisdom
+SpellEffectMap.Target_EnhanceAbility_OwlsWisdom_6 = SpellEffectMap.Target_EnhanceAbility_OwlsWisdom
+SpellEffectMap.Target_Enlarge = [[data "SpellProperties" "ApplyStatus(ENLARGE,100,10)"
+data "SpellRoll" "SpellAutoResolveOnAllyWithDisadvantage(Ability.Constitution, SourceSpellDC(),true)"
+data "SpellSuccess" ""
+data "SpellFail" ""]]
+SpellEffectMap.Target_Enlarge_3 = SpellEffectMap.Target_Enlarge
+SpellEffectMap.Target_Enlarge_4 = SpellEffectMap.Target_Enlarge
+SpellEffectMap.Target_Enlarge_5 = SpellEffectMap.Target_Enlarge
+SpellEffectMap.Target_Enlarge_6 = SpellEffectMap.Target_Enlarge
+SpellEffectMap.Target_Reduce = [[data "SpellProperties" "ApplyStatus(REDUCE,100,10)"
+data "SpellRoll" "SpellAutoResolveOnAllyWithDisadvantage(Ability.Constitution, SourceSpellDC(),true)"
+data "SpellSuccess" ""
+data "SpellFail" ""]]
+SpellEffectMap.Target_Reduce_3 = SpellEffectMap.Target_Reduce
+SpellEffectMap.Target_Reduce_4 = SpellEffectMap.Target_Reduce
+SpellEffectMap.Target_Reduce_5 = SpellEffectMap.Target_Reduce
+SpellEffectMap.Target_Reduce_6 = SpellEffectMap.Target_Reduce
+SpellEffectMap.Target_BestowCurse_Ability_Strength = [[data "SpellProperties" ""
+data "SpellRoll" "not SavingThrow(Ability.Wisdom, SourceSpellDC(), false, true)"
+data "SpellSuccess" "ApplyStatus(CURSE_ABILITY_STRENGTH,100,10)"
+data "SpellFail" "ApplyStatus(SAVED_AGAINST_HOSTILE_SPELL, 100, 0)"]]
+SpellEffectMap.Target_BestowCurse_Ability_Strength_4 = [[data "SpellProperties" ""
+data "SpellRoll" "not SavingThrow(Ability.Wisdom, SourceSpellDC(), false, true)"
+data "SpellSuccess" "ApplyStatus(CURSE_ABILITY_STRENGTH,100,20)"
+data "SpellFail" "ApplyStatus(SAVED_AGAINST_HOSTILE_SPELL, 100, 0)"]]
+SpellEffectMap.Target_BestowCurse_Ability_Strength_5 = [[data "SpellProperties" ""
+data "SpellRoll" "not SavingThrow(Ability.Wisdom, SourceSpellDC(), false, true)"
+data "SpellSuccess" "ApplyStatus(CURSE_ABILITY_STRENGTH,100,50)"
+data "SpellFail" "ApplyStatus(SAVED_AGAINST_HOSTILE_SPELL, 100, 0)"]]
+SpellEffectMap.Target_BestowCurse_Ability_Strength_6 = [[data "SpellProperties" ""
+data "SpellRoll" "not SavingThrow(Ability.Wisdom, SourceSpellDC(), false, true)"
+data "SpellSuccess" "ApplyStatus(CURSE_ABILITY_STRENGTH,100,100)"
+data "SpellFail" "ApplyStatus(SAVED_AGAINST_HOSTILE_SPELL, 100, 0)"]]
+SpellEffectMap.Target_BestowCurse_Ability_Dexterity = [[data "SpellProperties" ""
+data "SpellRoll" "not SavingThrow(Ability.Wisdom, SourceSpellDC(), false, true)"
+data "SpellSuccess" "ApplyStatus(CURSE_ABILITY_DEXTERITY,100,10)"
+data "SpellFail" "ApplyStatus(SAVED_AGAINST_HOSTILE_SPELL, 100, 0)"]]
+SpellEffectMap.Target_BestowCurse_Ability_Dexterity_4 = [[data "SpellProperties" ""
+data "SpellRoll" "not SavingThrow(Ability.Wisdom, SourceSpellDC(), false, true)"
+data "SpellSuccess" "ApplyStatus(CURSE_ABILITY_DEXTERITY,100,20)"
+data "SpellFail" "ApplyStatus(SAVED_AGAINST_HOSTILE_SPELL, 100, 0)"]]
+SpellEffectMap.Target_BestowCurse_Ability_Dexterity_5 = [[data "SpellProperties" ""
+data "SpellRoll" "not SavingThrow(Ability.Wisdom, SourceSpellDC(), false, true)"
+data "SpellSuccess" "ApplyStatus(CURSE_ABILITY_DEXTERITY,100,50)"
+data "SpellFail" "ApplyStatus(SAVED_AGAINST_HOSTILE_SPELL, 100, 0)"]]
+SpellEffectMap.Target_BestowCurse_Ability_Dexterity_6 = [[data "SpellProperties" ""
+data "SpellRoll" "not SavingThrow(Ability.Wisdom, SourceSpellDC(), false, true)"
+data "SpellSuccess" "ApplyStatus(CURSE_ABILITY_DEXTERITY,100,100)"
+data "SpellFail" "ApplyStatus(SAVED_AGAINST_HOSTILE_SPELL, 100, 0)"]]
+SpellEffectMap.Target_BestowCurse_Ability_Constitution = [[data "SpellProperties" ""
+data "SpellRoll" "not SavingThrow(Ability.Wisdom, SourceSpellDC(), false, true)"
+data "SpellSuccess" "ApplyStatus(CURSE_ABILITY_CONSTITUTION,100,10)"
+data "SpellFail" "ApplyStatus(SAVED_AGAINST_HOSTILE_SPELL, 100, 0)"]]
+SpellEffectMap.Target_BestowCurse_Ability_Constitution_4 = [[data "SpellProperties" ""
+data "SpellRoll" "not SavingThrow(Ability.Wisdom, SourceSpellDC(), false, true)"
+data "SpellSuccess" "ApplyStatus(CURSE_ABILITY_CONSTITUTION,100,20)"
+data "SpellFail" "ApplyStatus(SAVED_AGAINST_HOSTILE_SPELL, 100, 0)"]]
+SpellEffectMap.Target_BestowCurse_Ability_Constitution_5 = [[data "SpellProperties" ""
+data "SpellRoll" "not SavingThrow(Ability.Wisdom, SourceSpellDC(), false, true)"
+data "SpellSuccess" "ApplyStatus(CURSE_ABILITY_CONSTITUTION,100,50)"
+data "SpellFail" "ApplyStatus(SAVED_AGAINST_HOSTILE_SPELL, 100, 0)"]]
+SpellEffectMap.Target_BestowCurse_Ability_Constitution_6 = [[data "SpellProperties" ""
+data "SpellRoll" "not SavingThrow(Ability.Wisdom, SourceSpellDC(), false, true)"
+data "SpellSuccess" "ApplyStatus(CURSE_ABILITY_CONSTITUTION,100,100)"
+data "SpellFail" "ApplyStatus(SAVED_AGAINST_HOSTILE_SPELL, 100, 0)"]]
+SpellEffectMap.Target_BestowCurse_Ability_Intelligence = [[data "SpellProperties" ""
+data "SpellRoll" "not SavingThrow(Ability.Wisdom, SourceSpellDC(), false, true)"
+data "SpellSuccess" "ApplyStatus(CURSE_ABILITY_INTELLIGENCE,100,10)"
+data "SpellFail" "ApplyStatus(SAVED_AGAINST_HOSTILE_SPELL, 100, 0)"]]
+SpellEffectMap.Target_BestowCurse_Ability_Intelligence_4 = [[data "SpellProperties" ""
+data "SpellRoll" "not SavingThrow(Ability.Wisdom, SourceSpellDC(), false, true)"
+data "SpellSuccess" "ApplyStatus(CURSE_ABILITY_INTELLIGENCE,100,20)"
+data "SpellFail" "ApplyStatus(SAVED_AGAINST_HOSTILE_SPELL, 100, 0)"]]
+SpellEffectMap.Target_BestowCurse_Ability_Intelligence_5 = [[data "SpellProperties" ""
+data "SpellRoll" "not SavingThrow(Ability.Wisdom, SourceSpellDC(), false, true)"
+data "SpellSuccess" "ApplyStatus(CURSE_ABILITY_INTELLIGENCE,100,50)"
+data "SpellFail" "ApplyStatus(SAVED_AGAINST_HOSTILE_SPELL, 100, 0)"]]
+SpellEffectMap.Target_BestowCurse_Ability_Intelligence_6 = [[data "SpellProperties" ""
+data "SpellRoll" "not SavingThrow(Ability.Wisdom, SourceSpellDC(), false, true)"
+data "SpellSuccess" "ApplyStatus(CURSE_ABILITY_INTELLIGENCE,100,100)"
+data "SpellFail" "ApplyStatus(SAVED_AGAINST_HOSTILE_SPELL, 100, 0)"]]
+SpellEffectMap.Target_BestowCurse_Ability_Wisdom = [[data "SpellProperties" ""
+data "SpellRoll" "not SavingThrow(Ability.Wisdom, SourceSpellDC(), false, true)"
+data "SpellSuccess" "ApplyStatus(CURSE_ABILITY_WISDOM,100,10)"
+data "SpellFail" "ApplyStatus(SAVED_AGAINST_HOSTILE_SPELL, 100, 0)"]]
+SpellEffectMap.Target_BestowCurse_Ability_Wisdom_4 = [[data "SpellProperties" ""
+data "SpellRoll" "not SavingThrow(Ability.Wisdom, SourceSpellDC(), false, true)"
+data "SpellSuccess" "ApplyStatus(CURSE_ABILITY_WISDOM,100,20)"
+data "SpellFail" "ApplyStatus(SAVED_AGAINST_HOSTILE_SPELL, 100, 0)"]]
+SpellEffectMap.Target_BestowCurse_Ability_Wisdom_5 = [[data "SpellProperties" ""
+data "SpellRoll" "not SavingThrow(Ability.Wisdom, SourceSpellDC(), false, true)"
+data "SpellSuccess" "ApplyStatus(CURSE_ABILITY_WISDOM,100,50)"
+data "SpellFail" "ApplyStatus(SAVED_AGAINST_HOSTILE_SPELL, 100, 0)"]]
+SpellEffectMap.Target_BestowCurse_Ability_Wisdom_6 = [[data "SpellProperties" ""
+data "SpellRoll" "not SavingThrow(Ability.Wisdom, SourceSpellDC(), false, true)"
+data "SpellSuccess" "ApplyStatus(CURSE_ABILITY_WISDOM,100,100)"
+data "SpellFail" "ApplyStatus(SAVED_AGAINST_HOSTILE_SPELL, 100, 0)"]]
+SpellEffectMap.Target_BestowCurse_Ability_Charisma = [[data "SpellProperties" ""
+data "SpellRoll" "not SavingThrow(Ability.Wisdom, SourceSpellDC(), false, true)"
+data "SpellSuccess" "ApplyStatus(CURSE_ABILITY_CHARISMA,100,10)"
+data "SpellFail" "ApplyStatus(SAVED_AGAINST_HOSTILE_SPELL, 100, 0)"]]
+SpellEffectMap.Target_BestowCurse_Ability_Charisma_4 = [[data "SpellProperties" ""
+data "SpellRoll" "not SavingThrow(Ability.Wisdom, SourceSpellDC(), false, true)"
+data "SpellSuccess" "ApplyStatus(CURSE_ABILITY_CHARISMA,100,20)"
+data "SpellFail" "ApplyStatus(SAVED_AGAINST_HOSTILE_SPELL, 100, 0)"]]
+SpellEffectMap.Target_BestowCurse_Ability_Charisma_5 = [[data "SpellProperties" ""
+data "SpellRoll" "not SavingThrow(Ability.Wisdom, SourceSpellDC(), false, true)"
+data "SpellSuccess" "ApplyStatus(CURSE_ABILITY_CHARISMA,100,50)"
+data "SpellFail" "ApplyStatus(SAVED_AGAINST_HOSTILE_SPELL, 100, 0)"]]
+SpellEffectMap.Target_BestowCurse_Ability_Charisma_6 = [[data "SpellProperties" ""
+data "SpellRoll" "not SavingThrow(Ability.Wisdom, SourceSpellDC(), false, true)"
+data "SpellSuccess" "ApplyStatus(CURSE_ABILITY_CHARISMA,100,100)"
+data "SpellFail" "ApplyStatus(SAVED_AGAINST_HOSTILE_SPELL, 100, 0)"]]
+SpellEffectMap.Target_BestowCurse_Attack = [[data "SpellProperties" ""
+data "SpellRoll" "not SavingThrow(Ability.Wisdom, SourceSpellDC(), false, true)"
+data "SpellSuccess" "ApplyStatus(CURSE_ATTACK,100,10)"
+data "SpellFail" "ApplyStatus(SAVED_AGAINST_HOSTILE_SPELL, 100, 0)"]]
+SpellEffectMap.Target_BestowCurse_Attack_4 = [[data "SpellProperties" ""
+data "SpellRoll" "not SavingThrow(Ability.Wisdom, SourceSpellDC(), false, true)"
+data "SpellSuccess" "ApplyStatus(CURSE_ATTACK,100,20)"
+data "SpellFail" "ApplyStatus(SAVED_AGAINST_HOSTILE_SPELL, 100, 0)"]]
+SpellEffectMap.Target_BestowCurse_Attack_5 = [[data "SpellProperties" ""
+data "SpellRoll" "not SavingThrow(Ability.Wisdom, SourceSpellDC(), false, true)"
+data "SpellSuccess" "ApplyStatus(CURSE_ATTACK,100,50)"
+data "SpellFail" "ApplyStatus(SAVED_AGAINST_HOSTILE_SPELL, 100, 0)"]]
+SpellEffectMap.Target_BestowCurse_Attack_6 = [[data "SpellProperties" ""
+data "SpellRoll" "not SavingThrow(Ability.Wisdom, SourceSpellDC(), false, true)"
+data "SpellSuccess" "ApplyStatus(CURSE_ATTACK,100,100)"
+data "SpellFail" "ApplyStatus(SAVED_AGAINST_HOSTILE_SPELL, 100, 0)"]]
+SpellEffectMap.Target_BestowCurse_ExtraDamage = [[data "SpellProperties" ""
+data "SpellRoll" "not SavingThrow(Ability.Wisdom, SourceSpellDC(), false, true)"
+data "SpellSuccess" "ApplyStatus(CURSE_EXTRA_DAMAGE, 100, 10);ApplyStatus(SELF, CURSE_EXTRA_DAMAGE_OWNER, 100, 10)"
+data "SpellFail" "ApplyStatus(SAVED_AGAINST_HOSTILE_SPELL, 100, 0)"]]
+SpellEffectMap.Target_BestowCurse_ExtraDamage_4 = [[data "SpellProperties" ""
+data "SpellRoll" "not SavingThrow(Ability.Wisdom, SourceSpellDC(), false, true)"
+data "SpellSuccess" "ApplyStatus(CURSE_EXTRA_DAMAGE, 100, 20);ApplyStatus(SELF, CURSE_EXTRA_DAMAGE_OWNER, 100, 20)"
+data "SpellFail" "ApplyStatus(SAVED_AGAINST_HOSTILE_SPELL, 100, 0)"]]
+SpellEffectMap.Target_BestowCurse_ExtraDamage_5 = [[data "SpellProperties" ""
+data "SpellRoll" "not SavingThrow(Ability.Wisdom, SourceSpellDC(), false, true)"
+data "SpellSuccess" "ApplyStatus(CURSE_EXTRA_DAMAGE, 100, 50);ApplyStatus(SELF, CURSE_EXTRA_DAMAGE_OWNER, 100, 50))"
+data "SpellFail" "ApplyStatus(SAVED_AGAINST_HOSTILE_SPELL, 100, 0)"]]
+SpellEffectMap.Target_BestowCurse_ExtraDamage_6 = [[data "SpellProperties" ""
+data "SpellRoll" "not SavingThrow(Ability.Wisdom, SourceSpellDC(), false, true)"
+data "SpellSuccess" "ApplyStatus(CURSE_EXTRA_DAMAGE, 100, 100);ApplyStatus(SELF, CURSE_EXTRA_DAMAGE_OWNER, 100, 100)"
+data "SpellFail" "ApplyStatus(SAVED_AGAINST_HOSTILE_SPELL, 100, 0)"]]
+SpellEffectMap.Target_BestowCurse_SkipTurn = [[data "SpellProperties" ""
+data "SpellRoll" "not SavingThrow(Ability.Wisdom, SourceSpellDC(), false, true)"
+data "SpellSuccess" "ApplyStatus(CURSE_SKIP_TURN,100,10)"
+data "SpellFail" "ApplyStatus(SAVED_AGAINST_HOSTILE_SPELL, 100, 0)"]]
+SpellEffectMap.Target_BestowCurse_SkipTurn_4 = [[data "SpellProperties" ""
+data "SpellRoll" "not SavingThrow(Ability.Wisdom, SourceSpellDC(), false, true)"
+data "SpellSuccess" "ApplyStatus(CURSE_SKIP_TURN,100,20)"
+data "SpellFail" "ApplyStatus(SAVED_AGAINST_HOSTILE_SPELL, 100, 0)"]]
+SpellEffectMap.Target_BestowCurse_SkipTurn_5 = [[data "SpellProperties" ""
+data "SpellRoll" "not SavingThrow(Ability.Wisdom, SourceSpellDC(), false, true)"
+data "SpellSuccess" "ApplyStatus(CURSE_SKIP_TURN,100,50)"
+data "SpellFail" "ApplyStatus(SAVED_AGAINST_HOSTILE_SPELL, 100, 0)"]]
+SpellEffectMap.Target_BestowCurse_SkipTurn_6 = [[data "SpellProperties" ""
+data "SpellRoll" "not SavingThrow(Ability.Wisdom, SourceSpellDC(), false, true)"
+data "SpellSuccess" "ApplyStatus(CURSE_SKIP_TURN,100,100)"
+data "SpellFail" "ApplyStatus(SAVED_AGAINST_HOSTILE_SPELL, 100, 0)"]]
+SpellEffectMap.Target_ProtectionFromEnergy_Acid = [[data "SpellProperties" "ApplyStatus(PROTECTION_FROM_ENERGY_ACID,100,-1)"
+data "SpellRoll" ""
+data "SpellSuccess" ""
+data "SpellFail" ""]]
+SpellEffectMap.Target_ProtectionFromEnergy_Acid_4 = SpellEffectMap.Target_ProtectionFromEnergy_Acid
+SpellEffectMap.Target_ProtectionFromEnergy_Acid_5 = SpellEffectMap.Target_ProtectionFromEnergy_Acid
+SpellEffectMap.Target_ProtectionFromEnergy_Acid_6 = SpellEffectMap.Target_ProtectionFromEnergy_Acid
+SpellEffectMap.Target_ProtectionFromEnergy_Cold = [[data "SpellProperties" "ApplyStatus(PROTECTION_FROM_ENERGY_COLD,100,-1)"
+data "SpellRoll" ""
+data "SpellSuccess" ""
+data "SpellFail" ""]]
+SpellEffectMap.Target_ProtectionFromEnergy_Cold_4 = SpellEffectMap.Target_ProtectionFromEnergy_Cold
+SpellEffectMap.Target_ProtectionFromEnergy_Cold_5 = SpellEffectMap.Target_ProtectionFromEnergy_Cold
+SpellEffectMap.Target_ProtectionFromEnergy_Cold_6 = SpellEffectMap.Target_ProtectionFromEnergy_Cold
+SpellEffectMap.Target_ProtectionFromEnergy_Fire = [[data "SpellProperties" "ApplyStatus(PROTECTION_FROM_ENERGY_FIRE,100,-1)"
+data "SpellRoll" ""
+data "SpellSuccess" ""
+data "SpellFail" ""]]
+SpellEffectMap.Target_ProtectionFromEnergy_Fire_4 = SpellEffectMap.Target_ProtectionFromEnergy_Fire
+SpellEffectMap.Target_ProtectionFromEnergy_Fire_5 = SpellEffectMap.Target_ProtectionFromEnergy_Fire
+SpellEffectMap.Target_ProtectionFromEnergy_Fire_6 = SpellEffectMap.Target_ProtectionFromEnergy_Fire
+SpellEffectMap.Target_ProtectionFromEnergy_Lightning = [[data "SpellProperties" "ApplyStatus(PROTECTION_FROM_ENERGY_LIGHTNING,100,-1)"
+data "SpellRoll" ""
+data "SpellSuccess" ""
+data "SpellFail" ""]]
+SpellEffectMap.Target_ProtectionFromEnergy_Lightning_4 = SpellEffectMap.Target_ProtectionFromEnergy_Lightning
+SpellEffectMap.Target_ProtectionFromEnergy_Lightning_5 = SpellEffectMap.Target_ProtectionFromEnergy_Lightning
+SpellEffectMap.Target_ProtectionFromEnergy_Lightning_6 = SpellEffectMap.Target_ProtectionFromEnergy_Lightning
+SpellEffectMap.Target_ProtectionFromEnergy_Thunder = [[data "SpellProperties" "ApplyStatus(PROTECTION_FROM_ENERGY_THUNDER,100,-1)"
+data "SpellRoll" ""
+data "SpellSuccess" ""
+data "SpellFail" ""]]
+SpellEffectMap.Target_ProtectionFromEnergy_Thunder_4 = SpellEffectMap.Target_ProtectionFromEnergy_Thunder
+SpellEffectMap.Target_ProtectionFromEnergy_Thunder_5 = SpellEffectMap.Target_ProtectionFromEnergy_Thunder
+SpellEffectMap.Target_ProtectionFromEnergy_Thunder_6 = SpellEffectMap.Target_ProtectionFromEnergy_Thunder
+
 return SpellEffectMap

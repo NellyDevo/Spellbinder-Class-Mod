@@ -1,5 +1,10 @@
 local DynHelper = {}
 
+local SPELL_BLACKLIST = {
+    Target_Prestidigitation_Distract = true,
+    Target_Counterspell = true
+}
+
 ---@param spell SpellData
 ---@param spellID string
 DynHelper.DetermineChargesForSpell = function (spell, spellID)
@@ -39,7 +44,30 @@ DynHelper.GenerateTranslationEntry = function(text, output)
     return handle
 end
 
-DynHelper.isSpellBindable = function(spell)
+---@param spell SpellData
+---@param spellId string
+---@return boolean
+DynHelper.isSpellBindable = function(spell, spellId)
+    --if spellId == "Target_BestowCurse" then
+    --    _P("Target_BestowCurse")
+    --    _P(spell == nil)
+    --    _P(spell.PowerLevel > 0)
+    --    _P(spell.SpellType ~= "Target" and spell.SpellType ~= "Projectile")
+    --    _P(spell.SpellSchool == "None")
+    --    local foundFlag = false
+    --    for _,flag in pairs(spell.SpellFlags) do
+    --        if flag == "IsSpell" then
+    --            foundFlag = true
+    --            break
+    --        end
+    --    end
+    --    _P(not spell.SpellSuccess and not spell.SpellProperties and not spell.ContainerSpells)
+    --    _P(not foundFlag)
+    --    _P(spell.AreaRadius ~= 0)
+    --    _P(string.find(spell.TargetConditions, "not Character()", 1, false))
+    --    _P(string.find(spell.TargetConditions, "not Enemy()", 1, false))
+    --end
+    if SPELL_BLACKLIST[spellId] then return false end
     if spell == nil then return false end
     if spell.PowerLevel > 0 then return false end
     if spell.SpellType ~= "Target" and spell.SpellType ~= "Projectile" then return false end
@@ -51,11 +79,11 @@ DynHelper.isSpellBindable = function(spell)
             break
         end
     end
-    if not spell.SpellSuccess and not spell.SpellProperties then return false end
+    if not spell.SpellSuccess and not spell.SpellProperties and not spell.ContainerSpells then return false end
     if not foundFlag then return false end
     if spell.AreaRadius ~= 0 then return false end --TODO: Arcane Sniper level 15 impl
-    if string.find(spell.TargetConditions, "not Character()", 1, true) then return false end
-    if string.find(spell.TargetConditions, "not Enemy()", 1, true) then return false end
+    if string.find(spell.TargetConditions .. "", "not Character()", 1, false) then return false end
+    if string.find(spell.TargetConditions .. "", "not Enemy()", 1, false) then return false end
     return true
 end
 

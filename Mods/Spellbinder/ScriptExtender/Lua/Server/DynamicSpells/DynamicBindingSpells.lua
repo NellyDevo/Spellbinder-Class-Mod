@@ -37,12 +37,14 @@ end
 local function handleSpell(spellID, output)
     local spell = Ext.Stats.Get(spellID) --[[@as SpellData]]
     if spell then
-        if DynHelper.isSpellBindable(spell) then
+        if DynHelper.isSpellBindable(spell, spellID) then
             if spell.ContainerSpells and spell.ContainerSpells ~= "" then
                 local containedSpellTable = DynHelper.SplitString(spell.ContainerSpells, ";")
                 for _,containedID in pairs(containedSpellTable) do
                     local containedSpell = Ext.Stats.Get(containedID) --[[@as SpellData]]
-                    generateWithUpcasts(containedID, containedSpell, output)
+                    if DynHelper.isSpellBindable(containedSpell, containedID) then
+                        generateWithUpcasts(containedID, containedSpell, output)
+                    end
                 end
             else
                 generateWithUpcasts(spellID, spell, output)
