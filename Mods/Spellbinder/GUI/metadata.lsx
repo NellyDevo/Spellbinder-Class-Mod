@@ -566,7 +566,7 @@
                         </node>
 
                         <node id="Object">
-                            <attribute id="MapKey" type="FixedString" value="Assets/ActionResources_c/Icons/Resources/ReweavePoint.png" />
+                            <attribute id="MapKey" type="FixedString" value="Assets/ActionResources_c/Icons/Resources/ArcaneSmitePoint.png" />
                             <children>
                                 <node id="entries">
                                     <attribute id="h" type="int16" value="64" />
@@ -576,7 +576,7 @@
                             </children>
                         </node>
                         <node id="Object">
-                            <attribute id="MapKey" type="FixedString" value="Assets/ActionResources_c/Icons/ReweavePoint.png" />
+                            <attribute id="MapKey" type="FixedString" value="Assets/ActionResources_c/Icons/ArcaneSmitePoint.png" />
                             <children>
                                 <node id="entries">
                                     <attribute id="h" type="int16" value="80" />
@@ -586,7 +586,7 @@
                             </children>
                         </node>
                         <node id="Object">
-                            <attribute id="MapKey" type="FixedString" value="Assets/CC/icons_resources/ReweavePoint.png" />
+                            <attribute id="MapKey" type="FixedString" value="Assets/CC/icons_resources/ArcaneSmitePoint.png" />
                             <children>
                                 <node id="entries">
                                     <attribute id="h" type="int16" value="128" />
@@ -596,7 +596,7 @@
                             </children>
                         </node>
                         <node id="Object">
-                            <attribute id="MapKey" type="FixedString" value="Assets/Shared/Resources/Highlight/ReweavePoint.png" />
+                            <attribute id="MapKey" type="FixedString" value="Assets/Shared/Resources/Highlight/ArcaneSmitePoint.png" />
                             <children>
                                 <node id="entries">
                                     <attribute id="h" type="int16" value="48" />
@@ -606,7 +606,7 @@
                             </children>
                         </node>
                         <node id="Object">
-                            <attribute id="MapKey" type="FixedString" value="Assets/Shared/Resources/Missing/ReweavePoint.png" />
+                            <attribute id="MapKey" type="FixedString" value="Assets/Shared/Resources/Missing/ArcaneSmitePoint.png" />
                             <children>
                                 <node id="entries">
                                     <attribute id="h" type="int16" value="48" />
@@ -616,7 +616,7 @@
                             </children>
                         </node>
                         <node id="Object">
-                            <attribute id="MapKey" type="FixedString" value="Assets/Shared/Resources/Used/ReweavePoint.png" />
+                            <attribute id="MapKey" type="FixedString" value="Assets/Shared/Resources/Used/ArcaneSmitePoint.png" />
                             <children>
                                 <node id="entries">
                                     <attribute id="h" type="int16" value="48" />
@@ -626,7 +626,7 @@
                             </children>
                         </node>
                         <node id="Object">
-                            <attribute id="MapKey" type="FixedString" value="Assets/Shared/Resources/ReweavePoint.png" />
+                            <attribute id="MapKey" type="FixedString" value="Assets/Shared/Resources/ArcaneSmitePoint.png" />
                             <children>
                                 <node id="entries">
                                     <attribute id="h" type="int16" value="48" />

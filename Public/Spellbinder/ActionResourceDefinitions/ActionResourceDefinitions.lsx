@@ -82,7 +82,7 @@
                     <attribute id="IsSpellResource" type="bool" value="false"/>
                     <attribute id="MaxLevel" type="uint32" value="0"/>
                     <attribute id="MaxValue" type="uint32" value="0"/>
-                    <attribute id="Name" type="FixedString" value="ReweavePoint"/>
+                    <attribute id="Name" type="FixedString" value="ArcaneSmitePoint"/>
                     <attribute id="PartyActionResource" type="bool" value="false"/>
                     <attribute id="ReplenishType" type="FixedString" value="Rest"/>
                     <attribute id="ShowOnActionResourcePanel" type="bool" value="true"/>

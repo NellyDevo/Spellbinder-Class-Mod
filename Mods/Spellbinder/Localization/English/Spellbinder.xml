@@ -179,7 +179,7 @@
     <content contentuid="hd3dfb9450231431abdbf5f75cca7eef5a08a" version="1">Used to quickly bind spells to weapons</content>
     <content contentuid="ha0ad0427153c46aba761e109b5d6f5896a7c" version="1">Quick Binds</content>
     <content contentuid="h489fd55da0b5442da31e4018eb79e59e8fb8" version="1">Quick Bind</content>
-    <content contentuid="h8be02acd5b7745e281438a42201fb82ed6gd" version="1">You can use Quick Bind points to cast your spells to Bind them as a Bonus Action. Costs 1 point plus the level of the spell.</content>
+    <content contentuid="h8be02acd5b7745e281438a42201fb82ed6gd" version="1">You can use Quick Bind points to cast your Spellbinder Cantrips to Bind them as a Bonus Action.</content>
     <content contentuid="h97fcd9e74841489cb9ae544b05560b7658c1" version="1">Spell Binding</content>
     <content contentuid="ha04e15945f2141bb879f8577b6071d3e33b7" version="1">You can cast your spells to Bind them to your weapons. When you hit with a Bound weapon, also apply the effects of the Bound spell.</content>
     <content contentuid="h776580fc37504425a15f2a6d0d39ea4c7d5f" version="1">Bind Off Hand</content>
@@ -233,8 +233,8 @@
 
     <content contentuid="ha965c802ed734a0bad9cfd8704b8c3562423" version="1">Reweave</content>
     <content contentuid="h984e13a52abc4b958c66f847ecdb37cbf8fb" version="1">When you cast a cantrip without binding it, you may also bind one charge of that cantrip to the weapon you're holding.</content>
-    <content contentuid="hd3f096776f2a4b37980a0ce89be22df2bdee" version="1">Reweave</content>
-    <content contentuid="hddb374afc17a41ca9a1207743ad927ab8d13" version="1">Used to bind residual energies from your cantrips.</content>
+    <content contentuid="hd3f096776f2a4b37980a0ce89be22df2bdee" version="1">Arcane Smite</content>
+    <content contentuid="hddb374afc17a41ca9a1207743ad927ab8d13" version="1">Used to attack after binding a spell.</content>
 
     <content contentuid="hed20898c073e4784814f0ad2b66ae6fd2ad0" version="1">Spellsword</content>
     <content contentuid="hf887d44c412b416293014a19da42aa28a3a8" version="1">Whenever you cast a spell, get a +2 bonus on all weapon attack rolls until your next turn.</content>
@@ -354,4 +354,6 @@
     <content contentuid="ha6cf49e1aa7f473c9334a43611256c3ff15a" version="1">Whenever you expend a charge of a Bound spell, you can move up to [1]. You do not provoke attacks of opportunity this turn.</content>
     <content contentuid="h1af7b610ca5a4bd48e462dec69cc2595a4ae" version="1">You can move an extra [1] this round. You do not provoke attacks of opportunity this round.</content>
     <content contentuid="he386f2d9513646789a7757b0177585e4dd71" version="1">This bonus increases to +2 at level 11 and +3 at level 15.</content>
+    <content contentuid="hb662f26a38e640c79b24e3b66a880902baa6" version="1">Arcane Smite</content>
+    <content contentuid="hc7e06767974642a38ce440715f970907412d" version="1">When you bind a spell as an Action, you may use your Arcane Smite to make an attack as a Bonus Action.</content>
 </contentList>

@@ -17,7 +17,6 @@ Ext.Osiris.RegisterListener("LeveledUp", 1, "after", function(character)
         local characterEntity = Ext.Entity.Get(character)
         local changed = false
         if adjustPoints('Spellbinder_Bind', character, characterEntity, "df7bef22-5966-4322-982f-fe0c4219c4f0", "Intelligence") then changed = true end
-        if adjustPoints('Spellbinder_ReweavePoints', character, characterEntity, "6b4afa20-cad2-4fcc-b0a5-85723306a708", "Intelligence") then changed = true end
         if adjustPoints('Spellbinder_SpellDancer_EtherealPresence', character, characterEntity, "77a9fd60-e7fe-40a7-84c2-8e2aeff5a8ff", "Intelligence") then changed = true end
         if changed then
             characterEntity:Replicate("ActionResources")

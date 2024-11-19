@@ -25,6 +25,7 @@ data "SpellType" "Shout"
 data "SpellContainerID" "Shout_Spellbinder_Bind_Spell"
 data "TargetConditions" "Self()"
 data "Sheathing" "DontChange"
+data "SpellRoll" "not HasStatus('HeheXD')"
 
 new entry "Spellbinder_Bound_Spell_BasePassive"
 type "PassiveData"
