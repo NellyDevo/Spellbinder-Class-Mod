@@ -175,7 +175,8 @@ data "Boosts" "UnlockSpellVariant(BoundRangedSpellCheck(),ModifyTargetRadius(Mul
 new entry "SPELLBINDER_SPELL_DANCER_MAGICAL_ARC"
 type "StatusData"
 data "StatusType" "BOOST"
-data "OnApplyFunctors" "IF(not ClassLevelHigherOrEqualThan(11,'Spellbinder')):ApplyStatus(SPELLBINDER_SPELL_DANCER_MAGICAL_ARC_1,100,1);IF(ClassLevelHigherOrEqualThan(11,'Spellbinder') and not ClassLevelHigherOrEqualThan(15,'Spellbinder')):ApplyStatus(SPELLBINDER_SPELL_DANCER_MAGICAL_ARC_2,100,1);IF(ClassLevelHigherOrEqualThan(15,'Spellbinder')):ApplyStatus(SPELLBINDER_SPELL_DANCER_MAGICAL_ARC_3,100,1)"
+data "OnApplyConditions" ""
+data "OnApplyFunctors" "IF(HasPassive('Spellbinder_SpellDancer_MagicalArc',context.Target) and not ClassLevelHigherOrEqualThan(11,'Spellbinder')):ApplyStatus(SPELLBINDER_SPELL_DANCER_MAGICAL_ARC_1,100,1);IF(HasPassive('Spellbinder_SpellDancer_MagicalArc',context.Target) and ClassLevelHigherOrEqualThan(11,'Spellbinder') and not ClassLevelHigherOrEqualThan(15,'Spellbinder')):ApplyStatus(SPELLBINDER_SPELL_DANCER_MAGICAL_ARC_2,100,1);IF(HasPassive('Spellbinder_SpellDancer_MagicalArc',context.Target) and ClassLevelHigherOrEqualThan(15,'Spellbinder')):ApplyStatus(SPELLBINDER_SPELL_DANCER_MAGICAL_ARC_3,100,1)"
 data "StatusPropertyFlags" "IgnoreResting;DisableCombatlog;DisablePortraitIndicator;DisableOverhead;ApplyToDead"
 
 new entry "SPELLBINDER_SPELL_DANCER_MAGICAL_ARC_1"
