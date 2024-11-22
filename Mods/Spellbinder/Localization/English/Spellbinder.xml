@@ -386,4 +386,8 @@
     <content contentuid="he386f2d9513646789a7757b0177585e4dd71" version="1">This bonus increases to +2 at level 11 and +3 at level 15.</content>
     <content contentuid="hb662f26a38e640c79b24e3b66a880902baa6" version="1">Arcane Smite</content>
     <content contentuid="hc7e06767974642a38ce440715f970907412d" version="1">When you bind a spell as an Action, you may use your Arcane Smite to make an attack as a Bonus Action.</content>
+    <content contentuid="h559d4950878747eeb24225159e72ea19e28a" version="1">You can use any weapon action and add your Mystic Die to its damage, expending it if it hits.</content>
+    <content contentuid="hbcbfdeb535f54fe0a9643626709780534g70" version="1">Inscrutible Tactics - Ranged</content>
+    <content contentuid="h84cb786d8bac456eb413471bae8b8acf2745" version="1">Inscrutible Tactics - Melee</content>
+    <content contentuid="h00910982b8d34e939de97a07b67c453b23b0" version="1">Inscrutible Tactics</content>
 </contentList>
