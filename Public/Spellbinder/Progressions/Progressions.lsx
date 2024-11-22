@@ -345,7 +345,7 @@
                     <attribute id="Level" type="uint8" value="15"/>
                     <attribute id="Name" type="LSString" value="SpellDancer"/>
                     <attribute id="ProgressionType" type="uint8" value="1"/>
-                    <attribute id="PassivesAdded" type="LSString" value=""/>
+                    <attribute id="PassivesAdded" type="LSString" value="Spellbinder_SpellDancer_HastyUptake;Spellbinder_SpellDancer_HastyUptake_Upcasting"/>
                     <attribute id="TableUUID" type="guid" value="ac49e2c9-ce2b-474f-b28a-8bce290a9fc2"/>
                     <attribute id="UUID" type="guid" value="d5deccfc-fc92-457a-8d48-a3f64d7bf875"/>
                 </node>

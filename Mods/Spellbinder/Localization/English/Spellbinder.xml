@@ -278,7 +278,7 @@
     <content contentuid="h17e52f11229d423b9f3ebda5833c7c2ac877" version="1">Whenever you miss with a weapon attack, you may roll a Mystic Die and add it to the attack roll, possibly causing it to hit. If it does, the die is expended.</content>
     
     <content contentuid="h9b43c4ec621249c5a8e7623aac4d96148gd1" version="1">Ethereal Presence</content>
-    <content contentuid="h034b39f1ce5b411fac84632b6dd239472gd5" version="1">You can cast Misty Step a number of times per long rest equal to your Charisma modifier.</content>
+    <content contentuid="h034b39f1ce5b411fac84632b6dd239472gd5" version="1">You can cast Misty Step a number of times per long rest equal to your Intelligence modifier.</content>
     <content contentuid="h6eb2cbb658cd40e2b8f3dbdf6af0aaf5e80a" version="1">You learn Misty Step. You can also cast Misty Step without using a spell slot a number of times per long rest equal to your Intelligence modifier.</content>
 
     <content contentuid="h3eda01c193e74e2280848ebe1b51431159ab" version="1">Uncanny Athleticism</content>
@@ -386,8 +386,14 @@
     <content contentuid="he386f2d9513646789a7757b0177585e4dd71" version="1">This bonus increases to +2 at level 11 and +3 at level 15.</content>
     <content contentuid="hb662f26a38e640c79b24e3b66a880902baa6" version="1">Arcane Smite</content>
     <content contentuid="hc7e06767974642a38ce440715f970907412d" version="1">When you bind a spell as an Action, you may use your Arcane Smite to make an attack as a Bonus Action.</content>
+
     <content contentuid="h559d4950878747eeb24225159e72ea19e28a" version="1">You can use any weapon action and add your Mystic Die to its damage, expending it if it hits.</content>
     <content contentuid="hbcbfdeb535f54fe0a9643626709780534g70" version="1">Inscrutible Tactics - Ranged</content>
     <content contentuid="h84cb786d8bac456eb413471bae8b8acf2745" version="1">Inscrutible Tactics - Melee</content>
     <content contentuid="h00910982b8d34e939de97a07b67c453b23b0" version="1">Inscrutible Tactics</content>
+
+    <content contentuid="h9a4d74d8d2124d6e94032bdec6eae1a2fged" version="1">Hasty Uptake</content>
+    <content contentuid="h60d6b172f0964e24937a886b7e1b98e10819" version="1">You may cast Haste as a reaction to starting combat. If you do, you can only target yourself.</content>
+
+    <content contentuid="hb4eb8fe48b5e44caba4f81a17d7436a9491f" version="1">Started Combat</content>
 </contentList>
