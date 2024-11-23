@@ -396,4 +396,12 @@
     <content contentuid="h60d6b172f0964e24937a886b7e1b98e10819" version="1">You may cast Haste as a reaction to starting combat. If you do, you can only target yourself.</content>
 
     <content contentuid="hb4eb8fe48b5e44caba4f81a17d7436a9491f" version="1">Started Combat</content>
+    <content contentuid="hf303016e53cc4bc7944b7abf2014f1af8419" version="1">You gain a Mastery Point, which is restored on a Long Rest.</content>
+    <content contentuid="h10576b968c844b9490b0af639a617c4eb504" version="1">Mastery Point Unlocked</content>
+    <content contentuid="h3ed3c1e000b842f4bbe46dba1907d52efa76" version="1">You gain a Spectral Arrow Point, which is restored on a Short Rest.</content>
+    <content contentuid="h2f7eea44ad6f406abd97c2fca2f06baa6487" version="1">Spectral Arrow Point Unlocked</content>
+    <content contentuid="h675fdd9d332740da98545302aeed65dc1bgc" version="1">You gain an Arcane Resistance Point, which is restored on a Short Rest.</content>
+    <content contentuid="he1063a543f9a49c495f6a4eb0f1b31a719ag" version="1">Arcane Resistance Point Unlocked</content>
+    <content contentuid="hadfe844ae0474ddaae5e57c4a1f80452ea3b" version="1">You gain an Arcane Smite Point, which is restored on a Long Rest.</content>
+    <content contentuid="h7e5f85d52761474b9474738b1f136f273f8c" version="1">Arcane Smite Point Unlocked</content>
 </contentList>

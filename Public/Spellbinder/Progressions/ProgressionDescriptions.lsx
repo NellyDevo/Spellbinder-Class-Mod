@@ -35,6 +35,46 @@
           <attribute id="SelectorId" type="FixedString" value="SPELLBINDER_LOCA_ARCANE_MANEUVERS" />
           <attribute id="UUID" type="guid" value="f9d9b804-a20d-4ef4-b42a-bdb8fc96e745" />
         </node>
+        <node id="ProgressionDescription">
+	        <attribute id="Description" type="TranslatedString" handle="h264cd9e9gbe19g4e44g9c76g564d77bd3592" version="3" />
+	        <attribute id="DisplayName" type="TranslatedString" handle="h507fbc0dg284eg4ce4g8458g4b531df0467c" version="3" />
+	        <attribute id="ParamMatch" type="FixedString" value="0:SpellSlot" />
+	        <attribute id="ProgressionTableId" type="guid" value="ca9cfd96-20b1-485c-b474-b333e6396591" />
+	        <attribute id="Type" type="FixedString" value="ActionResource" />
+	        <attribute id="UUID" type="guid" value="da1d4eb8-0b21-41b1-b1bf-db1bfd9c65f1" />
+        </node>
+        <node id="ProgressionDescription">
+	        <attribute id="Description" type="TranslatedString" handle="hf303016e53cc4bc7944b7abf2014f1af8419" version="1" />
+	        <attribute id="DisplayName" type="TranslatedString" handle="h10576b968c844b9490b0af639a617c4eb504" version="1" />
+	        <attribute id="ParamMatch" type="FixedString" value="0:WeaponMasteryPoint" />
+	        <attribute id="ProgressionTableId" type="guid" value="ca9cfd96-20b1-485c-b474-b333e6396591" />
+	        <attribute id="Type" type="FixedString" value="ActionResource" />
+	        <attribute id="UUID" type="guid" value="9a99f240-8ab4-45e9-8c34-084d3f0593c8" />
+        </node>
+        <node id="ProgressionDescription">
+	        <attribute id="Description" type="TranslatedString" handle="h3ed3c1e000b842f4bbe46dba1907d52efa76" version="1" />
+	        <attribute id="DisplayName" type="TranslatedString" handle="h2f7eea44ad6f406abd97c2fca2f06baa6487" version="1" />
+	        <attribute id="ParamMatch" type="FixedString" value="0:SpectralArrowPoint" />
+	        <attribute id="ProgressionTableId" type="guid" value="2d9ebdee-94b9-4215-9b1c-a9eef9a32854" />
+	        <attribute id="Type" type="FixedString" value="ActionResource" />
+	        <attribute id="UUID" type="guid" value="53208880-4893-407c-96b2-3af7aed510f3" />
+        </node>
+        <node id="ProgressionDescription">
+	        <attribute id="Description" type="TranslatedString" handle="h675fdd9d332740da98545302aeed65dc1bgc" version="1" />
+	        <attribute id="DisplayName" type="TranslatedString" handle="he1063a543f9a49c495f6a4eb0f1b31a719ag" version="1" />
+	        <attribute id="ParamMatch" type="FixedString" value="0:ArcaneResistancePoint" />
+	        <attribute id="ProgressionTableId" type="guid" value="ca9cfd96-20b1-485c-b474-b333e6396591" />
+	        <attribute id="Type" type="FixedString" value="ActionResource" />
+	        <attribute id="UUID" type="guid" value="b599e81e-425b-4814-be04-1f39167c42be" />
+        </node>
+        <node id="ProgressionDescription">
+	        <attribute id="Description" type="TranslatedString" handle="hadfe844ae0474ddaae5e57c4a1f80452ea3b" version="1" />
+	        <attribute id="DisplayName" type="TranslatedString" handle="h7e5f85d52761474b9474738b1f136f273f8c" version="1" />
+	        <attribute id="ParamMatch" type="FixedString" value="0:ArcaneSmitePoint" />
+	        <attribute id="ProgressionTableId" type="guid" value="ca9cfd96-20b1-485c-b474-b333e6396591" />
+	        <attribute id="Type" type="FixedString" value="ActionResource" />
+	        <attribute id="UUID" type="guid" value="84c17cb3-4d51-4add-99f3-88fd166e28f3" />
+        </node>
       </children>
     </node>
   </region>
