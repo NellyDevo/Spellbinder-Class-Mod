@@ -296,6 +296,7 @@ data "Description" "h60d6b172f0964e24937a886b7e1b98e10819"
 data "Boosts" "UnlockInterrupt(Interrupt_Spellbinder_SpellDancer_HastyUptake);UnlockSpell(Target_Haste,AddChildren,d136c5d9-0ff0-43da-ceac-4aa7f807bfd6)"
 data "StatsFunctorContext" "OnCombatStarted"
 data "StatsFunctors" "ApplyStatus(SPELLBINDER_HASTY_UPTAKE_TRIGGER,100,0)"
+data "Properties" "ForceShowInCC"
 
 new entry "Spellbinder_SpellDancer_HastyUptake_Upcasting"
 type "PassiveData"

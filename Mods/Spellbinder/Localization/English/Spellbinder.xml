@@ -393,7 +393,7 @@
     <content contentuid="h00910982b8d34e939de97a07b67c453b23b0" version="1">Inscrutible Tactics</content>
 
     <content contentuid="h9a4d74d8d2124d6e94032bdec6eae1a2fged" version="1">Hasty Uptake</content>
-    <content contentuid="h60d6b172f0964e24937a886b7e1b98e10819" version="1">You may cast Haste as a reaction to starting combat. If you do, you can only target yourself.</content>
+    <content contentuid="h60d6b172f0964e24937a886b7e1b98e10819" version="1">You learn Haste and may cast it as a reaction to starting combat. If you do, you can only target yourself.</content>
 
     <content contentuid="hb4eb8fe48b5e44caba4f81a17d7436a9491f" version="1">Started Combat</content>
     <content contentuid="hf303016e53cc4bc7944b7abf2014f1af8419" version="1">You gain a Mastery Point, which is restored on a Long Rest.</content>
