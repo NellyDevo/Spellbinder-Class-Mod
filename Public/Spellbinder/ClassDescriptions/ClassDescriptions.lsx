@@ -13,6 +13,7 @@
                     <attribute id="DisplayName" type="TranslatedString" handle="hfa96c9fae809403c90fd843f4ff731360e5d" version="1"/> Link to the .loca file
                     <attribute id="HpPerLevel" type="int32" value="6"/> Half Hit Die + 1
                     <attribute id="LearningStrategy" type="uint8" value="1"/>
+                    <attribute id="MulticlassSpellcasterModifier" type="double" value="0.5"/>
                     <attribute id="MustPrepareSpells" type="bool" value="false"/> Have this as false if you don't need to prepare them
                     <attribute id="Name" type="FixedString" value="Spellbinder"/> The name of your class
                     <attribute id="PrimaryAbility" type="uint8" value="4"/> 4 is for int. order goes from Str, Dex, Con, Int, Wis, and Cha.
