@@ -69,6 +69,11 @@
           <attribute id="Spells" type="LSString" value="Teleportation_ArcaneGate;Projectile_ChainLightning;Target_CircleOfDeath;Target_CreateUndead;Projectile_Disintegrate;Target_Eyebite;Target_FleshToStone;Target_GlobeOfInvulnerability;Target_FreezingSphere;Target_IrresistibleDance;Zone_Sunbeam;Wall_WallOfIce" />
           <attribute id="UUID" type="guid" value="0b2e4925-018b-4f37-98ce-370a15f7d8c1" /> 
         </node>
+        <node id="SpellList">
+					<attribute id="Comment" type="LSString" value="Spellbinder Might And Magic" />
+          <attribute id="Spells" type="LSString" value="Projectile_ChromaticOrb_Spellbinder_Mastered;Shout_DetectMagic_Spellbinder_Mastered;Shout_DisguiseSelf_Spellbinder_Mastered;Shout_FalseLife_Spellbinder_Mastered;Target_FindFamiliar_Spellbinder_Mastered;Target_Grease_Spellbinder_Mastered;Projectile_IceKnife_Spellbinder_Mastered;Target_Jump_Spellbinder_Mastered;Target_Longstrider_Spellbinder_Mastered;Target_MageArmor_Spellbinder_Mastered;Projectile_MagicMissile_Spellbinder_Mastered;Target_ProtectionFromEvilAndGood_Spellbinder_Mastered;Projectile_RayOfSickness_Spellbinder_Mastered;Target_HideousLaughter_Spellbinder_Mastered;Zone_Thunderwave_Spellbinder_Mastered" />
+          <attribute id="UUID" type="guid" value="03850fb8-a746-4aae-8a98-a6d620e33857" />
+        </node>
       </children>
     </node>
   </region>

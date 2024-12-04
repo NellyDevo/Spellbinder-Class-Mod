@@ -111,6 +111,12 @@
           <attribute id="SelectorId" type="FixedString" value="SPELLBINDER_ENCHANTER_LOCA_EXPANDED_5" />
           <attribute id="UUID" type="guid" value="0b57391c-4e96-4894-9772-dcc7dcfe9934" />
         </node>
+        <node id="ProgressionDescription">
+          <attribute id="Description" type="TranslatedString" handle="ha06ea320a7c142f9bee3448197ee0b6c84e9" version="1" />
+          <attribute id="DisplayName" type="TranslatedString" handle="h65fc13a84f6f46e7b6d581ce98d70c16d679" version="1" />
+          <attribute id="SelectorId" type="FixedString" value="SPELLBINDER_LOCA_MIGHT_AND_MAGIC" />
+          <attribute id="UUID" type="guid" value="a3e5a8e7-941a-4e75-91e8-5dc5e7918493" />
+        </node>
       </children>
     </node>
   </region>

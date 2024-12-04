@@ -423,7 +423,7 @@
                     <attribute id="PassivesAdded" type="LSString" value=""/> 
                     <attribute id="PassivesRemoved" type="LSString" value=""/>
                     <attribute id="ProgressionType" type="uint8" value="0"/> 
-                    <attribute id="Selectors" type="LSString" value="SelectSpells(966a37fb-e0d7-43b1-864c-625440e6a315,0,1)"/>
+                    <attribute id="Selectors" type="LSString" value="SelectSpells(966a37fb-e0d7-43b1-864c-625440e6a315,0,1);SelectSpells(03850fb8-a746-4aae-8a98-a6d620e33857,1,0,SPELLBINDER_LOCA_MIGHT_AND_MAGIC)"/>
 					<attribute id="TableUUID" type="guid" value="ca9cfd96-20b1-485c-b474-b333e6396591"/> 
                     <attribute id="UUID" type="guid" value="591cfe30-a081-4ae7-8262-6ae1b4f36dbb"/>
                 </node>
