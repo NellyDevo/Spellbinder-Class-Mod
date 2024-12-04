@@ -2,7 +2,18 @@ local DynHelper = {}
 
 local SPELL_BLACKLIST = {
     Target_Prestidigitation_Distract = true,
-    Target_Counterspell = true
+    Target_Counterspell = true,
+    Target_DancingLights = true,
+    Target_ArcaneLock = true,
+    Target_Knock = true,
+    Target_AnimateDead_Skeleton = true,
+    Target_AnimateDead_Zombie = true,
+    Target_FeignDeath = true,
+    Target_GaseousForm = true,
+    Target_Seeming = true,
+    Target_CreateUndead = true,
+    Target_FreezingSphere_Throw = true,
+    Projectile_FreezingSphere_Hurl = true
 }
 
 ---@param spell SpellData
@@ -39,7 +50,7 @@ DynHelper.GenerateTranslationEntry = function(text, output)
         return alreadyGenerated[text]
     end
     local handle = generateHandle()
-    output.GeneratedLocalization = string.format(combiner, output.GeneratedLocalization, string.format(locaTemplate, handle, text))
+    output.SpellbinderGeneratedLocalization = string.format(combiner, output.SpellbinderGeneratedLocalization, string.format(locaTemplate, handle, text))
     alreadyGenerated[text] = handle
     return handle
 end
@@ -52,7 +63,7 @@ DynHelper.isSpellBindable = function(spell, spellId)
     --    _P("Target_BestowCurse")
     --    _P(spell == nil)
     --    _P(spell.PowerLevel > 0)
-    --    _P(spell.SpellType ~= "Target" and spell.SpellType ~= "Projectile")
+    --    _P(spell.SpellType ~= "Target" and spell.SpellType ~= "Projectile" and spell.SpellType ~= "Zone")
     --    _P(spell.SpellSchool == "None")
     --    local foundFlag = false
     --    for _,flag in pairs(spell.SpellFlags) do
@@ -63,14 +74,13 @@ DynHelper.isSpellBindable = function(spell, spellId)
     --    end
     --    _P(not spell.SpellSuccess and not spell.SpellProperties and not spell.ContainerSpells)
     --    _P(not foundFlag)
-    --    _P(spell.AreaRadius ~= 0)
     --    _P(string.find(spell.TargetConditions, "not Character()", 1, false))
     --    _P(string.find(spell.TargetConditions, "not Enemy()", 1, false))
     --end
     if SPELL_BLACKLIST[spellId] then return false end
     if spell == nil then return false end
     if spell.PowerLevel > 0 then return false end
-    if spell.SpellType ~= "Target" and spell.SpellType ~= "Projectile" then return false end
+    if spell.SpellType ~= "Target" and spell.SpellType ~= "Projectile" and spell.SpellType ~= "Zone" then return false end
     if spell.SpellSchool == "None" then return false end
     local foundFlag = false
     for _,flag in pairs(spell.SpellFlags) do
@@ -81,7 +91,6 @@ DynHelper.isSpellBindable = function(spell, spellId)
     end
     if not spell.SpellSuccess and not spell.SpellProperties and not spell.ContainerSpells then return false end
     if not foundFlag then return false end
-    if spell.AreaRadius ~= 0 then return false end --TODO: Arcane Sniper level 15 impl
     if string.find(spell.TargetConditions .. "", "not Character()", 1, false) then return false end
     if string.find(spell.TargetConditions .. "", "not Enemy()", 1, false) then return false end
     return true

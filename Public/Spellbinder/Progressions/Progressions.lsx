@@ -337,7 +337,8 @@
                     <attribute id="Level" type="uint8" value="15"/>
                     <attribute id="Name" type="LSString" value="Enchanter"/>
                     <attribute id="ProgressionType" type="uint8" value="1"/>
-                    <attribute id="PassivesAdded" type="LSString" value=""/>
+                    <attribute id="PassivesAdded" type="LSString" value="Spellbinder_Enchanter_MysticRecovery"/>
+                    <attribute id="Selectors" type="LSString" value="SelectSpells(7bf3f435-c45a-495f-9011-a67f44d6c0f2,1,0,SPELLBINDER_ENCHANTER_LOCA_EXPANDED_CANTRIP,,,AlwaysPrepared);SelectSpells(61580c1a-66f6-4bff-8c45-997b18124ead,1,0,SPELLBINDER_ENCHANTER_LOCA_EXPANDED_1);SelectSpells(773a2f87-1d02-495f-b63b-acaa275b74d8,1,0,SPELLBINDER_ENCHANTER_LOCA_EXPANDED_2);SelectSpells(e63275c2-0374-41b8-95a1-69529247e2e1,1,0,SPELLBINDER_ENCHANTER_LOCA_EXPANDED_3);SelectSpells(e1a15e27-41ef-44db-9ab0-37fd1dceb9b4,1,0,SPELLBINDER_ENCHANTER_LOCA_EXPANDED_4)"/>
                     <attribute id="TableUUID" type="guid" value="966e3e81-32cc-4a27-a60e-5e11be70b98f"/>
                     <attribute id="UUID" type="guid" value="a72a5d2d-ed26-4c51-bbb6-23ca8c75bc38"/>
                 </node>
@@ -381,6 +382,14 @@
                     <attribute id="Selectors" type="LSString" value="SelectSpells(966a37fb-e0d7-43b1-864c-625440e6a315,1,1)"/>
 					<attribute id="TableUUID" type="guid" value="ca9cfd96-20b1-485c-b474-b333e6396591"/> 
                     <attribute id="UUID" type="guid" value="12aa8ce4-496f-47f9-90e2-725dcb42f2cc"/>
+                </node>
+                <node id="Progression"> Enchanter Level 17 (spell level 5 expanded)
+                    <attribute id="Level" type="uint8" value="17"/>
+                    <attribute id="Name" type="LSString" value="Enchanter"/>
+                    <attribute id="ProgressionType" type="uint8" value="1"/>
+                    <attribute id="Selectors" type="LSString" value="SelectSpells(25722c6f-405e-4244-99fb-6bb899ff67db,1,0,SPELLBINDER_ENCHANTER_LOCA_EXPANDED_5)"/>
+                    <attribute id="TableUUID" type="guid" value="966e3e81-32cc-4a27-a60e-5e11be70b98f"/>
+                    <attribute id="UUID" type="guid" value="a134862e-24fb-45db-9ae1-b9f10abadffa"/>
                 </node>
                 <node id="Progression"> Mainclass Level 18
                     <attribute id="AllowImprovement" type="bool" value="false"/> 

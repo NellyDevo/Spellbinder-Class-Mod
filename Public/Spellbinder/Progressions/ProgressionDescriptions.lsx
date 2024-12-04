@@ -75,6 +75,42 @@
 	        <attribute id="Type" type="FixedString" value="ActionResource" />
 	        <attribute id="UUID" type="guid" value="84c17cb3-4d51-4add-99f3-88fd166e28f3" />
         </node>
+        <node id="ProgressionDescription">
+          <attribute id="Description" type="TranslatedString" handle="h2d1ef578b80c41b794f082c3890d8f159g05" version="1" />
+          <attribute id="DisplayName" type="TranslatedString" handle="h76359b3c830a4295944aabb84319f95f8475" version="1" />
+          <attribute id="SelectorId" type="FixedString" value="SPELLBINDER_ENCHANTER_LOCA_EXPANDED_CANTRIP" />
+          <attribute id="UUID" type="guid" value="ba63cb9d-d8e2-4324-9fa9-5a5f90dfb55b" />
+        </node>
+        <node id="ProgressionDescription">
+          <attribute id="Description" type="TranslatedString" handle="h2d1ef578b80c41b794f082c3890d8f159g05" version="1" />
+          <attribute id="DisplayName" type="TranslatedString" handle="h49726a35c08844ff96868c0738d342251gf0" version="1" />
+          <attribute id="SelectorId" type="FixedString" value="SPELLBINDER_ENCHANTER_LOCA_EXPANDED_1" />
+          <attribute id="UUID" type="guid" value="04bef34b-75ce-4d4e-ae07-e93e72362871" />
+        </node>
+        <node id="ProgressionDescription">
+          <attribute id="Description" type="TranslatedString" handle="h2d1ef578b80c41b794f082c3890d8f159g05" version="1" />
+          <attribute id="DisplayName" type="TranslatedString" handle="hc005ac3c532e4b2785fda824c39412f3b9ce" version="1" />
+          <attribute id="SelectorId" type="FixedString" value="SPELLBINDER_ENCHANTER_LOCA_EXPANDED_2" />
+          <attribute id="UUID" type="guid" value="2322604b-0e71-4988-9b1a-65df252378c0" />
+        </node>
+        <node id="ProgressionDescription">
+          <attribute id="Description" type="TranslatedString" handle="h2d1ef578b80c41b794f082c3890d8f159g05" version="1" />
+          <attribute id="DisplayName" type="TranslatedString" handle="h9775ab6972934ae58d20336719130e48111f" version="1" />
+          <attribute id="SelectorId" type="FixedString" value="SPELLBINDER_ENCHANTER_LOCA_EXPANDED_3" />
+          <attribute id="UUID" type="guid" value="9786dac1-2de0-4f0d-9504-4aa25ed884c2" />
+        </node>
+        <node id="ProgressionDescription">
+          <attribute id="Description" type="TranslatedString" handle="h2d1ef578b80c41b794f082c3890d8f159g05" version="1" />
+          <attribute id="DisplayName" type="TranslatedString" handle="hd5e8fa2017674903b6018564859bd99f9c7f" version="1" />
+          <attribute id="SelectorId" type="FixedString" value="SPELLBINDER_ENCHANTER_LOCA_EXPANDED_4" />
+          <attribute id="UUID" type="guid" value="ba0a38b9-128e-47f1-9656-f1fa169b06c3" />
+        </node>
+        <node id="ProgressionDescription">
+          <attribute id="Description" type="TranslatedString" handle="h2d1ef578b80c41b794f082c3890d8f159g05" version="1" />
+          <attribute id="DisplayName" type="TranslatedString" handle="hc1d85591544a4eaf96cd0968a2fb2b05cad2" version="1" />
+          <attribute id="SelectorId" type="FixedString" value="SPELLBINDER_ENCHANTER_LOCA_EXPANDED_5" />
+          <attribute id="UUID" type="guid" value="0b57391c-4e96-4894-9772-dcc7dcfe9934" />
+        </node>
       </children>
     </node>
   </region>

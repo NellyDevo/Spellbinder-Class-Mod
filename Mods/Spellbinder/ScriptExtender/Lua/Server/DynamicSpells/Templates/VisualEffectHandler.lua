@@ -69,7 +69,10 @@ local idOverrides = {
     Target_Contagion_Seizure = SHV_Lightning_Necro,
     Target_Contagion_SlimyDoom = SHV_Mist_Green,
     Target_DominatePerson = SHV_Mist_Cyan,
-    Target_HoldMonster = SHV_Lightning_Yellow
+    Target_HoldMonster = SHV_Lightning_Yellow,
+    Target_CloudOfDaggers = SHV_Lightning_Chilled,
+    Target_FlameStrike = SHV_Everflame_White,
+    Zone_Sunbeam = SHV_Everflame_White
 }
 
 local damageTypesToVFX = {
@@ -85,8 +88,12 @@ local damageTypesToVFX = {
     Psychic = SHV_Mist_Purple
 }
 
+---@param spellID string
+---@param spellStat SpellData
 VFX.GetVFXFor = function(spellID, spellStat)
-    local retVal = idOverrides[spellID]
+    local id = spellID
+    if spellStat.RootSpellID ~= "" then id = spellStat.RootSpellID end
+    local retVal = idOverrides[id]
     if not retVal then
         retVal = damageTypesToVFX[spellStat.DamageType]
     end
