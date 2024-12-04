@@ -212,4 +212,6 @@
     <content contentuid="heaffe5c7555a4329982336d5d768e42a97ab" version="1">Mystic Recovery</content>
     <content contentuid="ha20de3d76b0745618d9b2ad1c2811528d2a7" version="1">As a bonus action, you may expend any number of Mystic Dice to recover a spell slot of the same level.</content>
     <content contentuid="h8b33d23bd2f94022bd3a7a660c8342efedbb" version="1">Your ranged attacks deal an additional 1d4 Force damage.</content>
+    <content contentuid="h6ffa2290fc9f43529ed363b42e6cc427a9a6" version="1">Force Missiles</content>
+    <content contentuid="he25ca3dc4f6a4300808df8721c50adc301ca" version="1">While your Arrows of Force feature is active, your spellbound ranged attacks have an additional 50% max range</content>
 </contentList>
