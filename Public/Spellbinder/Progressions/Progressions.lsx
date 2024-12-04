@@ -141,7 +141,7 @@
                     <attribute id="Boosts" type="LSString" value=""/> 
                     <attribute id="Level" type="uint8" value="6"/> 
                     <attribute id="Name" type="LSString" value="Spellbinder"/> 
-                    <attribute id="PassivesAdded" type="LSString" value="Spellbinder_RunicBeacon;Spellbinder_BattleMagic;Spellbinder_BattleMagic_CantripTrigger"/> 
+                    <attribute id="PassivesAdded" type="LSString" value="Spellbinder_ArcaneSmite;Spellbinder_BattleMagic;Spellbinder_BattleMagic_CantripTrigger"/> 
                     <attribute id="PassivesRemoved" type="LSString" value="ExtraAttack"/>
                     <attribute id="ProgressionType" type="uint8" value="0"/> 
                     <attribute id="Selectors" type="LSString" value="SelectSpells(d360c3b2-4eff-4263-b87b-9a8de6e62522,0,1)"/>
@@ -223,7 +223,7 @@
                     <attribute id="Boosts" type="LSString" value="ActionResource(WeaponMasteryPoint,1,0);ActionResource(ArcaneSmitePoint,1,0)"/> 
                     <attribute id="Level" type="uint8" value="10"/> 
                     <attribute id="Name" type="LSString" value="Spellbinder"/> 
-                    <attribute id="PassivesAdded" type="LSString" value="Spellbinder_ArcaneSmite"/> 
+                    <attribute id="PassivesAdded" type="LSString" value="Spellbinder_RunicBeacon"/> 
                     <attribute id="PassivesRemoved" type="LSString" value=""/>
                     <attribute id="ProgressionType" type="uint8" value="0"/> 
                     <attribute id="Selectors" type="LSString" value="SelectSpells(012a228e-66f0-480f-ac19-e181822caf77,0,1)"/>
