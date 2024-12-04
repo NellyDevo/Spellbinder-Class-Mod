@@ -246,7 +246,7 @@
                     <attribute id="Level" type="uint8" value="11"/>
                     <attribute id="Name" type="LSString" value="ArcaneSniper"/>
                     <attribute id="ProgressionType" type="uint8" value="1"/>
-                    <attribute id="PassivesAdded" type="LSString" value="Spellbinder_ArcaneSniper_ArrowsOfForce;Spellbinder_BattleMagic_ForceTrigger;Spellbinder_ArcaneSniper_ArrowOfForcePoints"/>
+                    <attribute id="PassivesAdded" type="LSString" value="Spellbinder_ArcaneSniper_ArrowsOfForce"/>
                     <attribute id="Boosts" type="LSString" value="ActionResource(SpectralArrowPoint,1,0)"/>
                     <attribute id="TableUUID" type="guid" value="2d9ebdee-94b9-4215-9b1c-a9eef9a32854"/>
                     <attribute id="UUID" type="guid" value="cbd90745-61b0-417d-bf7b-3b38c8ac8ef7"/>

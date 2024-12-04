@@ -169,7 +169,7 @@
     <content contentuid="hf887d44c412b416293014a19da42aa28a3a8" version="1">Whenever you cast a spell, get a +2 bonus on all weapon attack rolls until your next turn.</content>
 
     <content contentuid="h3f6d764a80e74545960c87f73e5987a9707g" version="1">Arrows of Force</content>
-    <content contentuid="h24fb8c1d6ca24284b10177e7491d488de441" version="1">You may replace one of your attacks with a magic missile projectile. You can use this a number of times equal to your proficiency bonus each short rest.</content>
+    <content contentuid="h24fb8c1d6ca24284b10177e7491d488de441" version="1">As a bonus action, gain a buff that adds 1d4 force damage to your ranged attacks for 1 minute.</content>
     <content contentuid="h0243499ee39c465b904c1aa0af5ae160d746" version="1">You can replace an attack with a magic missile projectile.</content>
     <content contentuid="hd1c1ee63146f4861b000e7c70ed3bd381gfc" version="1">Arrows of Force</content>
 
@@ -312,4 +312,5 @@
     <content contentuid="hc1d85591544a4eaf96cd0968a2fb2b05cad2" version="1">Expanded Repertoire - Level 5</content>
     <content contentuid="heaffe5c7555a4329982336d5d768e42a97ab" version="1">Mystic Recovery</content>
     <content contentuid="ha20de3d76b0745618d9b2ad1c2811528d2a7" version="1">As a bonus action, you may expend any number of Mystic Dice to recover a spell slot of the same level.</content>
+    <content contentuid="h8b33d23bd2f94022bd3a7a660c8342efedbb" version="1">Your ranged attacks deal an additional 1d4 Force damage.</content>
 </contentList>
