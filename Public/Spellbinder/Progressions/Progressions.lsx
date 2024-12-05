@@ -138,7 +138,7 @@
                 </node>
                 <node id="Progression"> Mainclass Level 6
                     <attribute id="AllowImprovement" type="bool" value="false"/> 
-                    <attribute id="Boosts" type="LSString" value=""/> 
+                    <attribute id="Boosts" type="LSString" value="ActionResource(ArcaneSmitePoint,1,0)"/> 
                     <attribute id="Level" type="uint8" value="6"/> 
                     <attribute id="Name" type="LSString" value="Spellbinder"/> 
                     <attribute id="PassivesAdded" type="LSString" value="Spellbinder_ArcaneSmite;Spellbinder_BattleMagic;Spellbinder_BattleMagic_CantripTrigger"/> 

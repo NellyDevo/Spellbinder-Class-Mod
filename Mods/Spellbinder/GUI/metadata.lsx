@@ -1028,6 +1028,56 @@
                                 </node>
                             </children>
                         </node>
+                        <node id="Object">
+                            <attribute id="MapKey" type="FixedString" value="Assets/Tooltips/Icons/Spellbinder_Force_Missiles.png" />
+                            <children>
+                                <node id="entries">
+                                    <attribute id="h" type="int16" value="380" />
+                                    <attribute id="mipcount" type="int8" value="1" />
+                                    <attribute id="w" type="int16" value="380" />
+                                </node>
+                            </children>
+                        </node>
+                        <node id="Object">
+                            <attribute id="MapKey" type="FixedString" value="Assets/Tooltips/Icons/Spellbinder_Hasty_Uptake.png" />
+                            <children>
+                                <node id="entries">
+                                    <attribute id="h" type="int16" value="380" />
+                                    <attribute id="mipcount" type="int8" value="1" />
+                                    <attribute id="w" type="int16" value="380" />
+                                </node>
+                            </children>
+                        </node>
+                        <node id="Object">
+                            <attribute id="MapKey" type="FixedString" value="Assets/Tooltips/Icons/Spellbinder_Inscrutible_Tactics.png" />
+                            <children>
+                                <node id="entries">
+                                    <attribute id="h" type="int16" value="380" />
+                                    <attribute id="mipcount" type="int8" value="1" />
+                                    <attribute id="w" type="int16" value="380" />
+                                </node>
+                            </children>
+                        </node>
+                        <node id="Object">
+                            <attribute id="MapKey" type="FixedString" value="Assets/Tooltips/Icons/Spellbinder_Inscrutible_Tactics_Ranged.png" />
+                            <children>
+                                <node id="entries">
+                                    <attribute id="h" type="int16" value="380" />
+                                    <attribute id="mipcount" type="int8" value="1" />
+                                    <attribute id="w" type="int16" value="380" />
+                                </node>
+                            </children>
+                        </node>
+                        <node id="Object">
+                            <attribute id="MapKey" type="FixedString" value="Assets/Tooltips/Icons/Spellbinder_Mystic_Recovery.png" />
+                            <children>
+                                <node id="entries">
+                                    <attribute id="h" type="int16" value="380" />
+                                    <attribute id="mipcount" type="int8" value="1" />
+                                    <attribute id="w" type="int16" value="380" />
+                                </node>
+                            </children>
+                        </node>
 
                         <node id="Object">
                             <attribute id="MapKey" type="FixedString" value="Assets/ControllerUIIcons/skills_png/Spellbinder_Battle_Dance.png" />
@@ -1271,6 +1321,56 @@
                         </node>
                         <node id="Object">
                             <attribute id="MapKey" type="FixedString" value="Assets/ControllerUIIcons/skills_png/Spellbinder_Mystic_Dice.png" />
+                            <children>
+                                <node id="entries">
+                                    <attribute id="h" type="int16" value="144" />
+                                    <attribute id="mipcount" type="int8" value="1" />
+                                    <attribute id="w" type="int16" value="144" />
+                                </node>
+                            </children>
+                        </node>
+                        <node id="Object">
+                            <attribute id="MapKey" type="FixedString" value="Assets/ControllerUIIcons/skills_png/Spellbinder_Force_Missiles.png" />
+                            <children>
+                                <node id="entries">
+                                    <attribute id="h" type="int16" value="144" />
+                                    <attribute id="mipcount" type="int8" value="1" />
+                                    <attribute id="w" type="int16" value="144" />
+                                </node>
+                            </children>
+                        </node>
+                        <node id="Object">
+                            <attribute id="MapKey" type="FixedString" value="Assets/ControllerUIIcons/skills_png/Spellbinder_Hasty_Uptake.png" />
+                            <children>
+                                <node id="entries">
+                                    <attribute id="h" type="int16" value="144" />
+                                    <attribute id="mipcount" type="int8" value="1" />
+                                    <attribute id="w" type="int16" value="144" />
+                                </node>
+                            </children>
+                        </node>
+                        <node id="Object">
+                            <attribute id="MapKey" type="FixedString" value="Assets/ControllerUIIcons/skills_png/Spellbinder_Inscrutible_Tactics.png" />
+                            <children>
+                                <node id="entries">
+                                    <attribute id="h" type="int16" value="144" />
+                                    <attribute id="mipcount" type="int8" value="1" />
+                                    <attribute id="w" type="int16" value="144" />
+                                </node>
+                            </children>
+                        </node>
+                        <node id="Object">
+                            <attribute id="MapKey" type="FixedString" value="Assets/ControllerUIIcons/skills_png/Spellbinder_Inscrutible_Tactics_Ranged.png" />
+                            <children>
+                                <node id="entries">
+                                    <attribute id="h" type="int16" value="144" />
+                                    <attribute id="mipcount" type="int8" value="1" />
+                                    <attribute id="w" type="int16" value="144" />
+                                </node>
+                            </children>
+                        </node>
+                        <node id="Object">
+                            <attribute id="MapKey" type="FixedString" value="Assets/ControllerUIIcons/skills_png/Spellbinder_Mystic_Recovery.png" />
                             <children>
                                 <node id="entries">
                                     <attribute id="h" type="int16" value="144" />

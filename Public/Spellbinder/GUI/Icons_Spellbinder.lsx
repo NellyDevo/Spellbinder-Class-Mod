@@ -180,35 +180,35 @@
                     <attribute id="V2" type="float" value="0.3"/>
                 </node>
 				<node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value=""/>
+                    <attribute id="MapKey" type="FixedString" value="Spellbinder_Force_Missiles"/>
                     <attribute id="U1" type="float" value="0.5"/>
                     <attribute id="U2" type="float" value="0.6"/>
                     <attribute id="V1" type="float" value="0.2"/>
                     <attribute id="V2" type="float" value="0.3"/>
                 </node>
 				<node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value=""/>
+                    <attribute id="MapKey" type="FixedString" value="Spellbinder_Hasty_Uptake"/>
                     <attribute id="U1" type="float" value="0.6"/>
                     <attribute id="U2" type="float" value="0.7"/>
                     <attribute id="V1" type="float" value="0.2"/>
                     <attribute id="V2" type="float" value="0.3"/>
                 </node>
 				<node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value=""/>
+                    <attribute id="MapKey" type="FixedString" value="Spellbinder_Inscrutible_Tactics"/>
                     <attribute id="U1" type="float" value="0.7"/>
                     <attribute id="U2" type="float" value="0.8"/>
                     <attribute id="V1" type="float" value="0.2"/>
                     <attribute id="V2" type="float" value="0.3"/>
                 </node>
 				<node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value=""/>
+                    <attribute id="MapKey" type="FixedString" value="Spellbinder_Inscrutible_Tactics_Ranged"/>
                     <attribute id="U1" type="float" value="0.8"/>
                     <attribute id="U2" type="float" value="0.9"/>
                     <attribute id="V1" type="float" value="0.2"/>
                     <attribute id="V2" type="float" value="0.3"/>
                 </node>
 				<node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value=""/>
+                    <attribute id="MapKey" type="FixedString" value="Spellbinder_Mystic_Recovery"/>
                     <attribute id="U1" type="float" value="0.9"/>
                     <attribute id="U2" type="float" value="1.0"/>
                     <attribute id="V1" type="float" value="0.2"/>

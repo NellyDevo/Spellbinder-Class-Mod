@@ -261,7 +261,7 @@ data "StatsFunctors" "IF(context.HasContextFlag(StatsFunctorContext.OnCast)):App
 
 new entry "Spellbinder_SpellDancer_HastyUptake"
 type "PassiveData"
-data "Icon" "PLACEHOLDER"
+data "Icon" "Spellbinder_Hasty_Uptake"
 data "DisplayName" "h9a4d74d8d2124d6e94032bdec6eae1a2fged"
 data "Description" "h60d6b172f0964e24937a886b7e1b98e10819"
 data "Boosts" "UnlockInterrupt(Interrupt_Spellbinder_SpellDancer_HastyUptake);UnlockSpell(Target_Haste,AddChildren,d136c5d9-0ff0-43da-ceac-4aa7f807bfd6)"
@@ -278,12 +278,12 @@ data "StatsFunctors" "IF(HasPassive('UnlockedSpellSlotLevel4',context.Target) an
 new entry "Spellbinder_Enchanter_MysticRecovery"
 type "PassiveData"
 data "Boosts" "UnlockSpell(Shout_Spellbinder_Enchanter_MysticRecovery)"
-data "Icon" "PLACEHOLDER"
+data "Icon" "Spellbinder_Mystic_Recovery"
 data "DisplayName" "heaffe5c7555a4329982336d5d768e42a97ab"
 data "Description" "ha20de3d76b0745618d9b2ad1c2811528d2a7"
 
 new entry "Spellbinder_ArcaneSniper_ForceMissiles"
 type "PassiveData"
-data "Icon" "PLACEHOLDER"
+data "Icon" "Spellbinder_Force_Missiles"
 data "DisplayName" "h6ffa2290fc9f43529ed363b42e6cc427a9a6"
 data "Description" "he25ca3dc4f6a4300808df8721c50adc301ca"
