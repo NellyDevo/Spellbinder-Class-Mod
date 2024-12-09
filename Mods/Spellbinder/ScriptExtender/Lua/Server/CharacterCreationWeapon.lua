@@ -35,9 +35,17 @@ local passivesToEquipmentMap = {
 }
 
 local function findPassive(characterEntity, passive)
-    for _,selection in pairs(characterEntity.CCLevelUp.LevelUps[1].Upgrades.Passives[1].Passives) do
-        if passive == selection then
-            return true
+    if characterEntity.CCLevelUp --fug it, just check all these values exist to not error on origin characters
+    and characterEntity.CCLevelUp.LevelUps
+    and characterEntity.CCLevelUp.LevelUps[1]
+    and characterEntity.CCLevelUp.LevelUps[1].Upgrades
+    and characterEntity.CCLevelUp.LevelUps[1].Upgrades.Passives
+    and characterEntity.CCLevelUp.LevelUps[1].Upgrades.Passives[1]
+    and characterEntity.CCLevelUp.LevelUps[1].Upgrades.Passives[1].Passives then
+        for _,selection in pairs(characterEntity.CCLevelUp.LevelUps[1].Upgrades.Passives[1].Passives) do
+            if passive == selection then
+                return true
+            end
         end
     end
     return false
