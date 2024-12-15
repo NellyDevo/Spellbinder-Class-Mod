@@ -208,7 +208,7 @@
                 </node>
                 <node id="Progression"> Mainclass Level 9
                     <attribute id="AllowImprovement" type="bool" value="false"/> 
-                    <attribute id="Boosts" type="LSString" value="ActionResource(SpellSlot,2,3);ActionResource(ArcaneResistancePoint,1,0)"/> 
+                    <attribute id="Boosts" type="LSString" value="ActionResource(SpellSlot,2,3)"/> 
                     <attribute id="Level" type="uint8" value="9"/> 
                     <attribute id="Name" type="LSString" value="Spellbinder"/> 
                     <attribute id="PassivesAdded" type="LSString" value="UnlockedSpellSlotLevel3;Spellbinder_ArcaneResistance"/> 
@@ -302,7 +302,7 @@
                 </node>
                 <node id="Progression"> Mainclass Level 14
                     <attribute id="AllowImprovement" type="bool" value="false"/> 
-                    <attribute id="Boosts" type="LSString" value="ActionResource(ArcaneResistancePoint,1,0)"/> 
+                    <attribute id="Boosts" type="LSString" value="ActionResource(ArcaneSmitePoint,1,0)"/> 
                     <attribute id="Level" type="uint8" value="14"/> 
                     <attribute id="Name" type="LSString" value="Spellbinder"/> 
                     <attribute id="PassivesAdded" type="LSString" value=""/> 
