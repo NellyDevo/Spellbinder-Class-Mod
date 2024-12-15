@@ -53,3 +53,9 @@ Ext.Osiris.RegisterListener("SavegameLoaded", 0, "after", function ()
     end
 end)
 
+Ext.Osiris.RegisterListener("Equipped", 2, "after", function(item, character)
+    local characterEntity = Ext.Entity.Get(character)
+    if characterEntity then
+        unlockSpells(characterEntity, character)
+    end
+end)
