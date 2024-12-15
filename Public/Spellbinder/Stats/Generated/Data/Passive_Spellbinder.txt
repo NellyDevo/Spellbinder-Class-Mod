@@ -178,7 +178,7 @@ data "DisplayName" "hed20898c073e4784814f0ad2b66ae6fd2ad0"
 data "Description" "hf887d44c412b416293014a19da42aa28a3a8"
 data "Icon" "Spellbinder_Spellsword"
 data "StatsFunctorContext" "OnCast"
-data "Conditions" "IsSpell() and not HasStatus('SPELLBINDER_SPELLSWORD',context.Target)"
+data "Conditions" "IsSpell() and not HasUseCosts('FauxTagIsBoundSpell') and not HasStatus('SPELLBINDER_SPELLSWORD',context.Target)"
 data "StatsFunctors" "ApplyStatus(SPELLBINDER_SPELLSWORD,100,1)"
 
 new entry "Spellbinder_ArcaneSniper_ArrowsOfForce"
