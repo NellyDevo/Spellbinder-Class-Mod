@@ -5,7 +5,7 @@
         <node id="root">
             <children>
                 <node id="SkillList"> Class Skills
-                    <attribute id="Skills" type="LSString" value="Atheletics, Acrobatics, Arcana, History, Investigation, Perception, Medicine, Religion, Survival"/> List of skills to choose at CC
+                    <attribute id="Skills" type="LSString" value="Acrobatics,Arcana,Athletics,History,Investigation,Nature,Performance,Stealth"/> List of skills to choose at CC
                     <attribute id="UUID" type="guid" value="6659e971-cdce-4e8f-aead-ac36153752e1"/> same as passiveList, make a new UUID and refer to it when selecting skills
                 </node>
             </children>

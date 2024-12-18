@@ -5,7 +5,7 @@
         <node id="root">
             <children>
                 <node id="DefaultValue">
-                    <attribute id="Add" type="LSString" value="Athletics;Arcana;Acrobatics;Insight;Intimidation;Investigation;Perception;"/>
+                    <attribute id="Add" type="LSString" value="Arcana;Athletics"/>
                     <attribute id="Level" type="int32" value="1"/>
                     <attribute id="TableUUID" type="guid" value="ca9cfd96-20b1-485c-b474-b333e6396591"/>
                     <attribute id="UUID" type="guid" value="cdf5fffb-5e73-4e0d-9132-1254f2d4ada7"/>

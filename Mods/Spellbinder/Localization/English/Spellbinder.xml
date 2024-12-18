@@ -121,7 +121,7 @@
     <content contentuid="hdad94a2c5fa8412eb46e0a2dc865dd1946f5" version="1">Your armor was recently bound and its residual magics remain for a short time to continue protecting you.</content>
     
     <content contentuid="hd08f9d660e974a92be8a75e65bdb222ee6f9" version="1">Battle Dance</content>
-    <content contentuid="h4a15fe1d6bd140b6acd160a3846707f5b21e" version="1">When you are attacked, you may spend your reaction to impose disadvantage on that attack.</content>
+    <content contentuid="ha6cf49e1aa7f473c9334a43611256c3ff15a" version="1">Whenever you expend a charge of a Bound spell, you can move up to [1] without provoking attacks of opportunity.</content>
     
     <content contentuid="h424d6f87fdb14b7daf5cc39d1614f0b45f63" version="1">Magic Batteries</content>
     <content contentuid="hcd63bc7878334ec38b33ee28889919962dae" version="1">Your bound spells no longer have a limited duration</content>
@@ -280,7 +280,6 @@
     <content contentuid="h93afc1b068254c10a685f52d084ac6f93cde" version="1">Mastering Warhammers</content>
     <content contentuid="h4dee9f7864aa42598973c59901ebe1ba7b2e" version="1">Mastering Warpicks</content>
 
-    <content contentuid="ha6cf49e1aa7f473c9334a43611256c3ff15a" version="1">Whenever you expend a charge of a Bound spell, you can move up to [1]. You do not provoke attacks of opportunity this turn.</content>
     <content contentuid="h1af7b610ca5a4bd48e462dec69cc2595a4ae" version="1">You can move an extra [1] this round. You do not provoke attacks of opportunity this round.</content>
     <content contentuid="he386f2d9513646789a7757b0177585e4dd71" version="1">This bonus increases to +2 at level 11 and +3 at level 15.</content>
     <content contentuid="hb662f26a38e640c79b24e3b66a880902baa6" version="1">Arcane Smite</content>
@@ -310,11 +309,17 @@
     <content contentuid="h9775ab6972934ae58d20336719130e48111f" version="1">Expanded Repertoire - Level 3</content>
     <content contentuid="hd5e8fa2017674903b6018564859bd99f9c7f" version="1">Expanded Repertoire - Level 4</content>
     <content contentuid="hc1d85591544a4eaf96cd0968a2fb2b05cad2" version="1">Expanded Repertoire - Level 5</content>
+
     <content contentuid="heaffe5c7555a4329982336d5d768e42a97ab" version="1">Mystic Recovery</content>
     <content contentuid="ha20de3d76b0745618d9b2ad1c2811528d2a7" version="1">As a bonus action, you may expend any number of Mystic Dice to recover a spell slot of the same level.</content>
     <content contentuid="h8b33d23bd2f94022bd3a7a660c8342efedbb" version="1">Your ranged attacks deal an additional 1d4 Force damage.</content>
+
     <content contentuid="h6ffa2290fc9f43529ed363b42e6cc427a9a6" version="1">Force Missiles</content>
     <content contentuid="he25ca3dc4f6a4300808df8721c50adc301ca" version="1">While your Arrows of Force feature is active, your spellbound ranged attacks have an additional 50% max range</content>
+    
     <content contentuid="h65fc13a84f6f46e7b6d581ce98d70c16d679" version="1">Might and Magic</content>
     <content contentuid="ha06ea320a7c142f9bee3448197ee0b6c84e9" version="1">Choose a level 1 spell. You can cast it without expending a spell slot and in place of your battle magic cantrip.</content>
+    
+    <content contentuid="h66b48442068b49b0aa1a7cc17ef98dd45e85" version="1">Deliberate Performance</content>
+    <content contentuid="h254b710767fc4287b3aeb2a092ba57713dee" version="1">You have a calculated approach to the arts thanks to your training of the dance of magic and swordplay. You use your Intelligence modifier instead of your Charisma modifier for performance checks.</content>
 </contentList>
