@@ -136,7 +136,7 @@
     <content contentuid="h98f68b6c0bd54e6bb5c667fbd08826b210c0" version="1">When a ranged weapon is spellbound, increase its effective range by 50%.</content>
 
     <content contentuid="haedb89a68428476589d3bde6d33aa08838gd" version="1">Magical Arc</content>
-    <content contentuid="h475e3a2cbcde40a2a977804e49323d747073" version="1">When you consume a charge of a bound spell, gain [1] AC for 1 round.</content>
+    <content contentuid="h475e3a2cbcde40a2a977804e49323d747073" version="1">When you consume a charge of a bound spell, if you are not wearing medium or heavy armor or a shield, gain [1] AC for 1 round.</content>
     
     <content contentuid="h4064116ce1d640bd903824659456626ea1d4" version="1">Mystic Dice</content>
     <content contentuid="hce5dfc9a8a214b71a55afc019c39c1296851" version="1">Used to fuel your subclass powers.</content>
@@ -321,5 +321,5 @@
     <content contentuid="ha06ea320a7c142f9bee3448197ee0b6c84e9" version="1">Choose a level 1 spell. You can cast it without expending a spell slot and in place of your battle magic cantrip.</content>
     
     <content contentuid="h66b48442068b49b0aa1a7cc17ef98dd45e85" version="1">Deliberate Performance</content>
-    <content contentuid="h254b710767fc4287b3aeb2a092ba57713dee" version="1">You have a calculated approach to the arts thanks to your training of the dance of magic and swordplay. You use your Intelligence modifier instead of your Charisma modifier for performance checks.</content>
+    <content contentuid="h254b710767fc4287b3aeb2a092ba57713dee" version="1">You have a calculated approach to the arts thanks to your training of the dance of magic and swordplay. Add your Intelligence modifier to your performance checks.</content>
 </contentList>
