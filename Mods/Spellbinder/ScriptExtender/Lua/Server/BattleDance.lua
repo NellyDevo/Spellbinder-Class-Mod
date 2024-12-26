@@ -6,7 +6,7 @@ Ext.Osiris.RegisterListener("StatusApplied", 4, "after", function (object, statu
             local used = actionResource.MaxAmount - actionResource.Amount
             Osi.ApplyStatus(object, "SPELLBINDER_SPELLDANCER_BATTLE_DANCE_TRACKER", used, 1)
         end
-        Osi.ApplyStatus(object, "SPELLBINDER_SPELLDANCER_BATTLE_DANCE", 1)
+        Osi.ApplyStatus(object, "SPELLBINDER_SPELLDANCER_BATTLE_DANCE_INTERMEDIARY", 0, 1, object)
     elseif status == "SPELLBINDER_SPELLDANCER_BATTLE_DANCE_MOVE_TRIGGER" then
         local characterEntity = Ext.Entity.Get(object)
         local prevUsed = Osi.GetStatusCurrentLifetime(object, "SPELLBINDER_SPELLDANCER_BATTLE_DANCE_TRACKER")
@@ -15,7 +15,7 @@ Ext.Osiris.RegisterListener("StatusApplied", 4, "after", function (object, statu
         local used = actionResource.MaxAmount - actionResource.Amount
         if used - prevUsed >= distanceAvailable then
             Osi.RemoveStatus(object, "SPELLBINDER_SPELLDANCER_BATTLE_DANCE_TRACKER")
-            Osi.RemoveStatus(object, "SPELLBINDER_SPELLDANCER_BATTLE_DANCE")
+            Osi.RemoveStatus(object, "SPELLBINDER_SPELLDANCER_BATTLE_DANCE", object)
         end
     end
 end)

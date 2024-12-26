@@ -161,7 +161,7 @@ type "SpellData"
 data "SpellType" "Target"
 using "%s"
 %s
-data "SpellFlags" "HasHighGroundRangeExtension;RangeIgnoreVerticalThreshold;IsHarmful;IgnoreVisionBlock;ImmediateCast;IsSpell%s"
+data "SpellFlags" "HasHighGroundRangeExtension;RangeIgnoreVerticalThreshold;IsHarmful;IgnoreVisionBlock;RangeIgnoreBlindness;DontAbortPerforming;ImmediateCast;IsSpell%s"
 data "TargetRadius" "100"
 data "TargetConditions" ""
 data "UseCosts" "FauxTagIsBoundSpell:1"
